@@ -3,7 +3,7 @@
 A simple and interactive command-line Python script that generates a unique band name based on user inputs.
 
 ## Screenshot
-Band-Name-Generator.
+Band-Name-Generator
 ![Band-Name-Generator.](./Band-Name-Generator.jpg)
 
 ## Description
