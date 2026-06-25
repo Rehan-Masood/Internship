@@ -2,6 +2,10 @@
 
 A simple and interactive command-line interface (CLI) Python utility designed to calculate the exact amount each person needs to pay when splitting a bill, incorporating a custom tip percentage.
 
+## Screenshot
+# Tip Calculator
+![Tip Calculator.](./Tip Calculator.jpg)
+
 ## Features
 
 - **Interactive Prompts**: Asks for the total bill, desired tip percentage, and the number of people sharing the bill.
