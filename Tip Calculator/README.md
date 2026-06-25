@@ -4,7 +4,7 @@ A simple and interactive command-line interface (CLI) Python utility designed to
 
 ## Screenshot
 # Tip Calculator
-![Tip Calculator.](./Tip Calculator.jpg)
+![Tip Calculator.](./Tip%20Calculator.jpg)
 
 ## Features
 
