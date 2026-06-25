@@ -2,6 +2,10 @@
 
 A simple and interactive command-line Python script that generates a unique band name based on user inputs.
 
+## Screenshot
+Band-Name-Generator.
+![Band-Name-Generator.](./Band-Name-Generator.jpg)
+
 ## Description
 
 The **Band Name Generator** is a beginner-friendly Python program that helps you brainstorm band names. It prompts the user for two inputs:
