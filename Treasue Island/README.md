@@ -6,6 +6,14 @@ Your mission, should you choose to accept it, is to navigate a series of dangero
 
 ---
 
+# Screenshot
+## GAME WIN
+![GAME WIN.](./Game%20Win!.jpg)
+
+## GAME OVER
+![GAME OVER.](./Game%20Over!.jpg)
+
+
 ## 🎮 How to Play
 
 The game will prompt you to make decisions at key moments. Type your choices in the terminal when prompted and press **Enter**.
