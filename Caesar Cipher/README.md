@@ -2,7 +2,7 @@
 
 A simple, interactive command-line interface (CLI) Python tool to encrypt (encode) and decrypt (decode) messages using the classic Caesar Cipher algorithm.
 
-# Caesar Cipher
+## Caesar Cipher
   ![Caesar Cipher.](./Caesar%20Cipher.jpg)
 
 ## Features
