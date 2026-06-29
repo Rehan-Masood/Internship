@@ -3,10 +3,10 @@
 A simple, interactive terminal-based Rock, Paper, Scissors game implemented in Python. The game features stylized ASCII art for each choice and plays against a computer opponent.
 
 # Screenshot
-1
+1.
 ![1.](./1.jpg)
 
-2
+2.
 ![2.](./2.jpg)
 
 ## Table of Contents
