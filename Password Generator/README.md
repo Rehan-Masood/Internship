@@ -3,8 +3,9 @@
 A simple Python command-line application that generates a customized, secure password based on user input for the number of letters, symbols, and numbers.
 
 # Screenshot
-##Password Generator 
-![Password Generator.](./Password%20Generator)
+##PyPassword Generator 
+![PyPassword Generator.](./Password%20Generator)
+
 ## Features
 
 - **Customizable Length**: Choose exactly how many letters, symbols, and numbers you want in your password.
