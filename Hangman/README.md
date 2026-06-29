@@ -6,6 +6,12 @@ A classic command-line Hangman game implemented in Python. The game selects a ra
 ## 1.
    ![1.](./1.jpg)
 
+## 2.
+   ![2.](./2.jpg)
+
+## 3.
+   ![3.](./3.jpg)
+
 ## Features
 
 - **Random Word Selection**: Chooses a random word from a built-in dictionary for each game.
