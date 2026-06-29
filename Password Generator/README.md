@@ -4,7 +4,7 @@ A simple Python command-line application that generates a customized, secure pas
 
 # Screenshot
 ##PyPassword Generator 
-![PyPassword Generator.](./Password%20Generator)
+![PyPassword Generator.](./main/Password%20Generator)
 
 ## Features
 
