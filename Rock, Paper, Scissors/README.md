@@ -4,10 +4,10 @@ A simple, interactive terminal-based Rock, Paper, Scissors game implemented in P
 
 # Screenshot
 1
-![1.](./Rock%2C%20Paper%2C%20Scissors/1.jpg)
+![1.](./1.jpg)
 
 2
-![2.](./Rock%2C%20Paper%2C%20Scissors/2.jpg)
+![2.](./2.jpg)
 
 ## Table of Contents
 - [Features](#features)
