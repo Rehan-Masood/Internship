@@ -2,6 +2,10 @@
 
 A classic command-line Hangman game implemented in Python. The game selects a random word from a predefined list, and the player has to guess it letter by letter before running out of lives.
 
+# Screenshot
+## 1.
+   ![1.](./1.jpg)
+
 ## Features
 
 - **Random Word Selection**: Chooses a random word from a built-in dictionary for each game.
