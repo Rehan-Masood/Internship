@@ -2,6 +2,10 @@
 
 A clean, interactive, command-line calculator written in Python. It allows users to perform basic arithmetic operations and chain multiple calculations together continuously.
 
+# Screenshot
+## Pythonista Calculator.
+   ![Pythonista Calculator.](./Pythonista.jpg)
+
 ## Features
 
 - **Basic Operations**: Supports addition, subtraction, multiplication, and division.
