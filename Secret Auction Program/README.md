@@ -2,6 +2,13 @@
 
 A simple command-line Python application that simulates a blind (secret) auction. Bidders can input their names and bids sequentially. The screen clears after each bid, ensuring other participants cannot see previous offers. Once all bids are placed, the program determines and announces the winner with the highest bid.
 
+# Screenshot
+## 1.
+   ![1.](./1.jpg)
+
+## 2.
+   ![2.](./2.jpg)
+
 ## 🔨 Features
 
 * **Blind Bidding:** Clears the console screen after each bidder enters their details to maintain confidentiality.
