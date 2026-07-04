@@ -3,7 +3,10 @@
 A simple desktop BMI Calculator built with Python and Tkinter. Enter your weight in kilograms and height in centimeters to calculate your Body Mass Index and see the result category.
 
 ## BMI Calculator
-![BMI Calculator.](./Rehan's%20BMI%20Calculator.jpg)
+   ![BMI Calculator.](./Rehan's%20BMI%20Calculator.jpg)
+
+## Invalid Entries
+   ![Invalid Entries.](./Invalid%20Entries.jpg)
 
 ## Features
 
