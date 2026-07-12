@@ -2,6 +2,52 @@
 
 This repository contains a single-page personal portfolio built in [Index.html](Index.html). It presents Muhammad Rehan Masood’s profile as a Django Developer Intern and includes a LinkedIn-style profile section, about section, education timeline, skills tabs, projects, and contact details.
 
+## Live-Link# 🚀 My Portfolio
+
+A personal portfolio website showcasing my journey as a **Django Developer Intern**, currently building skills in full stack web development.
+
+## 🔗 Live Demo
+
+**[View Live Portfolio →](https://internship-axskzl99q-rehan-web.vercel.app)**
+
+## 📌 About
+
+I'm Muhammad Rehan Masood, a **Django Developer Intern** at WeConnect-Innovation and a Software Engineering student at COMSATS University Islamabad. This portfolio highlights my current skills, ongoing internship experience, and the small projects I've built while learning full stack development.
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+- JavaScript
+- Three.js (background animation)
+
+## 💼 What's Inside
+
+- **Profile Overview** — internship role, education, and skills
+- **About Me** — my background and career goals
+- **Education** — BS Software Engineering @ COMSATS University Islamabad
+- **Skills** — Python, Django (learning), HTML5, Tailwind CSS, Tkinter, MySQL, Git
+- **Projects** — including a BMI Calculator desktop app and a Django learning project
+- **Contact** — ways to reach me for opportunities or collaboration
+
+## 🎯 Currently Learning
+
+- Django (models, views, templates)
+- MySQL fundamentals
+- AI/ML basics
+- Building toward becoming a **Full Stack Web Developer**
+
+## 📫 Contact
+
+- **Email:** jrehan590@gmail.com
+- **LinkedIn:** [linkedin.com/in/m-rehan-masood-48126241b](https://www.linkedin.com/in/m-rehan-masood-48126241b)
+- **GitHub:** [github.com/Rehan-Masood](https://github.com/Rehan-Masood)
+
+---
+
+⭐ Feel free to explore the code, and reach out if you'd like to connect!
+
+
 ## Overview
 
 - Built with plain HTML, CSS, and JavaScript in one file.
