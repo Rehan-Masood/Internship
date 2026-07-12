@@ -1,8 +1,6 @@
-# Portfolio Landing Page
+🚀 My Portfolio
 
-This repository contains a single-page personal portfolio built in [Index.html](Index.html). It presents Muhammad Rehan Masood’s profile as a Django Developer Intern and includes a LinkedIn-style profile section, about section, education timeline, skills tabs, projects, and contact details.
-
-## Live-Link# 🚀 My Portfolio
+## Live-Link# 
 
 A personal portfolio website showcasing my journey as a **Django Developer Intern**, currently building skills in full stack web development.
 
