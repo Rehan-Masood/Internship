@@ -1,4 +1,4 @@
-# Blackjack Casino Simulator
+# Black-jack Casino Simulator
 
 A terminal-based Blackjack (21) game built entirely with Object-Oriented Programming in Python. The Player bets chips and plays against the Dealer (computer), following standard Blackjack rules.
 
