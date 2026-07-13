@@ -2,7 +2,7 @@
 
 A terminal-based Blackjack (21) game built entirely with Object-Oriented Programming in Python. The Player bets chips and plays against the Dealer (computer), following standard Blackjack rules.
 
-# Screenshot
+## Screenshot
 ## 1.
    ![1.](./1.jpg)
 
@@ -11,7 +11,6 @@ A terminal-based Blackjack (21) game built entirely with Object-Oriented Program
 
 ## 3.
    ![3.](./3.jpg)
-
 ## Overview
 
 - Player places a bet from their chip balance.
