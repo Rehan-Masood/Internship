@@ -3,7 +3,6 @@
 
 # 🚀 My Portfolio
 
-## Live-Link 
 
 A personal portfolio website showcasing my journey as a **Django Developer Intern**, currently building skills in full stack web development.
 
