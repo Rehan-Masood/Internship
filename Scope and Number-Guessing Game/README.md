@@ -6,7 +6,7 @@ A small Python terminal game where the computer chooses a random number between 
 ## Hard Level
    ![Hard Level.](./Hard%20Level.jpg)
 ## Easy Level
-   ![Easy Level.](./Easy%20Level.jpg)
+   ![Easy Level.](./Easy%20Level%20.jpg)
 ## Easy Level 1
    ![Easy Level 1.](./Easy%20Level.jpg)
 
