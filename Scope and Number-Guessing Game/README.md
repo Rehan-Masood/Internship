@@ -2,6 +2,10 @@
 
 A small Python terminal game where the computer chooses a random number between 1 and 100 and the player tries to guess it in as few attempts as possible.
 
+## Screenshot
+# Hard Level
+![Hard Level.](./Hard Level.jpg)
+
 ## Overview
 
 The game gives feedback after every guess so the player can narrow down the answer:
