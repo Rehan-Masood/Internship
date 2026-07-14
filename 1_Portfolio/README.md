@@ -10,6 +10,9 @@ A personal portfolio website showcasing my journey as a **Django Developer Inter
 
 **[View Live Portfolio →](https://internship-axskzl99q-rehan-web.vercel.app)**
 
+## Demo Video
+<video src="https://github.com/Rehan-Masood/Internship/raw/main/1_Portfolio/Portfolio-Video.mp4" controls width="600"></video>
+
 ## 📌 About
 
 I'm Muhammad Rehan Masood, a **Django Developer Intern** at WeConnect-Innovation and a Software Engineering student at COMSATS University Islamabad. This portfolio highlights my current skills, ongoing internship experience, and the small projects I've built while learning full stack development.
