@@ -10,6 +10,9 @@ A small Python terminal game where the computer chooses a random number between 
 ## Easy Level 1
    ![Easy Level 1.](./Easy%20Level%201%20.jpg)
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/c54b55ac-03a6-4439-adcd-ec35d2412ff3" controls width="600"></video>
+
 ## Overview
 
 The game gives feedback after every guess so the player can narrow down the answer:
