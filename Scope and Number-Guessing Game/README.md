@@ -5,6 +5,10 @@ A small Python terminal game where the computer chooses a random number between 
 ## Screenshot
 ## Hard Level
    ![Hard Level.](./Hard%20Level.jpg)
+## Easy Level
+   ![Easy Level.](./Easy%20Level.jpg)
+## Easy Level 1
+   ![Easy Level 1.](./Easy%20Level.jpg)
 
 ## Overview
 
