@@ -2,6 +2,9 @@
 
 A simple console-based Python game where you guess which public figure has more followers.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/6a83550a-a029-4545-9b21-350cfd9a965e" controls width="600"></video>
+
 ## Overview
 - Players are shown two profiles (A and B) and must guess which has more followers.
 - Correct guesses increase your score; an incorrect guess ends the game.
