@@ -2,6 +2,10 @@
 
 A terminal-based Python battle game where you fight through enemy waves, earn gold, and upgrade your warrior between rounds.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/f23118d0-dfc2-4cd3-8db4-53f638fb2eed" controls width="600"></video>
+
+
 ## Game Overview
 
 You play as a warrior with:
