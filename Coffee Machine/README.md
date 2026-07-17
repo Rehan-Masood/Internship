@@ -5,9 +5,6 @@ A simple command-line coffee machine simulator written in Python.
 ## Demo Video
 <video src="https://github.com/user-attachments/assets/bd9d99a5-43d7-49d1-aefb-ff80a01ce5c3" controls width="600"></video>
 
-## Coffee Machine
-   ![Coffee Machine.](./Coffee%20Machine.jpg)
-
 ## Project Overview
 
 This project simulates a coffee machine that can:
