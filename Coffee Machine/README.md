@@ -1,4 +1,4 @@
-# Coffee Machine (Python)
+# Coffee Machine 
 
 A simple command-line coffee machine simulator written in Python.
 
