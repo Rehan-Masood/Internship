@@ -4,7 +4,7 @@ A simple and interactive command-line Python script that generates a unique band
 
 ## Screenshot
 ## Band-Name-Generator
-![Band-Name-Generator.](./Band-Name-Generator.jpg)
+   ![Band-Name-Generator.](./Band-Name-Generator.jpg)
 
 ## Description
 
