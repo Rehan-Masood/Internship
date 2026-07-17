@@ -2,6 +2,12 @@
 
 A Python-based vending machine simulator that demonstrates Object-Oriented Programming (OOP) principles. This project implements a fully functional coffee machine with menu management, resource tracking, and payment processing.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/bd9d99a5-43d7-49d1-aefb-ff80a01ce5c3" controls width="600"></video>
+
+## Coffee Machine
+   ![Coffee Machine.](./Coffee%20Machine.jpg)
+
 ## Features
 
 - **Multiple Drink Options**: Choose from Latte, Espresso, and Cappuccino
