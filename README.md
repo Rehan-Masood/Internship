@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 🖼️ BANNER IMAGE GOES HERE — see notes at the bottom of this file for what to use -->
-<img src="./assets/banner.png" alt="Django Fullstack Internship Banner" width="100%"/>
+<img src="./assets/banner.png" alt="Django Fullstack Internship Banner" width="850"/>
 
 # 🚀 Django Fullstack Internship
 
