@@ -3,8 +3,8 @@
 A simple command-line coffee machine simulator written in Python.
 
 
-##
-![Coffee Machine.](./Coffee%20Machine/Coffee%20Machine.jpg)
+## Coffee Machine
+   ![Coffee Machine.](./Coffee%20Machine/Coffee%20Machine.jpg)
 
 ## Project Overview
 
