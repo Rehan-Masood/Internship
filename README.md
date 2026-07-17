@@ -21,7 +21,7 @@
 
 This repository is a growing collection of projects I built while learning **Python, HTML, CSS, and Django**. Each folder is a self-contained project with its own code and README. New projects are added regularly as I continue building.
 
-**🔗 Live Portfolio (HTML/CSS/JS):** [internship-one-alpha.vercel.app](https://internship-axskzl99q-rehan-web.vercel.app)
+**🔗 Live Portfolio (HTML/CSS/JS):** [Rehan's Portfolio](https://internship-axskzl99q-rehan-web.vercel.app)
 
 ---
 
