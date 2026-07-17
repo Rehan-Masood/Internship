@@ -7,7 +7,7 @@
 
 ### A collection of HTML, CSS, Python & Django projects built during my learning journey
 
-[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-2ea44f?style=for-the-badge)](https://internship-one-alpha.vercel.app)
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-2ea44f?style=for-the-badge)](https://internship-axskzl99q-rehan-web.vercel.app)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -114,9 +114,9 @@ Each project folder contains its own `main.py` (or equivalent) and a short local
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/muhammad-rehan-masood-48126241b)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rehan-Masood)
-[![Portfolio](https://img.shields.io/badge/Portfolio-2ea44f?style=for-the-badge&logo=vercel&logoColor=white)](https://internship-one-alpha.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2ea44f?style=for-the-badge&logo=vercel&logoColor=white)](https://internship-axskzl99q-rehan-web.vercel.app)
 
 </div>
 
