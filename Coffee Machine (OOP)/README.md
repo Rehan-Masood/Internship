@@ -1,4 +1,4 @@
-# Coffee Machine OOP Project
+# Coffee Machine (OOP Project)
 
 A Python-based vending machine simulator that demonstrates Object-Oriented Programming (OOP) principles. This project implements a fully functional coffee machine with menu management, resource tracking, and payment processing.
 
