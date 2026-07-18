@@ -2,6 +2,9 @@
 
 A simple Snake game built with Python's built-in `turtle` module. The player controls the snake with the arrow keys, eats food to grow, and tries to avoid the walls and its own body.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/e04fe6cb-d922-4532-895d-8a020f652623" controls width="600"></video>
+
 ## Features
 
 - Classic Snake gameplay with keyboard controls
