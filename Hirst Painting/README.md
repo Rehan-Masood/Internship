@@ -2,6 +2,12 @@
 
 A simple Python project that generates a Damien Hirst style dot painting using the `turtle` module.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/bd9d99a5-43d7-49d1-aefb-ff80a01ce5c3" controls width="600"></video>
+
+## Hirst Painting
+   ![Hirst Painting.](./Hirst%20Painting.jpg)
+
 ## Project Files
 
 - `main.py`: Draws a 10x10 grid of colored dots (100 total) using a predefined palette.
