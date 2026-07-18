@@ -2,6 +2,12 @@
 
 A small Python console quiz that asks 5 random true/false questions from a built-in question bank and shows your final score at the end.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/64530241-700a-4179-8fb1-b8e8d6daa8c2" controls width="600"></video>
+
+## Quiz Game 
+   ![Quiz Game .](./Quiz%20Game.jpg)
+
 ## Features
 
 - Randomly selects 5 questions each time you run the program
