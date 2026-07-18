@@ -3,7 +3,7 @@
 A simple Python project that generates a Damien Hirst style dot painting using the `turtle` module.
 
 ## Demo Video
-<video src="https://github.com/user-attachments/assets/bd9d99a5-43d7-49d1-aefb-ff80a01ce5c3" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/f120719a-5d2c-4d10-b4de-073f9af60ee4" controls width="600"></video>
 
 ## Hirst Painting
    ![Hirst Painting.](./Hirst%20Painting.jpg)
