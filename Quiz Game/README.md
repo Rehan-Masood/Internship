@@ -3,7 +3,7 @@
 A small Python console quiz that asks 5 random true/false questions from a built-in question bank and shows your final score at the end.
 
 ## Demo Video
-<video src="https://github.com/user-attachments/assets/64530241-700a-4179-8fb1-b8e8d6daa8c2" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/aa102add-920d-4149-b5e3-2e5cf86e959b" controls width="600"></video>
 
 ## Quiz Game 
    ![Quiz Game .](./Quiz%20Game.jpg)
