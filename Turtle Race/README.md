@@ -2,6 +2,9 @@
 
 A small interactive Python turtle graphics project where colored turtles race across the screen and you place a bet on which one will win.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/d949d755-c125-4ff0-bca6-6f40eb7a32cc" controls width="600"></video>
+
 ## Features
 - Simple GUI input prompt to place a bet on a turtle color.
 - Uses Python's built-in `turtle` module for graphics and animation.
