@@ -50,6 +50,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 17 | [Coffee Machine (OOP)](./Coffee%20Machine%20(OOP)) | Coffee vending machine built with Python OOP that manages drink orders, resources, and coin payments. | Python |
 | 18 | [Quiz Game](./Quiz%20Game) | Quiz game that asks 5 random True/False trivia questions, validates flexible True/False input, and tracks the user's score. | Python |
 | 19 | [Hirst Painting](./Hirst%20Painting) | A project that uses turtle graphics and colorgram.py to recreate a Damien Hirst–style spot painting — a 10x10 grid of dots colored. | Python |
+| 20 | [Turtle Race](./Turtle%20Race) | Turtle-graphics betting game where 6 colored turtles race to the finish line, and the player wins or loses based on which turtle they bet on. | Python |
+
 
 
 <!-- 👇 Add new rows here as you upload more projects. Use the same format:
