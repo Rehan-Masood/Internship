@@ -47,7 +47,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 14 | [Tip Calculator](./Tip%20Calculator) | Calculates per-person bill split including tip percentage. | Python |
 | 15 | [Treasure Island](./Treasue%20Island) | A text-based choose-your-own-adventure game with branching paths. | Python |
 | 16 | [Coffee Machine](./Coffee%20Machine) | Coffee machine simulator that serves drinks, tracks resources, and handles coin payments with change calculation that is generated only by loops. | Python |
-| 17 | [Coffee Machine (OOP)](./Coffee%20Machine%20(OOP)) | Coffee vending machine built with Python OOP that manages drink orders, resources, and coin payments.. | Python |
+| 17 | [Coffee Machine (OOP)](./Coffee%20Machine%20(OOP)) | Coffee vending machine built with Python OOP that manages drink orders, resources, and coin payments. | Python |
+| 18 | [Quiz Game)](./Quiz%20Game) | Quiz game that asks 5 random True/False trivia questions, validates flexible True/False input, and tracks the user's score. | Python |
 
 
 <!-- 👇 Add new rows here as you upload more projects. Use the same format:
