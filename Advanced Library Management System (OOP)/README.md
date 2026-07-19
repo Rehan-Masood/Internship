@@ -2,6 +2,31 @@
 
 A Python-based library management system built using Object-Oriented Programming principles. This system allows users to manage books, members, and track borrowing transactions in a library environment.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/f120719a-5d2c-4d10-b4de-073f9af60ee4" controls width="600"></video>
+
+## Screenshots
+1.
+![1.](./1.jpg)
+
+2.
+![2.](./2.jpg)
+
+3.
+![3.](./3.jpg)
+
+4.
+![4.](./4.jpg)
+
+5.
+![5.](./5.jpg)
+
+6.
+![6.](./6.jpg)
+
+7.
+![7.](./7.jpg)
+
 ## Features
 
 - **Book Management**: Add, display, and search books by title or author
