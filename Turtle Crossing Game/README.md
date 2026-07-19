@@ -2,6 +2,9 @@
 
 A simple Python turtle game where you guide the turtle across the road while avoiding moving cars. Each time you reach the top safely, the level increases and the cars speed up.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/a3c59786-b7c8-4deb-b9c3-7e3e3319b090" controls width="600"></video>
+
 ## Requirements
 
 - Python 3.x
