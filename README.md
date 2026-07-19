@@ -53,6 +53,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 20 | [Turtle Race](./Turtle%20Race) | Turtle-graphics betting game where 6 colored turtles race to the finish line, and the player wins or loses based on which turtle they bet on. | Python |
 | 21 | [The Snake Game](./The%20Snake%20Game) | Turtle-graphics Snake game where you steer a growing snake with the arrow keys to eat food, avoid walls and its own tail, and rack up points on a live scoreboard. | Python |
 | 22 | [Advanced Library Management System (OOP)](./Advanced%20Library%20Management%20System%20(OOP)) | An Advanced command-line library management system with Book, Member, Library, and Transaction classes that handles borrowing, returning, and automatic late-fee calculation. | Python |
+| 23 | [Th Pong Game](./The%20Pong%20Game) | A turtle-graphics Pong game where two players control paddles to bounce a ball back and forth, with the score updating live on screen. | Python |
 
 
 
