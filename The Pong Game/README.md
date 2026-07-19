@@ -2,6 +2,9 @@
 
 A simple two-player Pong game built with Python's built-in `turtle` module.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/76c86a38-0538-40d7-93e3-6e2bbd67f490" controls width="600"></video>
+
 ## Features
 
 - Classic Pong-style gameplay
