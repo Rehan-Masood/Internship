@@ -1,4 +1,4 @@
-# Pong Game
+# The Pong Game
 
 A simple two-player Pong game built with Python's built-in `turtle` module.
 
