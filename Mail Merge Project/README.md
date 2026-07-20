@@ -2,6 +2,9 @@
 
 A simple Python mail merge script that reads a list of names and a letter template, then generates one personalized text file per person.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/a6dee9de-cbf5-4513-8612-badb68e013c7" controls width="600"></video>
+
 ## Features
 
 - Reads names from `Input/Names/invited_names.txt`
