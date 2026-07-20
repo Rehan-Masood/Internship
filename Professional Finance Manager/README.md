@@ -3,7 +3,7 @@
 A simple Python command-line app for tracking personal income and expenses. It lets you add transactions, view a summary report, and save your data between sessions.
 
 ## Demo Video
-<video src="https://github.com/user-attachments/assets/aa102add-920d-4149-b5e3-2e5cf86e959b" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/23e8ea3d-729a-4508-b35f-3be9489d92e2" controls width="600"></video>
 
 ## Screenshots
 
