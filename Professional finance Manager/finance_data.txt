@@ -1,4 +1,0 @@
-Salary,2026-07-20,50000.0,Salary,Income
-Electricity,2026-07-20,20000.0,Bills,Expense
-Living Expense,2026-07-20,20000.0,Bills,Expense
-Food,2026-07-20,10000.0,Food,Expense
