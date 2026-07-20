@@ -6,8 +6,8 @@ A simple Python command-line app for tracking personal income and expenses. It l
 <video src="https://github.com/user-attachments/assets/aa102add-920d-4149-b5e3-2e5cf86e959b" controls width="600"></video>
 
 ## Screenshots
-   1.
- ![1.](./Sceenshots/1.jpg)
+1.
+![1.](./Sceenshots/1.jpg)
 
 ## Features
 
