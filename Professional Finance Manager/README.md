@@ -6,16 +6,22 @@ A simple Python command-line app for tracking personal income and expenses. It l
 <video src="https://github.com/user-attachments/assets/aa102add-920d-4149-b5e3-2e5cf86e959b" controls width="600"></video>
 
 ## Screenshots
+
    1.
    ![1.](./Sceenshots/1.jpg)
+
    2.
    ![2.](./Sceenshots/2.jpg)
+
    3.
    ![3.](./Sceenshots/3.jpg)
+
    4.
    ![4.](./Sceenshots/4.jpg)
+
    5.
    ![5.](./Sceenshots/5.jpg)
+
 ## Features
 
 - Add income and expense transactions
