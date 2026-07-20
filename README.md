@@ -56,6 +56,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 23 | [The Pong Game](./The%20Pong%20Game) | A turtle-graphics Pong game where two players control paddles to bounce a ball back and forth, with the score updating live on screen. | Python |
 | 24 | [Turtle Crossing Game](./Turtle%20Crossing%20Game) | A turtle-graphics dodging game where you move a turtle upward across the road while avoiding oncoming cars, leveling up (and speeding up) each time you reach the top. | Python |
 | 25 |[Professional Finance Manager](./Professional%20Finance%20Manager) | A Python OOP + File-Handling CLI app that tracks personal income and expenses, saves data between sessions, blocks overspending, and warns when expenses hit 80% of income. | Python |
+| 26 |[Mail Merge Project](./Mail%20Merge%20Project) |A Python file-handling project that automates personalized mail merge — reading a list of names and a letter template, then generating a custom invitation letter for each person. | Python |
 
 
 
