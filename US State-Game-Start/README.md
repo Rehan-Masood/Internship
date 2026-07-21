@@ -2,6 +2,9 @@
 
 A simple Turtle-based geography game built with Python. The goal is to name all 50 U.S. states by typing them into the prompt while they are placed on the map.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/6596ef10-d1ce-4a48-972b-5b4dfb8d3a99" controls width="600"></video>
+
 ## Features
 
 - Interactive map quiz using the Python `turtle` module
