@@ -58,6 +58,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 25 |[Professional Finance Manager](./Professional%20Finance%20Manager) | A Python OOP + File-Handling CLI app that tracks personal income and expenses, saves data between sessions, blocks overspending, and warns when expenses hit 80% of income. | Python |
 | 26 |[Mail Merge Project](./Mail%20Merge%20Project) |A Python file-handling project that automates personalized mail merge — reading a list of names and a letter template, then generating a custom invitation letter for each person. | Python |
 | 27 |[U.S State Game](./US%20State-Game-Start) |A Python turtle-graphics geography quiz where you type U.S. state names and watch them get labeled on a map, with any states you miss saved to a file for extra study.| Python |
+| 28 |[NATO Alphabet project](./NATO%20Alphabet%20Project) |A NATO Alphabet converter that takes any word as input and outputs its corresponding phonetic code words (e.g. "Masood" → Mike, Alfa, Sierra, Oscar, Oscar, Delta).| Python |
 
 
 
