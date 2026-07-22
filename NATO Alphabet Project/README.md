@@ -2,6 +2,12 @@
 
 A simple Python project that converts a word into its NATO phonetic alphabet code words.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/dbde2697-8173-457d-a55f-b49e2cd63d89" controls width="600"></video>
+
+## NATO Alphabet Project
+   ![NATO Alphabet Project .](./NATO%20Alphabet%20Project.jpg)
+
 ## Features
 - Reads the alphabet mapping from a CSV file
 - Prompts the user to enter a word
