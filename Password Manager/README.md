@@ -1,6 +1,16 @@
-# Password Manager (Tkinter)
+# Password Manager 
 
 A simple desktop password manager built with Python and Tkinter.
+
+## Demo Video
+<video src="https://github.com/user-attachments/assets/808de202-5059-469e-873d-e7509b6a2a77" controls width="600"></video>
+
+## Password Mananger
+   ![Password Mananger .](./Password%20Manager.jpg)
+
+## Data Storage 
+   ![Data Storage .](./Data%20Storage.jpg)
+
 
 This app helps you:
 - Generate strong random passwords
