@@ -1,4 +1,4 @@
-# Pomodoro App
+# Pomodoro Timer App
 
 A simple desktop Pomodoro timer built with Python and Tkinter.
 
