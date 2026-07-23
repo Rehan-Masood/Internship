@@ -2,6 +2,9 @@
 
 A simple desktop Pomodoro timer built with Python and Tkinter.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/9cef9586-d73c-4b96-b2ea-68bd9eb187f9" controls width="600"></video>
+
 ## Features
 
 - 25-minute focus sessions
