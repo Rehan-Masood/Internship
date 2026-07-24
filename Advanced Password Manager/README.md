@@ -5,8 +5,14 @@ A simple yet powerful GUI-based password manager built with Python. Generate sec
 ## Demo Video
 <video src="https://github.com/user-attachments/assets/14ce4c80-cf03-4498-9e3c-f885ff4924ae" controls width="600"></video>
 
-## 1.
+## 1
    ![1 .](./1.jpg)
+
+## 2
+   ![2 .](./2.jpg)
+
+## Data File 
+   ![Data File .](.//Data%20File.jpg)
 
 ## Features
 
