@@ -62,7 +62,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 29 |[Miles to Km Converter](./Miles%20to%20Kilometer%20Converter) |A simple GUI application built with Tkinter that converts miles to kilometers. Users enter a distance in miles, click "Calculate," and the equivalent value in kilometers is displayed instantly. | Python |
 | 30 |[Pomodoro Timer App](./Pomodoro%20Timer%20App) |A simple Pomodoro timer built with Python and Tkinter — 25 min work, 5 min short break, 15 min long break after every 4 sessions, with checkmarks tracking completed work sessions. | Python |
 | 31 |[Password Manager](./Password%20Manager) |A password manager built with Python and Tkinter that generates strong random passwords, copies them straight to your clipboard using pyperclip, and saves your website, email, and password entries to a local file. | Python |
-| 32 |[Advaced Password Manager](./Advanced%20Password%20Manager) |A Python Tkinter password manager that generates strong random passwords, copies them to your clipboard, and saves/looks up website login details in a local JSON file. | Python |
+| 32 |[Advanced Password Manager](./Advanced%20Password%20Manager) |A Python Tkinter password manager that generates strong random passwords, copies them to your clipboard, and saves/looks up website login details in a local JSON file. | Python |
 
 
 
