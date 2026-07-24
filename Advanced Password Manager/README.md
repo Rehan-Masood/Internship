@@ -2,6 +2,12 @@
 
 A simple yet powerful GUI-based password manager built with Python. Generate secure passwords, store them safely, and retrieve your credentials whenever you need them.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/14ce4c80-cf03-4498-9e3c-f885ff4924ae" controls width="600"></video>
+
+## 1.
+   ![1 .](./1.jpg)
+
 ## Features
 
 - 🔐 **Password Generation**: Generate strong, random passwords with a mix of uppercase, lowercase, numbers, and special characters
