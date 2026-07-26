@@ -63,6 +63,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 30 |[Pomodoro Timer App](./Pomodoro%20Timer%20App) |A simple Pomodoro timer built with Python and Tkinter — 25 min work, 5 min short break, 15 min long break after every 4 sessions, with checkmarks tracking completed work sessions. | Python |
 | 31 |[Password Manager](./Password%20Manager) |A password manager built with Python and Tkinter that generates strong random passwords, copies them straight to your clipboard using pyperclip, and saves your website, email, and password entries to a local file. | Python |
 | 32 |[Advanced Password Manager](./Advanced%20Password%20Manager) |A Python Tkinter password manager that generates strong random passwords, copies them to your clipboard, and saves/looks up website login details in a local JSON file. | Python |
+| 33 |[Professional Inventory & Sales Management System](./Professional%20Inventory%20%26%20Sales%20Management%20System) |A premium Python OOP inventory & sales management system with CSV persistence, invoicing, discounts, profit tracking, undo support, and Excel/PDF report exports. | Python |
 
 
 
