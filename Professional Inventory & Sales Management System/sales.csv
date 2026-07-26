@@ -1,0 +1,2 @@
+sale_id,date_time,product_id,name,quantity,price,cost_price,staff_name,discount_percent
+S001,2026-07-26 10:49:48,P002,Sun Glasses,5,500.0,400.0,Rehan,2.0
