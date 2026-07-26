@@ -11,6 +11,12 @@ A Python command-line application for managing products, sales, stock movement, 
 ## 2
    ![2 .](./2.jpg)
 
+## 3
+   ![3 .](./3.jpg)
+   
+## Daily Sales Report
+   ![Daily Sales Report .](./daily_sales_report.pdf)
+
 ## Overview
 
 This system is designed for small retail or stock-tracking workflows where you need to:
