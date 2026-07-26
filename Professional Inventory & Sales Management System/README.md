@@ -2,6 +2,15 @@
 
 A Python command-line application for managing products, sales, stock movement, reports, and exports. The project stores inventory and sales data in CSV files, provides interactive menus for day-to-day operations, and can generate Excel, PDF, and chart-based outputs for reporting.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/26bf097c-49b8-4b87-ad53-829525eef8e9" controls width="600"></video>
+
+## 1
+   ![1 .](./1.jpg)
+
+## 2
+   ![2 .](./2.jpg)
+
 ## Overview
 
 This system is designed for small retail or stock-tracking workflows where you need to:
