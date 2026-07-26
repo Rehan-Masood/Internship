@@ -15,7 +15,7 @@ A Python command-line application for managing products, sales, stock movement, 
    ![3 .](./3.jpg)
 
 ## Daily Sales Report
-   ![Daily Sales Report .](./maiSales%20Management%20System/daily_sales_report.pdf)
+   ![Daily Sales Report .](./daily_sales_report.pdf)
 
 ## Overview
 
