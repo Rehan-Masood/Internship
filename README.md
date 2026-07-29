@@ -67,6 +67,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 34 |[Flash Card Project](./Flash%20Card%20Project) |A Python Tkinter flashcard app that quizzes you on French vocabulary, auto-flips each card to reveal the translation, and removes words you've marked as known so you only keep studying what you don't know yet.| Python |
 | 35 |[Birthday Wisher Project](./Birthday%20Wisher%20Project) |Birthday Wisher is a lightweight Python script that automatically sends personalized birthday emails. It checks a birthdays.csv file for anyone celebrating a birthday today, picks a random message template, inserts their name, and emails it using standard SMTP settings.| Python |
 | 36 |[ISS Overhead Notifier Project](./ISS%20Overhead%20Notifier%20Project) |A Python script that checks if the International Space Station is currently overhead and if it's nighttime at your location — if both are true, it automatically emails you to look up at the sky.| Python |
+| 37 |[The Quizzler App](./The%20Quizzler%20App) |A Python quiz app with a Tkinter GUI that presents true/false questions, tracks your score, and gives instant feedback on each answer.| Python |
 
 
 
