@@ -64,6 +64,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 31 |[Password Manager](./Password%20Manager) |A password manager built with Python and Tkinter that generates strong random passwords, copies them straight to your clipboard using pyperclip, and saves your website, email, and password entries to a local file. | Python |
 | 32 |[Advanced Password Manager](./Advanced%20Password%20Manager) |A Python Tkinter password manager that generates strong random passwords, copies them to your clipboard, and saves/looks up website login details in a local JSON file. | Python |
 | 33 |[Professional Inventory & Sales Management System](./Professional%20Inventory%20%26%20Sales%20Management%20System) |A premium Python OOP inventory & sales management system with CSV persistence, invoicing, discounts, profit tracking, undo support, and Excel/PDF report exports. | Python |
+| 34 |[Flash Card Project](./Flash%20Card%20Project) |A Python Tkinter flashcard app that quizzes you on French vocabulary, auto-flips each card to reveal the translation, and removes words you've marked as known so you only keep studying what you don't know yet.| Python |
 
 
 
