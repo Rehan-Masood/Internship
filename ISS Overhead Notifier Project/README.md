@@ -6,7 +6,9 @@ A small Python script that checks the current position of the International Spac
 <video src="https://github.com/user-attachments/assets/19920d10-2261-4bee-b4ba-dfb762aee341" controls width="600"></video>
 
 ## Email-Received-Confirmation
-   ![Email-Received-Confirmation.](./Email-Received-Confirmation.jpeg)
+   <p align="center">
+  <img src="./Email-Received-Confirmation.jpeg" alt="Email Received Confirmation" width="500">
+  </p>
 
 ## 60-Sec-Notification-Checking
    ![60-Sec-Notification-Checking.](./60%20Sec%20Notification%20Checking.jpg)
