@@ -2,6 +2,12 @@
 
 A small Python utility that sends personalized birthday emails using a CSV of birthdays and letter templates.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/bd9d99a5-43d7-49d1-aefb-ff80a01ce5c3" controls width="600"></video>
+
+## Gmail-Received-Confrimation
+   ![Gmail-Received-Confrimation .](./Gmail-Received-Confrimation.jpg)
+
 **Project files:**
 - [main.py](main.py): program entry point — finds today's birthdays and sends emails using `credentials.py`.
 - [birthdays.csv](birthdays.csv): CSV with birthday records (required columns described below).
