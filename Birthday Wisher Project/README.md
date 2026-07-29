@@ -3,7 +3,7 @@
 A small Python utility that sends personalized birthday emails using a CSV of birthdays and letter templates.
 
 ## Demo Video
-<video src="https://github.com/user-attachments/assets/bd9d99a5-43d7-49d1-aefb-ff80a01ce5c3" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/c80a43ca-0e0e-4373-a1bb-2b79ef831ef4" controls width="600"></video>
 
 ## Gmail-Received-Confrimation
    ![Gmail-Received-Confrimation .](./Gmail-Received-Confrimation.jpg)
