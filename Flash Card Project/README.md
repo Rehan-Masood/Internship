@@ -2,6 +2,9 @@
 
 A simple Python flashcard app built with Tkinter to help users learn French vocabulary. The app displays a French word, flips to its English translation after a few seconds, and lets the user mark words as known or unknown.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/ecf313de-913b-487a-b3c5-831c8eb4a844" controls width="600"></video>
+
 ## Features
 - Displays French vocabulary cards
 - Automatically flips to the English meaning after 3 seconds
