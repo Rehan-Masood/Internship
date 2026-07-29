@@ -2,6 +2,9 @@
 
 A small Python quiz application with a simple GUI.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/9bae98eb-7b18-4380-8087-313ad7adb563" controls width="600"></video>
+
 ## Overview
 
 The Quizzler App is a lightweight quiz program that presents multiple-choice or true/false questions to the user, tracks score, and provides a simple GUI. It is implemented in Python using a small MVC-like separation:
