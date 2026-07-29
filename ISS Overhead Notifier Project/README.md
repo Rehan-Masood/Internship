@@ -2,6 +2,16 @@
 
 A small Python script that checks the current position of the International Space Station (ISS) and sends an email notification when the ISS is overhead at night.
 
+## Testing Gmail Demo Video
+<video src="https://github.com/user-attachments/assets/19920d10-2261-4bee-b4ba-dfb762aee341" controls width="600"></video>
+
+## Email-Received-Confirmation
+   ![Email-Received-Confirmation.](./Email-Received-Confirmation.jpeg)
+
+## 60-Sec-Notification-Checking
+   ![60-Sec-Notification-Checking.](./60%20Sec%20Notification%20Checking.jpg)
+
+
 ## Overview
 
 - The script polls the Open Notify ISS position API and the Sunrise-Sunset API to determine whether the ISS is within ~5° of the configured location and whether it is currently night there.
