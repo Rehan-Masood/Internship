@@ -6,7 +6,6 @@ BACKGROUND_COLOR = "#B1DDC6"
 current_card = {}
 to_learn = {}
 
-# ----- Load words: continue from where you left off if a "still learning" file exists -----
 try:
     data = pandas.read_csv("data/words_to_learn.csv")
 except FileNotFoundError:
@@ -42,14 +41,12 @@ def is_known():
     next_card()
 
 
-# ----- Window setup -----
 window = Tk()
 window.title("Flashy")
 window.config(padx=25, pady=15, bg=BACKGROUND_COLOR)
 
 flip_timer = window.after(3000, func=flip_card)
 
-# ----- Card canvas -----
 canvas = Canvas(width=800, height=450)
 card_front_img = PhotoImage(file="images/card_front.png")
 card_back_img = PhotoImage(file="images/card_back.png")
@@ -59,7 +56,6 @@ card_word = canvas.create_text(400, 225, text="", font=("Arial", 60, "bold"))
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
 canvas.grid(row=0, column=0, columnspan=2)
 
-# ----- Buttons -----
 cross_image = PhotoImage(file="images/wrong.png")
 unknown_button = Button(image=cross_image, highlightthickness=0, command=next_card)
 unknown_button.grid(row=1, column=0)
@@ -70,7 +66,6 @@ known_button.grid(row=1, column=1)
 
 next_card()
 
-# center the window on screen so it doesn't open partly off-screen / behind the taskbar
 window.update_idletasks()
 window.eval('tk::PlaceWindow . center')
 
