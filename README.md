@@ -71,6 +71,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 38 |[Rain Alert App](./Rain%20Alert%20App) |A Python app that checks the weather forecast for your location and automatically sends you a WhatsApp message if rain is expected in the next 12 hours. | Python |
 | 39 |[Stock News Montoring Project](./Stock%20News%20Montoring%20Project) |A Python app that tracks a stock's daily price change, and if it moves more than 5% in a day, automatically sends you the latest news headlines about that company via WhatsApp. | Python |
 | 40 |[Habit Tracker](./Habit%20Tracker) |A Python habit tracker that logs your daily activity (like kilometers cycled) to Pixela, turning your consistency into a visual heatmap graph — similar to GitHub's contribution graph. | Python |
+| 41 |[Exercise Tracking App](./Exercise%20Tracking%20Project) |A Python script that takes your daily exercise input, calculates calories burned via the API Ninjas API, and automatically logs the workout details into a Google Sheet using Sheety. | Python |
 
 
 
