@@ -8,10 +8,10 @@ MY_LAT = 30.309065
 MY_LONG = 71.943004  
 
 
-TWILIO_SID = "ACda10ff5c5e6ceb4b96cf0207e0114e0d"        
-TWILIO_AUTH_TOKEN = "a9760156bd3dc9aacaaaa76066d40c1a"  
-TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"    
-MY_WHATSAPP_NUMBER = "whatsapp:+923201098437"       
+TWILIO_SID = "your_twilio_account_sid_here"        
+TWILIO_AUTH_TOKEN = "your_twilio_auth_token_here"  
+TWILIO_WHATSAPP_NUMBER = "whatsapp:+143456789"    
+MY_WHATSAPP_NUMBER = "whatsapp:+92324596433"       
 
 TEST_MODE = False  
 
