@@ -2,6 +2,15 @@
 
 This Python project monitors a stock's daily price movement and sends WhatsApp alerts with related news headlines when the change is significant.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/68b92043-3759-47df-a905-23a78ff483dd" controls width="600"></video>
+
+## Message-Received for testing
+   ![Message-Received for testing.](./Message-Received%20for%20testing.jpg)
+
+## Real-Time Working
+   ![Real-Time Working.](./Real-Time%20Working.jpg)
+
 ## What it does
 
 The script:
