@@ -2,6 +2,17 @@
 
 Rain Alert App is a small Python script that checks the OpenWeatherMap forecast for your location and sends a WhatsApp alert through Twilio when rain is expected.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/aa6dbf8e-43dd-40b1-b336-e83aa39b9bed" controls width="600"></video>
+
+## Message-Received for testing
+   ![Message-Received for testing.](./Message-Received%20for%20testing.jpg)
+
+## Real-Time Working
+   ![Real-Time Working.](./Real-Time%20Working.jpg)
+
+
+
 ## How It Works
 
 1. The script requests the next forecast from OpenWeatherMap.
