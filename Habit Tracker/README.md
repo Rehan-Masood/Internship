@@ -2,6 +2,19 @@
 
 A small Python project to track and build habits. This repository contains a simple entry point in `main.py` — extend it with features, storage, or a UI as needed.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/263712a6-dc60-43ff-90c0-08b605aa0579" controls width="600"></video>
+
+## Profile View
+   ![Profile View.](./Profile%20view.jpg)
+   ![Profile View.](./Profile%20view%201.jpg)
+
+## Graph View
+   ![Graph View.](./Graph.jpg)
+   ![Graph View.](./Grapgh%201.jpg)
+
+
+
 ## Features
 
 - Minimal CLI-driven habit tracking (starter)
