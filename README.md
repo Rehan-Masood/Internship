@@ -69,6 +69,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 36 |[ISS Overhead Notifier Project](./ISS%20Overhead%20Notifier%20Project) |A Python script that checks if the International Space Station is currently overhead and if it's nighttime at your location — if both are true, it automatically emails you to look up at the sky.| Python |
 | 37 |[The Quizzler App](./The%20Quizzler%20App) |A Python quiz app with a Tkinter GUI that presents true/false questions, tracks your score, and gives instant feedback on each answer.| Python |
 | 38 |[Rain Alert App](./Rain%20Alert%20App) |A Python app that checks the weather forecast for your location and automatically sends you a WhatsApp message if rain is expected in the next 12 hours. | Python |
+| 39 |[Stock News Montoring Project](./Stock%20News%20Montoring%20Project) |A Python app that tracks a stock's daily price change, and if it moves more than 5% in a day, automatically sends you the latest news headlines about that company via WhatsApp. | Python |
+
 
 
 
