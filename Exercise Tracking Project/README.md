@@ -2,6 +2,12 @@
 
 A small exercise tracking helper that uses the API Ninjas "caloriesburned" endpoint and Sheety to log workouts into a Google Sheet.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/592a7147-d443-4525-a8d6-097875509fe4" controls width="600"></video>
+
+## SpreadSheet
+   ![SpreadSheet.](./Spreadsheet.jpg)
+
 This repository contains a minimal runnable example (`main.py`) that queries the calorie estimation API and sends a single row to a Sheety endpoint. The example currently contains placeholder/hard-coded credentials — do NOT commit real API keys. Instead, set the values below as environment variables.
 
 **Contents**
