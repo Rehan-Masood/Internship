@@ -73,6 +73,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 40 |[Habit Tracker](./Habit%20Tracker) |A Python habit tracker that logs your daily activity (like kilometers cycled) to Pixela, turning your consistency into a visual heatmap graph — similar to GitHub's contribution graph. | Python |
 | 41 |[Exercise Tracking App](./Exercise%20Tracking%20Project) |A Python script that takes your daily exercise input, calculates calories burned via the API Ninjas API, and automatically logs the workout details into a Google Sheet using Sheety. | Python |
 | 42 |[Rehan's Flight Club](./Rehan's%20Flight%20Club) |Rehan's Flight Club is a real-time Python application that tracks flight prices and matches them to user budgets. It features interactive email sign-ups via SMTP, live flight search via RapidAPI, and automated deal notifications with direct booking links. | Python |
+| 43 |[Birthday Invitation Project](./Birthday%20Invitation%20Project) |This is a responsive HTML/CSS birthday invitation featuring a dark theme with gold accents, party details, and a cake graphic. It includes a direct Google Maps button pointing to COMSATS University Islamabad, Vehari Campus. | Python |
+
 
 
 
