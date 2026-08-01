@@ -2,6 +2,25 @@
 
 Cheap Flight Finder is a Python command-line app that helps you discover and evaluate flight deals from London to a destination of your choice. It combines a simple sign-up flow, live flight search, budget comparison, and email notifications.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/fd10dbb6-f13d-4f41-bbf4-e6a0be15b1df" controls width="600"></video>
+
+## Welcome-Email
+   ![Welcome-Email.](./Welcome.jpg)
+
+## Reservation-Email
+   ![Reservation-Email.](./Reservation.jpg)
+
+## Output
+   ![Output.](./1.jpg)
+   ![Output.](./1.jpg)
+
+## Users-Detail
+   ![Users-Detail.](./User.jpg)
+
+## Prices-Detail
+   ![Prices-Detail.](./Prices.jpg)
+
 ## What the app does
 
 The program:
