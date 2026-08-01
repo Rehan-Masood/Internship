@@ -2,6 +2,9 @@
 
 A simple and elegant birthday invitation webpage built with HTML and CSS.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/7b335d26-7db0-4639-a87a-56876842b719" controls width="600"></video>
+
 ## Project Overview
 This project displays a stylish invitation card for a birthday celebration with:
 - A decorative heading and subtitle
