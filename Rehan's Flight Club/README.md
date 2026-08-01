@@ -1,6 +1,6 @@
-# Cheap Flight Finder
+# Rehan's Flight Club
 
-Cheap Flight Finder is a Python command-line app that helps you discover and evaluate flight deals from London to a destination of your choice. It combines a simple sign-up flow, live flight search, budget comparison, and email notifications.
+Rehan's Flight Club is a Python command-line app that helps you discover and evaluate flight deals from London to a destination of your choice. It combines a simple sign-up flow, live flight search, budget comparison, and email notifications.
 
 ## Demo Video
 <video src="https://github.com/user-attachments/assets/fd10dbb6-f13d-4f41-bbf4-e6a0be15b1df" controls width="600"></video>
