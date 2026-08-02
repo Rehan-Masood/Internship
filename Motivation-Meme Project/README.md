@@ -2,6 +2,9 @@
 
 A small static webpage displaying motivational memes to uplift users.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/c653b0f9-64d8-4348-b5a3-abb4b97323c5" controls width="600"></video>
+
 ## Features
 
 - Simple, responsive single-page layout
