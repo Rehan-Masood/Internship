@@ -77,6 +77,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 44 |[Spanish Color-Vocab Project](./Spanish%20Color-Vocab%20Project) |This is a simple web page that helps beginners learn Spanish color vocabulary by pairing words with matching images. Each Spanish color name is styled in its actual color using CSS for easy visual learning. | Python |
 | 45 |[Motivation-Meme Project](./Motivation-Meme%20Project) |This is a web project that creates a classic motivational meme poster centered on a dark background. It uses custom typography and CSS borders to display an image alongside a bold, capitalized title and caption. | Python |
 | 46 |[100-MoviesTo Watch](./100-MoviesTo%20Watch) |This project is a Python web scraper that automatically fetches a list of top 100 movies from an archived website using BeautifulSoup. It then reverses the list and saves the movie titles in ascending order to a text file. | Python |
+| 47 |[Musical Time Machine Project](./Musical%20Time%20Machine%20Project) |This project is a Python web scraper that retrieves the Billboard Hot 100 songs for any given historical date. It automatically generates a text file containing the top 100 tracks paired with direct Spotify search links for instant listening. | Python |
 
 
 
