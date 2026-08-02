@@ -2,6 +2,9 @@
 
 A tiny utility that scrapes the Billboard Hot 100 for a given date and produces a plain-text playlist with Spotify search links.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/91acb36c-0d01-4c22-bd40-3c68fad76e34" controls width="600"></video>
+
 ## What it does
 - Prompts for a date in `YYYY-MM-DD` format.
 - Fetches the Billboard Hot 100 chart for that date.
