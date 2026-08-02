@@ -76,6 +76,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 43 |[Birthday Invitation Project](./Birthday%20Invitation%20Project) |This is a responsive HTML/CSS birthday invitation featuring a dark theme with gold accents, party details, and a cake graphic. It includes a direct Google Maps button pointing to COMSATS University Islamabad, Vehari Campus. | Python |
 | 44 |[Spanish Color-Vocab Project](./Spanish%20Color-Vocab%20Project) |This is a simple web page that helps beginners learn Spanish color vocabulary by pairing words with matching images. Each Spanish color name is styled in its actual color using CSS for easy visual learning. | Python |
 | 45 |[Motivation-Meme Project](./Motivation-Meme%20Project) |This is a web project that creates a classic motivational meme poster centered on a dark background. It uses custom typography and CSS borders to display an image alongside a bold, capitalized title and caption. | Python |
+| 46 |[100-MoviesTo Watch](./100-MoviesTo%20Watch) |This project is a Python web scraper that automatically fetches a list of top 100 movies from an archived website using BeautifulSoup. It then reverses the list and saves the movie titles in ascending order to a text file. | Python |
 
 
 
