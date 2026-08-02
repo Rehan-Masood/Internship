@@ -2,6 +2,9 @@
 
 This project uses BeautifulSoup to scrape Empire's list of the 100 greatest movies from the Internet Archive and writes the titles to `movies.txt`.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/8fbc8350-111c-4d0e-b704-37b45c53af68" controls width="600"></video>
+
 ## What it does
 
 - Fetches the archived Empire movie list page.
