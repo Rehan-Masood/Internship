@@ -1,0 +1,27 @@
+# Motivation Meme Project
+
+A small static webpage displaying motivational memes to uplift users.
+
+## Features
+
+- Simple, responsive single-page layout
+- Local assets under the `assets/images` folder
+- Easy to preview by opening the HTML in a browser
+
+## Files
+
+- [index.html](index.html) — main page
+- [style.css](style.css) — styles
+- [assets/images/](assets/images/) — meme images
+
+## How to run
+
+Open [index.html](index.html) in your browser (double-click or drag into a tab).
+
+## Contributing
+
+Feel free to add more images to `assets/images` and update `index.html`.
+
+## License
+
+MIT — see LICENSE for details.
