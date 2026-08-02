@@ -78,6 +78,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 45 |[Motivation-Meme Project](./Motivation-Meme%20Project) |This is a web project that creates a classic motivational meme poster centered on a dark background. It uses custom typography and CSS borders to display an image alongside a bold, capitalized title and caption. | Python |
 | 46 |[100-MoviesTo Watch](./100-MoviesTo%20Watch) |This project is a Python web scraper that automatically fetches a list of top 100 movies from an archived website using BeautifulSoup. It then reverses the list and saves the movie titles in ascending order to a text file. | Python |
 | 47 |[Musical Time Machine Project](./Musical%20Time%20Machine%20Project) |This project is a Python web scraper that retrieves the Billboard Hot 100 songs for any given historical date. It automatically generates a text file containing the top 100 tracks paired with direct Spotify search links for instant listening. | Python |
+| 48 |[Amazon Price Tracker](./Amazon%20Price%20Tracker) |This project is an automated Python price tracker that scrapes Amazon product pages for real-time prices using BeautifulSoup. It compares current prices against a target threshold and sends an instant email alert via SMTP whenever a price drop occurs. | Python |
 
 
 
