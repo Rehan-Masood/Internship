@@ -74,6 +74,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 41 |[Exercise Tracking App](./Exercise%20Tracking%20Project) |A Python script that takes your daily exercise input, calculates calories burned via the API Ninjas API, and automatically logs the workout details into a Google Sheet using Sheety. | Python |
 | 42 |[Rehan's Flight Club](./Rehan's%20Flight%20Club) |Rehan's Flight Club is a real-time Python application that tracks flight prices and matches them to user budgets. It features interactive email sign-ups via SMTP, live flight search via RapidAPI, and automated deal notifications with direct booking links. | Python |
 | 43 |[Birthday Invitation Project](./Birthday%20Invitation%20Project) |This is a responsive HTML/CSS birthday invitation featuring a dark theme with gold accents, party details, and a cake graphic. It includes a direct Google Maps button pointing to COMSATS University Islamabad, Vehari Campus. | Python |
+| 44 |[Spanish Color-Vocab Project](./Spanish%20Color-Vocab%20Project) |This is a simple web page that helps beginners learn Spanish color vocabulary by pairing words with matching images. Each Spanish color name is styled in its actual color using CSS for easy visual learning. | Python |
 
 
 
