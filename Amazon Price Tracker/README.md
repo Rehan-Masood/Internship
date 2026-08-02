@@ -2,6 +2,16 @@
 
 A simple Python project to track product prices on Amazon and notify you of price changes.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/c82f2732-b536-4cd4-8c4d-2a24aea6fe79" controls width="600"></video>
+
+## Amazon Price Track
+   ![Amazon Price Track.](./Amazon%20Price%20Tracker.jpg)
+
+## Confirmation-Email
+   ![Confirmation-Email.](./Confirmation-Email.jpg)
+  
+
 ## Overview
 
 This repository contains a small script (`main.py`) that can be used as the basis for tracking item prices on Amazon. It fetches product pages, extracts prices, and can be extended to send notifications when prices drop.
