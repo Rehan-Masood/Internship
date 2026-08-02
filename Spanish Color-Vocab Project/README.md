@@ -1,6 +1,9 @@
-# Color-Vocab Project
+# Spanish Color-Vocab Project
 
-A simple static web page for teaching color vocabulary.
+A simple static web page for teaching Spanish color vocabulary.
+
+## Demo Video
+<video src="https://github.com/user-attachments/assets/712ff5aa-edf0-4a08-8762-9e70c5f5d571" controls width="600"></video>
 
 ## Overview
 This project contains a single-page web app that demonstrates color vocabulary using images and styles.
