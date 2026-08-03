@@ -4,7 +4,7 @@ Small Selenium automation that plays the Cookie Clicker experiment
 available at http://orteil.dashnet.org/experiments/cookie/.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/9ff40451-fe3b-4f12-a4ac-195af7e0e5cc" controls width="600"></video>
 
 ## Features
 - Automates clicking the big cookie repeatedly.
