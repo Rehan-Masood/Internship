@@ -79,6 +79,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 46 |[100-MoviesTo Watch](./100-MoviesTo%20Watch) |This project is a Python web scraper that automatically fetches a list of top 100 movies from an archived website using BeautifulSoup. It then reverses the list and saves the movie titles in ascending order to a text file. | Python |
 | 47 |[Musical Time Machine Project](./Musical%20Time%20Machine%20Project) |This project is a Python web scraper that retrieves the Billboard Hot 100 songs for any given historical date. It automatically generates a text file containing the top 100 tracks paired with direct Spotify search links for instant listening. | Python |
 | 48 |[Amazon Price Tracker](./Amazon%20Price%20Tracker) |This project is an automated Python price tracker that scrapes Amazon product pages for real-time prices using BeautifulSoup. It compares current prices against a target threshold and sends an instant email alert via SMTP whenever a price drop occurs. | Python |
+| 49 |[The Cookie Clicker](./The%20Cookie%20Clicker) |An automated Python bot built with Selenium that clicks the giant cookie and buys optimal upgrades to maximize your score in 5 minutes. | Python |
 
 
 
