@@ -3,6 +3,9 @@
 Small Selenium automation that plays the Cookie Clicker experiment
 available at http://orteil.dashnet.org/experiments/cookie/.
 
+## Demo Video
+<video src="" controls width="600"></video>
+
 ## Features
 - Automates clicking the big cookie repeatedly.
 - Parses available store items and purchases the most expensive affordable upgrade every 5 seconds.
