@@ -5,7 +5,7 @@ A small Python project to automate parts of the job application process on Linke
 **NOTE:** Automating interactions with websites can violate terms of service. Use this code only on accounts you control and for permitted automation. Review LinkedIn's terms and applicable laws before running any automation.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/015bfbcd-3405-4ed0-b982-839e2ef24603" controls width="600"></video>
 
 ## Linked-Job-Application-Automation
    ![Linked-Job-Application-Automation.](./Linked-Job-Application-Automation.jpg)
