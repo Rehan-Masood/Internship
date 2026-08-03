@@ -1,6 +1,9 @@
-# Auto-Tinder Bot — BBC Top News Scraper
+# Auto-BBC-News Bot
 
-A small utility that scrapes top BBC News headlines and saves them to a CSV file. The repository currently contains `main.py`, which uses Selenium and webdriver-manager to open BBC News and collect the top headlines (default: top 10).
+An automated Python bot built with **Selenium** that automatically navigates to BBC News, accepts required browser consents, extracts top trending news stories along with their direct article links, exports the structured dataset into a CSV file, and cleanly closes the browser session.
+
+## Demo Video
+<video src="https://github.com/user-attachments/assets/a33a3a19-7d20-405c-a002-4139eee053cc" controls width="600"></video>
 
 **Features**
 - Opens BBC News (`https://www.bbc.com/news`) with Chrome
