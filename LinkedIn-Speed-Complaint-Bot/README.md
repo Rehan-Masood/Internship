@@ -2,6 +2,12 @@
 
 Automates a quick LinkedIn post when your measured internet speed is below the promised provider speeds. The script measures download/upload speeds (using speedtest), and if results fall short it opens Chrome, logs into LinkedIn, composes a short complaint post mentioning the provider, and submits it (requires brief manual verification if LinkedIn shows a CAPTCHA).
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/402e9fe7-6507-4440-8762-7278639a8baa" controls width="600"></video>
+
+## LinkedIn-Speed-Complaint Bot
+   ![LinkedIn-Speed-Complaint Bot.](./LinkedIn-Speed-Complaint%20Bot.jpg)
+
 **Files**
 - `main.py`: main script that measures speed and posts to LinkedIn.
 - `credentials.py`: stores `LINKEDIN_EMAIL` and `LINKEDIN_PASSWORD` used for login (see Security).
