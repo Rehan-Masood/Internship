@@ -82,6 +82,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 49 |[The Cookie Clicker](./The%20Cookie%20Clicker) |An automated Python bot built with Selenium that clicks the giant cookie and buys optimal upgrades to maximize your score in 5 minutes. | Python |
 | 50 |[LinkedIn-Job-Application-Automation](./LinkedIn-Job-Application-Automation) |An automated Python bot built with Selenium that logs into LinkedIn, searches for job listings, and automatically submits "Easy Apply" applications while skipping multi-step forms. | Python |
 | 51 |[Auto-BBC-News Bot](./Auto-BBC-News%20Bot) |An automated Python bot built with Selenium that navigates to BBC News, extracts the latest top headlines and their article links, and saves the data into a clean CSV file before automatically closing the browser. | Python |
+| 52 |[LinkedIn-Speed-Complaint-Bot](./LinkedIn-Speed-Complaint-Bot) |LinkedIn-Speed-Complaint-Bot is an automated Python bot that measures your real-time internet speed using speedtest-cli and automatically logs into LinkedIn using Selenium and PyAutoGUI to post a complaint if your speed falls below your promised ISP limit. | Python |
 
 
 
