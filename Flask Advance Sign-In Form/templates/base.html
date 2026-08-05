@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% block styles %}
+        {{ bootstrap.load_css() }}
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <style>
+            body {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                margin: 0;
+            }
+
+            .main-card {
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(16px);
+                -webkit-backdrop-filter: blur(16px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 24px;
+                padding: 40px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+                width: 100%;
+                max-width: 440px;
+            }
+
+            .form-label {
+                color: #e2e8f0;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+
+            .form-control {
+                background: rgba(255, 255, 255, 0.08) !important;
+                border: 1px solid rgba(255, 255, 255, 0.15) !important;
+                color: #ffffff !important;
+                border-radius: 12px !important;
+                padding: 12px 16px !important;
+                transition: all 0.3s ease;
+            }
+
+            .form-control:focus {
+                background: rgba(255, 255, 255, 0.12) !important;
+                border-color: #6366f1 !important;
+                box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.25) !important;
+            }
+
+            .invalid-feedback {
+                color: #f87171 !important;
+            }
+
+            .btn-primary {
+                background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+                border: none !important;
+                border-radius: 12px !important;
+                padding: 12px 24px !important;
+                font-weight: 600 !important;
+                width: 100%;
+                margin-top: 15px;
+                transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+            }
+
+            .btn-primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3) !important;
+            }
+
+            .gif-img {
+                border-radius: 16px;
+                width: 100%;
+                max-width: 360px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                margin-top: 15px;
+            }
+        </style>
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}{% endblock %}
+
+    {{ bootstrap.load_js() }}
+</body>
+</html>

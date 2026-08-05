@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Access Denied{% endblock %}
+
+{% block content %}
+<div class="main-card text-center">
+    <h1 class="text-danger fw-bold mb-2">Access Denied ❌</h1>
+    <p class="text-secondary mb-3">Invalid email address or password.</p>
+    <img src="https://media.giphy.com/media/1xeVd1vr43nHO/giphy.gif" alt="Access Denied GIF" class="gif-img img-fluid">
+    <div class="mt-4">
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-sm rounded-pill px-4">Try Again</a>
+    </div>
+</div>
+{% endblock %}

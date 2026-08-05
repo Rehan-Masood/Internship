@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Access Granted{% endblock %}
+
+{% block content %}
+<div class="main-card text-center">
+    <h1 class="text-success fw-bold mb-2">Top Secret 🔑</h1>
+    <p class="text-secondary mb-3">Access granted! You are logged in.</p>
+    <img src="https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif" alt="Success GIF" class="gif-img img-fluid">
+    <div class="mt-4">
+        <a href="{{ url_for('home') }}" class="btn btn-outline-light btn-sm rounded-pill px-4">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
