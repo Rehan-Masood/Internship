@@ -3,7 +3,7 @@
 A small automation script that opens Chrome, logs into LinkedIn, and attempts to follow a target company page.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/adaaa231-794c-4c4e-8fbe-3a3405e2cacc" controls width="600"></video>
 
 ## LinkedIn Follower Bot
    ![LinkedIn Follower Bot.](./LinkedIn%20follower%20Bot.jpg)
