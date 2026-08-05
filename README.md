@@ -85,6 +85,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 52 |[LinkedIn-Speed-Complaint-Bot](./LinkedIn-Speed-Complaint-Bot) |LinkedIn-Speed-Complaint-Bot is an automated Python bot that measures your real-time internet speed using speedtest-cli and automatically logs into LinkedIn using Selenium and PyAutoGUI to post a complaint if your speed falls below your promised ISP limit. | Python |
 | 53 |[LinkedIn Follower Bot](./LinkedIn%20Follower%20Bot) |An automated Python bot that uses Selenium and PyAutoGUI to log into LinkedIn and follow a target company page automatically. | Python |
 | 54 |[Data Entry Job Automation](./Data%20Entry%20Job%20Automation) |Data Entry Job Automation project uses BeautifulSoup to scrape real estate rental listings and Selenium to automatically populate and submit the gathered details into a Google Form. | Python |
+| 55 |[Higher-Lower App](./Higher-Lower) |A Flask web application where users guess a random number (0–9) by typing it into the browser's URL path. The app dynamically checks the guess and provides instant feedback using colorful text and animated GIFs. | Python |
 
 
 
