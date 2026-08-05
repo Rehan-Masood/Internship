@@ -2,6 +2,9 @@
 
 A simple static website (single-page) for the TINDOG project. This repository contains the site entry page and the images used by the page.
 
+## Demo Video
+<video src="" controls width="600"></video>
+
 ## Project Structure
 
 - `index.html` — main HTML page to open in the browser.
