@@ -2,6 +2,9 @@
 
 A small Flask example demonstrating Jinja2 templates and static assets.
 
+## Demo Video
+<video src="" controls width="600"></video>
+
 ## Project structure
 
 - main.py — Flask app entry point
