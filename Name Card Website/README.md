@@ -2,6 +2,9 @@
 
 A minimal Flask web app that serves a simple name-card webpage.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/afa5a947-d461-4f91-acae-6825d202ab9e" controls width="600"></video>
+
 ## Features
 - Serves `index.html` from the `templates/` folder
 - Static assets served from `static/`
