@@ -90,6 +90,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 57 |[Templating Flask Application](./Templating%20Flask%20Application) |A Flask blog app that fetches post data from an API and uses Jinja templates to display posts dynamically across home and detail pages. | Python |
 | 58 |[TINDOG Website](./TINDOG%20Website) |TinDog is a responsive, modern landing page for a dog matchmaking app built using Bootstrap 5 and custom CSS. It includes animated gradient backgrounds, feature highlights, user testimonials, and interactive pricing plans. | Python |
 | 59 |[BLOG Website](./BLOG%20Website) |A small Flask-based blog demo that fetches posts from an external JSON endpoint and renders them using the templates in the templates/ folder. | Python |
+| 60 |[BLOG Contact Form](./BLOG%20Contact%20Form) |A Flask-based blog application that dynamically fetches and displays posts from an API and features an integrated contact form that emails user messages via Gmail SMTP. | Python |
 
 
 
