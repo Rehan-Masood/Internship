@@ -3,7 +3,7 @@
 A simple static website (single-page) for the TINDOG project. This repository contains the site entry page and the images used by the page.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/e8973433-7a4d-4210-9c9e-ee319ebbc17f" controls width="600"></video>
 
 ## Project Structure
 
