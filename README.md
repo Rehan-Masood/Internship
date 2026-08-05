@@ -87,6 +87,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 54 |[Data Entry Job Automation](./Data%20Entry%20Job%20Automation) |Data Entry Job Automation project uses BeautifulSoup to scrape real estate rental listings and Selenium to automatically populate and submit the gathered details into a Google Form. | Python |
 | 55 |[Higher-Lower App](./Higher-Lower) |A Flask web application where users guess a random number (0–9) by typing it into the browser's URL path. The app dynamically checks the guess and provides instant feedback using colorful text and animated GIFs. | Python |
 | 56 |[Name Card Website](./Name%20Card%20Website) |A personal digital name card built with Flask, HTML, and CSS that presents your profile, photo, and social links in a responsive, modern card. | Python |
+| 57 |[Templating Flask Application](./Templating%20Flask%20Application) |A Flask blog app that fetches post data from an API and uses Jinja templates to display posts dynamically across home and detail pages. | Python |
+
 
 
 
