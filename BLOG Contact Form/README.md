@@ -2,6 +2,9 @@
 
 Simple Flask blog with a contact form that emails form submissions.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/e8fb2f90-822e-4dc5-a32b-90e1339704f5" controls width="600"></video>
+
 ## Features
 
 - Static blog pages rendered from a remote JSON (npoint) in `main.py`
