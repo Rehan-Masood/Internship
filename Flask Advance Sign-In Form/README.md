@@ -2,6 +2,9 @@
 
 A simple Flask web application that demonstrates a login form with validation using Flask-WTF, WTForms, and Bootstrap.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/7bfe9e5d-79b4-482f-a600-8990f2a32b66" controls width="600"></video>
+
 ## Features
 
 - Home page with a welcome screen
