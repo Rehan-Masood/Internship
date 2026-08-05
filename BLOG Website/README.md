@@ -2,6 +2,9 @@
 
 A small Flask-based blog demo that fetches posts from an external JSON endpoint and renders them using the templates in the `templates/` folder.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/311f40b9-8d7b-490e-b13a-2f8a4d46d49b" controls width="600"></video>
+
 ## Features
 - Lists blog posts on the homepage
 - Individual post pages using `post.html`
