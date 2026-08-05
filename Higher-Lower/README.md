@@ -3,6 +3,8 @@
 - **Description:** A tiny Flask web app that asks the user to guess a secret number between 0 and 9.
 - **Main file:** [server.py](server.py#L1-L40)
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/8b9e9450-4807-4764-b623-6f3e73bbc755" controls width="600"></video>
 
 **Requirements**
 
