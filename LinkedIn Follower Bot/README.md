@@ -2,6 +2,12 @@
 
 A small automation script that opens Chrome, logs into LinkedIn, and attempts to follow a target company page.
 
+## Demo Video
+<video src="" controls width="600"></video>
+
+## LinkedIn Follower Bot
+   ![LinkedIn Follower Bot.](./LinkedIn%20follower%20Bot.jpg)
+
 ## Features
 - Uses Selenium + webdriver-manager to drive Chrome.
 - Uses `pyautogui` and `pyperclip` for clipboard-based credential entry and fallback clicking.
