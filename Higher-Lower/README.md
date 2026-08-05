@@ -1,4 +1,4 @@
-# Higher-Lower Game
+# Higher-Lower App
 
 - **Description:** A tiny Flask web app that asks the user to guess a secret number between 0 and 9.
 - **Main file:** [server.py](server.py#L1-L40)
