@@ -88,6 +88,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 55 |[Higher-Lower App](./Higher-Lower) |A Flask web application where users guess a random number (0–9) by typing it into the browser's URL path. The app dynamically checks the guess and provides instant feedback using colorful text and animated GIFs. | Python |
 | 56 |[Name Card Website](./Name%20Card%20Website) |A personal digital name card built with Flask, HTML, and CSS that presents your profile, photo, and social links in a responsive, modern card. | Python |
 | 57 |[Templating Flask Application](./Templating%20Flask%20Application) |A Flask blog app that fetches post data from an API and uses Jinja templates to display posts dynamically across home and detail pages. | Python |
+| 58 |[TINDOG Website](./TINDOG%20Website) |TinDog is a responsive, modern landing page for a dog matchmaking app built using Bootstrap 5 and custom CSS. It includes animated gradient backgrounds, feature highlights, user testimonials, and interactive pricing plans. | Python |
+
 
 
 
