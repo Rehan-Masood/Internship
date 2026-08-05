@@ -2,6 +2,16 @@
 
 A small automation script that scrapes property listings from a Zillow-like demo site and submits them into a Google Form using Selenium.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/c2997cfe-a672-486f-a70b-29c3f16f6cc8" controls width="600"></video>
+
+## Data-Entry-Job-Automation
+   ![Data-Entry-Job-Automation.](./Data%20Entry%20Job%20Automation.jpg)
+
+## Google-Reponse-Chart
+   ![Google-Reponse-Chart.](./Google-Reponse-Chart.jpg)
+
+   
 ## What it does
 - Scrapes property addresses, prices, and links from a Zillow clone demo page.
 - Automatically fills and submits a Google Form for each listing.
