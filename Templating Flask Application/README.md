@@ -3,7 +3,7 @@
 A small Flask example demonstrating Jinja2 templates and static assets.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/c3280c79-4165-4c6a-b1f9-86b2cb8e07aa" controls width="600"></video>
 
 ## Project structure
 
