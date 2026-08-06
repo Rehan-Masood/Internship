@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}Add Movie — CineTop{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center py-5">
+    <div class="col-md-8 col-lg-6">
+        <div class="glass-card p-4 p-md-5">
+            <div class="text-center mb-4">
+                <div class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-circle mb-3" style="width: 65px; height: 65px;">
+                    <i class="fa-solid fa-magnifying-glass fs-3"></i>
+                </div>
+                <h2 class="fw-bold text-white">Find Your Next Movie</h2>
+                <p class="text-secondary small">Search using the Movie Database framework API lookup systems.</p>
+            </div>
+
+            {{ render_form(form) }}
+            
+            <div class="text-center mt-3">
+                <a href="{{ url_for('home') }}" class="text-secondary small text-decoration-none hover-white">
+                    <i class="fa-solid fa-arrow-left me-1"></i> Back to Grid Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}Edit Review — CineTop{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+        <div class="glass-card p-4 p-md-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="{{ movie.img_url }}" alt="{{ movie.title }}" class="img-fluid rounded-3 shadow" style="max-height: 260px;">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="fw-bold text-white mb-1">{{ movie.title }}</h2>
+                    <p class="text-secondary small mb-4">Released: {{ movie.year }}</p>
+                    
+                    {{ render_form(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

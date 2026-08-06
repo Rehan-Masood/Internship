@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Top Movies Collection{% endblock %}
+
+{% block content %}
+<div class="mb-5 text-center text-md-start">
+    <h1 class="fw-black display-4 text-white mb-1">Your Ultimate Watchlist</h1>
+    <p class="text-secondary fs-5">Your top-ranked cinematic selections, curated dynamically.</p>
+</div>
+
+{% if not movies %}
+<div class="glass-card text-center p-5 mx-auto my-5 shadow-lg" style="max-width: 550px;">
+    <i class="fa-solid fa-film text-secondary display-1 mb-4 opacity-25"></i>
+    <h3 class="fw-bold text-white">Your Watchlist is Empty</h3>
+    <p class="text-secondary mb-4">Start crafting your custom premium movie ranks right now.</p>
+    <a href="{{ url_for('add_movie') }}" class="btn btn-danger-gradient px-4 py-2 rounded-pill fw-bold">
+        Discover Movies
+    </a>
+</div>
+{% else %}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    {% for movie in movies %}
+    <div class="col">
+        <div class="card movie-card border-0 h-100 bg-transparent text-white">
+            <div class="position-relative overflow-hidden rounded-4 shadow-lg poster-container">
+                <img src="{{ movie.img_url }}" class="card-img-top img-fluid movie-poster" alt="{{ movie.title }}">
+                
+                <span class="rank-badge">#{{ movie.ranking }}</span>
+                
+                <div class="poster-overlay p-3 d-flex flex-column justify-content-between">
+                    <p class="card-text small description-text text-white-50">{{ movie.description[:160] }}...</p>
+                    
+                    <div class="d-flex flex-column gap-2 mt-auto">
+                        <a href="{{ url_for('rate_movie', id=movie.id) }}" class="btn btn-light btn-sm rounded-pill fw-bold">
+                            <i class="fa-solid fa-star text-warning me-1"></i> Edit Review
+                        </a>
+                        <button type="button" class="btn btn-outline-danger btn-sm rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#deleteMovie{{ movie.id }}">
+                            <i class="fa-solid fa-trash-can me-1"></i> Remove
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body px-1 pt-3">
+                <h5 class="card-title fw-bold text-truncate mb-1" title="{{ movie.title }}">{{ movie.title }}</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-secondary small fw-semibold">{{ movie.year }}</span>
+                    <span class="badge bg-warning text-dark fw-bold px-2.5 py-1.5 rounded-3">
+                        <i class="fa-solid fa-star me-1"></i>{{ movie.rating or 'N/A' }}
+                    </span>
+                </div>
+                {% if movie.review %}
+                <p class="card-text text-secondary italic small mt-2 border-start border-danger border-2 ps-2">
+                    "{{ movie.review[:65] }}..."
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% for movie in movies %}
+<div class="modal fade" id="deleteMovie{{ movie.id }}" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content glass-modal text-start p-3">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold text-white d-flex align-items-center">
+          <div class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-circle me-3" style="width: 40px; height: 40px;">
+            <i class="fa-solid fa-circle-exclamation fs-5"></i>
+          </div>
+          Remove Movie
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-secondary py-3 fs-6">
+        Are you sure you want to remove <strong class="text-white">"{{ movie.title }}"</strong> from your watchlist?
+      </div>
+      <div class="modal-footer border-0 pt-0 gap-2">
+        <button type="button" class="btn btn-glass px-4 rounded-pill" data-bs-dismiss="modal">Cancel</button>
+        <a href="{{ url_for('delete_movie', id=movie.id) }}" class="btn btn-danger rounded-pill fw-bold px-4">
+            Confirm Delete
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+{% endif %}
+{% endblock %}

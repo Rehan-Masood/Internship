@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Select Movie — CineTop{% endblock %}
+
+{% block content %}
+<div class="mb-5">
+    <h1 class="fw-bold text-white mb-1">Search Results</h1>
+    <p class="text-secondary">Select the matching movie path item below to append credentials.</p>
+</div>
+
+<div class="glass-card p-4">
+    <div class="list-group list-group-flush bg-transparent">
+        {% for movie in options %}
+        <div class="list-group-item bg-transparent border-secondary border-opacity-25 py-3 d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div>
+                <h5 class="fw-bold text-white mb-1">{{ movie.title }}</h5>
+                <p class="text-secondary small mb-0">
+                    <i class="fa-solid fa-calendar me-2"></i>Release Date: {{ movie.release_date or 'Unknown Date' }}
+                </p>
+            </div>
+            <a href="{{ url_for('find_movie', id=movie.id) }}" class="btn btn-danger btn-sm rounded-pill px-4 fw-bold">
+                Select <i class="fa-solid fa-chevron-right ms-1 small"></i>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
