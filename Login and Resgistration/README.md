@@ -3,7 +3,7 @@
 Simple Flask-based login and registration example app.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/4c48c909-cef9-40fa-87fe-00672fc025f7" controls width="600"></video>
 
 ## Project Overview
 
