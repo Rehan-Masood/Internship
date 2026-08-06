@@ -2,6 +2,9 @@
 
 A small Flask app to track books and ratings using SQLite and SQLAlchemy.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/30d45c8a-fc24-457d-9666-2624b140b996" controls width="600"></video>
+
 ## Features
 - Add, edit (rating), and delete books
 - Persistent storage with SQLite (`books.db`)
