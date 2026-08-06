@@ -95,6 +95,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 62 |[Coffee and Wifi](./Coffee%20and%20Wifi) |A Flask web application that reads cafe information from a CSV file and allows users to view coffee spots and submit new ones using WTForms. It features Bootstrap styling for displaying ratings on wifi, power outlets, and coffee quality. | Python |
 | 63 |[My Library](./My%20Library) |A Flask library app backed by SQLAlchemy that lets users manage book collections via a dark glassmorphic dashboard with rating updates and delete modals. | Python |
 | 64 |[Top Movies Website](./Top%20Movies%20Website) |A Flask web app that uses the TMDB API to fetch movie posters, details, and dynamic rankings into a dark glassmorphic watchlist. | Python |
+| 65 |[Cafe RESTful API](./Cafe%20RESTful%20API) |A Flask RESTful API with full CRUD functionality and API key security, featuring an interactive developer console to test endpoints live. | Python |
 
 
 
