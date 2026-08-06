@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Sign In — SecureAuth{% endblock %}
+
+{% block content %}
+<div class="container px-4 my-auto py-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5 col-xl-4">
+      
+      <div class="glass-card p-4 p-md-5">
+        <div class="text-center mb-4">
+          <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3" style="width: 56px; height: 56px;">
+            <i class="fa-solid fa-right-to-bracket fs-4"></i>
+          </div>
+          <h3 class="fw-bold text-white mb-1">Welcome Back</h3>
+          <p class="text-secondary small">Enter your credentials to access your account.</p>
+        </div>
+
+        <form method="post" action="{{ url_for('login') }}" class="d-flex flex-column gap-3">
+          <div>
+            <label class="form-label text-secondary small fw-bold">EMAIL ADDRESS</label>
+            <div class="input-group">
+              <input type="email" name="email" class="form-control" placeholder="name@example.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div>
+            <label class="form-label text-secondary small fw-bold">PASSWORD</label>
+            <input type="password" name="password" class="form-control" placeholder="••••••••" required autocomplete="current-password" />
+          </div>
+
+          <button type="submit" class="btn btn-primary-gradient w-100 py-3 rounded-pill fw-bold mt-2">
+            Sign In
+          </button>
+        </form>
+
+        <div class="text-center mt-4 pt-3 border-top border-secondary border-opacity-25">
+          <p class="small text-secondary mb-0">
+            Don't have an account? <a href="{{ url_for('register') }}" class="text-primary text-decoration-none fw-bold ms-1">Register here</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

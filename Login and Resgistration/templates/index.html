@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Home — SecureAuth Platform{% endblock %}
+
+{% block content %}
+<div class="container px-4 py-5 text-center my-auto">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      
+      <span class="badge bg-primary bg-opacity-20 text-primary border border-primary border-opacity-25 px-3 py-2 rounded-pill mb-4 fw-bold">
+        <i class="fa-solid fa-lock me-1"></i> PBKDF2 Encrypted Authentication
+      </span>
+
+      <h1 class="display-3 fw-black text-white mb-3">Enterprise Auth Engine</h1>
+      <p class="lead text-secondary fs-5 mb-5">
+        Experience seamless session persistence, password salting, and route protection built on lightweight micro-architectures.
+      </p>
+
+      {% if not logged_in %}
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 max-w-450 mx-auto">
+        <a href="{{ url_for('register') }}" class="btn btn-primary-gradient py-3 px-5 rounded-pill fw-bold fs-6">
+          Create Free Account
+        </a>
+        <a href="{{ url_for('login') }}" class="btn btn-glass py-3 px-5 rounded-pill fw-bold fs-6">
+          Sign In
+        </a>
+      </div>
+      {% else %}
+      <div class="glass-card p-4 max-w-450 mx-auto text-center">
+        <div class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle mb-3" style="width: 50px; height: 50px;">
+          <i class="fa-solid fa-user-check fs-4"></i>
+        </div>
+        <h4 class="fw-bold text-white mb-2">Active Session Detected</h4>
+        <p class="text-secondary small mb-4">You are currently authenticated in the system.</p>
+        <a href="{{ url_for('secrets') }}" class="btn btn-primary-gradient w-100 py-2.5 rounded-pill fw-bold">
+          Go to Dashboard
+        </a>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+{% endblock %}
