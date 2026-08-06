@@ -92,6 +92,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 59 |[BLOG Website](./BLOG%20Website) |A small Flask-based blog demo that fetches posts from an external JSON endpoint and renders them using the templates in the templates/ folder. | Python |
 | 60 |[BLOG Contact Form](./BLOG%20Contact%20Form) |A Flask-based blog application that dynamically fetches and displays posts from an API and features an integrated contact form that emails user messages via Gmail SMTP. | Python |
 | 61 |[Flask Advance Sign-In Form](./Flask%20Advance%20Sign-In%20Form) |This Flask application uses Flask-WTF and Bootstrap 5 to build a styled, secure login system. It validates user credentials to grant access to a top-secret page or display an access-denied screen. | Python |
+| 62 |[Coffee and Wifi](./Coffee%20and%20Wifi) |A Flask web application that reads cafe information from a CSV file and allows users to view coffee spots and submit new ones using WTForms. It features Bootstrap styling for displaying ratings on wifi, power outlets, and coffee quality. | Python |
 
 
 
