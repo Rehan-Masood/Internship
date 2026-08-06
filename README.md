@@ -96,6 +96,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 63 |[My Library](./My%20Library) |A Flask library app backed by SQLAlchemy that lets users manage book collections via a dark glassmorphic dashboard with rating updates and delete modals. | Python |
 | 64 |[Top Movies Website](./Top%20Movies%20Website) |A Flask web app that uses the TMDB API to fetch movie posters, details, and dynamic rankings into a dark glassmorphic watchlist. | Python |
 | 65 |[Cafe RESTful API](./Cafe%20RESTful%20API) |A Flask RESTful API with full CRUD functionality and API key security, featuring an interactive developer console to test endpoints live. | Python |
+| 66 |[BLOG Capstone Project](./BLOG%20Capstone%20Project) |CineJournal is a modern, high-performance web application built with Python Flask and SQLite that allows users to create, edit, view, and publish rich-text editorial articles through a sleek, glassmorphic dark-mode interface. | Python |
 
 
 
