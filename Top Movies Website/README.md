@@ -3,7 +3,7 @@
 A simple Flask web app to search, add, rate, review, and manage a personal movies list using The Movie Database (TMDb) API.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/b169a6d2-38a1-44d4-93b0-a2657418f946" controls width="600"></video>
 
 ## Features
 - Search movies via TMDb and add them to a local SQLite database
