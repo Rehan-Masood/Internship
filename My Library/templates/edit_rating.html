@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Change Rating — My Library{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="glass-card p-4 p-md-5">
+            <div class="text-center mb-4">
+                <div class="d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning rounded-circle mb-3" style="width: 60px; height: 60px;">
+                    <i class="fa-solid fa-star fs-3"></i>
+                </div>
+                <h2 class="fw-bold mb-1">Update Rating</h2>
+                <p class="text-secondary small">Adjust score for <span class="text-white fw-bold">"{{ book.title }}"</span></p>
+            </div>
+
+            <form action="{{ url_for('edit') }}" method="POST">
+                <input type="hidden" name="id" value="{{ book.id }}">
+
+                <div class="mb-4">
+                    <label for="rating" class="form-label text-secondary small fw-semibold">NEW RATING (0 - 10)</label>
+                    <input type="number" step="0.1" min="0" max="10" class="form-control form-control-dark text-center fs-4 fw-bold text-warning" id="rating" name="rating" value="{{ book.rating }}" required>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-gradient py-3">
+                        <i class="fa-solid fa-rotate me-2"></i> Update Score
+                    </button>
+                    <a href="{{ url_for('home') }}" class="btn btn-glass py-2 text-center mt-2">
+                        Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

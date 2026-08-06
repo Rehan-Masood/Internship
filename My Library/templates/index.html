@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard — My Library{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-5">
+    <div>
+        <h1 class="fw-bold display-5 mb-1">Your Collection</h1>
+        <p class="text-secondary mb-0">Manage and rate your favorite books.</p>
+    </div>
+    <span class="badge bg-primary bg-opacity-20 text-primary border border-primary border-opacity-25 px-3 py-2 rounded-pill fs-6">
+        Total Books: {{ books|length }}
+    </span>
+</div>
+
+{% if not books %}
+<div class="glass-card p-5 text-center my-5 mx-auto" style="max-width: 500px;">
+    <i class="fa-solid fa-book-open text-secondary display-1 mb-4 opacity-50"></i>
+    <h3 class="fw-bold mb-2">No Books Found</h3>
+    <p class="text-secondary mb-4">Your shelf is empty! Start building your digital collection now.</p>
+    <a href="{{ url_for('add') }}" class="btn btn-gradient px-4 py-2">
+        <i class="fa-solid fa-plus me-2"></i> Add Your First Book
+    </a>
+</div>
+{% else %}
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    {% for book in books %}
+    <div class="col">
+        <div class="glass-card h-100 p-4 d-flex flex-column justify-content-between">
+            <div>
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <span class="rating-badge small">
+                        <i class="fa-solid fa-star me-1 text-warning"></i> {{ book.rating }} / 10
+                    </span>
+                    <button type="button" 
+                            class="btn btn-glass px-2 py-1 border-0" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#deleteModal{{ book.id }}" 
+                            title="Delete Book">
+                        <i class="fa-solid fa-trash-can text-danger"></i>
+                    </button>
+                </div>
+                <h3 class="h4 fw-bold text-white mb-2">{{ book.title }}</h3>
+                <p class="text-secondary mb-4">
+                    <i class="fa-solid fa-user-pen me-2 text-primary opacity-75"></i>{{ book.author }}
+                </p>
+            </div>
+
+            <div class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                <a href="{{ url_for('edit', id=book.id) }}" class="btn btn-glass btn-sm px-3">
+                    <i class="fa-solid fa-pen-to-square me-1"></i> Edit Rating
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% for book in books %}
+<div class="modal fade" id="deleteModal{{ book.id }}" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-start p-3">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold text-white d-flex align-items-center">
+          <div class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-circle me-3" style="width: 40px; height: 40px;">
+            <i class="fa-solid fa-triangle-exclamation fs-5"></i>
+          </div>
+          Delete Confirmation
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-secondary py-3 fs-6">
+        Are you sure you want to remove <strong class="text-white">"{{ book.title }}"</strong> from your library? This action cannot be undone.
+      </div>
+      <div class="modal-footer border-0 pt-0 gap-2">
+        <button type="button" class="btn btn-glass px-4 rounded-3" data-bs-dismiss="modal">Cancel</button>
+        <a href="{{ url_for('delete', id=book.id) }}" class="btn btn-danger rounded-3 fw-bold px-4 py-2">
+          <i class="fa-solid fa-trash-can me-1"></i> Delete
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+{% endif %}
+{% endblock %}
