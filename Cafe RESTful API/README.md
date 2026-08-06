@@ -2,6 +2,9 @@
 
 Minimal Flask-based RESTful API for a simple cafe project.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/7f5f3e2c-6daa-47b1-bc9c-ca4830ba8c2e" controls width="600"></video>
+
 ## Project Overview
 
 - `main.py` — application entrypoint (Flask app and route definitions).
