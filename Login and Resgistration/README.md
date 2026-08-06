@@ -2,6 +2,9 @@
 
 Simple Flask-based login and registration example app.
 
+## Demo Video
+<video src="" controls width="600"></video>
+
 ## Project Overview
 
 This repository contains a small web application that demonstrates user login and registration flows using Flask. It includes HTML templates, static assets, and a minimal Python entrypoint.
