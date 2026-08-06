@@ -1,0 +1,28 @@
+{% include "header.html" %}
+{% from "bootstrap5/form.html" import render_form %}
+
+<header class="masthead position-relative overflow-hidden" style="background-image: url('{{ url_for('static', filename='about-bg.jpg') }}')">
+  <div class="overlay-dark"></div>
+  <div class="container position-relative px-4 px-lg-5 z-2 text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <h1 class="display-4 fw-black text-white font-serif mb-2">Join CineJournal</h1>
+        <p class="text-white-50 fs-6">Create an account to start contributing to discussions.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="py-5">
+  <div class="container px-4 px-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="glass-card p-4 p-md-5">
+          {{ render_form(form, novalidate=True, button_map={"submit": "primary-gradient rounded-pill px-5 fw-bold py-2.5 w-100 mt-3"}) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}
