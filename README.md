@@ -98,6 +98,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 65 |[Cafe RESTful API](./Cafe%20RESTful%20API) |A Flask RESTful API with full CRUD functionality and API key security, featuring an interactive developer console to test endpoints live. | Python |
 | 66 |[BLOG Capstone Project](./BLOG%20Capstone%20Project) |CineJournal is a modern, high-performance web application built with Python Flask and SQLite that allows users to create, edit, view, and publish rich-text editorial articles through a sleek, glassmorphic dark-mode interface. | Python |
 | 67 |[Login and Resgistration](./Login%20and%20Resgistration) |SecureAuth Engine is a full-stack user authentication platform built with Python Flask and SQLite, featuring PBKDF2 password hashing, session management, and protected routes wrapped in a modern dark glassmorphic interface. | Python |
+| 68 |[Advanced BLOG Capstone Project](./Advanced%20BLOG%20Capstone%20Project) |CineJournal is a modern, full-stack blog platform built with Python Flask and SQLite that features user authentication, relational databases for articles and comments, and an interactive glassmorphic interface. | Python |
 
 
 
