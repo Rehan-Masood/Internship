@@ -3,7 +3,7 @@
 A simple Flask-based blogging application built as a capstone project. It includes user authentication, post creation, and template-driven pages using the `templates/` and `static/` folders.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/18c61ed1-1415-4d56-9bf8-43984695d1d5" controls width="600"></video>
 
 ## Features
 
