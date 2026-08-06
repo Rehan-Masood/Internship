@@ -3,7 +3,7 @@
 A Flask-based blog application with article publishing, editing, deleting, detailed post pages, an about page, and a contact form. The app uses SQLite for persistence and CKEditor for rich-text post content.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/4096995c-d5cf-4e82-ad3f-a012ce08b195" controls width="600"></video>
 
 ## Features
 
