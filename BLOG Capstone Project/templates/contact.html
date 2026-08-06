@@ -1,0 +1,52 @@
+{% include "header.html" %}
+
+<header class="masthead position-relative overflow-hidden" style="background-image: url('{{ url_for('static', filename='contact-bg.jpg') }}')">
+  <div class="overlay-dark"></div>
+  <div class="container position-relative px-4 px-lg-5 py-5 z-2">
+    <div class="row justify-content-center text-center py-5">
+      <div class="col-md-10 col-lg-8">
+        {% if msg_sent %}
+        <h1 class="display-4 fw-black text-success mb-2">Message Sent!</h1>
+        <p class="text-white-50 fs-5">Thank you for getting in touch. We will respond shortly.</p>
+        {% else %}
+        <h1 class="display-3 fw-black text-white mb-2">Get in Touch</h1>
+        <p class="text-white-50 fs-5">Have feedback or inquiries? Send us a direct note.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="py-5">
+  <div class="container px-4 px-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="glass-card p-4 p-md-5">
+          <form id="contactForm" action="{{ url_for('contact') }}" method="post" class="d-flex flex-column gap-3">
+            <div>
+              <label for="name" class="form-label text-secondary small fw-bold">NAME</label>
+              <input class="form-control" id="name" name="name" type="text" placeholder="Your Full Name" required />
+            </div>
+            <div>
+              <label for="email" class="form-label text-secondary small fw-bold">EMAIL ADDRESS</label>
+              <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
+            </div>
+            <div>
+              <label for="phone" class="form-label text-secondary small fw-bold">PHONE NUMBER</label>
+              <input class="form-control" id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" required />
+            </div>
+            <div>
+              <label for="message" class="form-label text-secondary small fw-bold">MESSAGE</label>
+              <textarea class="form-control" id="message" name="message" placeholder="Type your message here..." required style="height: 10rem"></textarea>
+            </div>
+            <button class="btn btn-primary-gradient py-3 rounded-pill fw-bold text-uppercase mt-3" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}
