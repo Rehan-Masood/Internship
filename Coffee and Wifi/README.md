@@ -3,8 +3,7 @@
 Simple Flask app to list and add cafes with Wi‑Fi info.
 
 ## Demo Video
-<video src="## Demo Video
-<video src="https://github.com/user-attachments/assets/6ca3f310-c405-4e77-be1e-dfe138683b40" controls width="600"></video>" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/6ca3f310-c405-4e77-be1e-dfe138683b40" controls width="600"></video> 
 
 ## Features
 - View a list of cafes
