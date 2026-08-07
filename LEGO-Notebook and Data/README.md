@@ -2,6 +2,13 @@
 
 A small data analysis project that explores LEGO datasets with Python, pandas, and matplotlib. The script reads CSV files about LEGO colors, sets, and themes, then prints summary statistics and shows a trend chart for LEGO production growth over time.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/cb7283b9-831d-41db-9ae6-a8936e5f7284" controls width="600"></video>
+
+## LEGO-Notebook and Data
+   ![LEGO-Notebook and Data.](./1.jpg)
+   ![LEGO-Notebook and Data.](./1.jpg)
+   
 ## Project Goals
 
 - Explore how many LEGO colors exist and how transparent colors are distributed.
