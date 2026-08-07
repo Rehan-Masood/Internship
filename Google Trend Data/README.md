@@ -1,6 +1,12 @@
-# Google Trend Data
+# Google Trend Data 
 
 This repository contains scripts and CSV data for exploring relationships between Google Search Trends and time-series data (prices, rates).
+
+## Demo Video
+<video src="https://github.com/user-attachments/assets/fc472816-46ff-439e-b092-0059cc8947b8" controls width="600"></video>
+
+## Google Trend Data Visualizing
+   ![Google Trend Data Visualizing.](./1.jpg)
 
 Project contents
 - main.py — primary script to load and analyze CSV files.
