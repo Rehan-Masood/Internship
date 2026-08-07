@@ -7,6 +7,9 @@ A small Python project that explores the Boston Housing dataset, visualizes the 
 
 The script also produces a sample valuation estimate for a hypothetical property.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/f88f7075-f3b7-49b9-9a0e-bedd2037289c" controls width="600"></video>
+
 ## Project Files
 
 - `main.py` - main script that loads the data, trains the models, and prints the results
