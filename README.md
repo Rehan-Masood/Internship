@@ -110,6 +110,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 77 | [Nobel Prize Analysis](./Nobel%20Prize%20Analysis) |A comprehensive data analysis project using Pandas, Seaborn, Matplotlib, and Plotly to analyze demographic trends, age distributions, and global rankings of Nobel Prize laureates over a century. | Python |
 | 78 | [Dr-Semmelweis-Analysis](./Dr-Semmelweis-Analysis) |A statistical data analysis project using Pandas, Plotly, and SciPy to analyze historical hospital mortality data and perform a two-sample t-test proving the effectiveness of handwashing. | Python |
 | 79 | [Multivariable Regression](./Multivariable%20Regression) |A real estate valuation capstone project using Pandas and Scikit-Learn to analyze Boston housing features and build a log-transformed multivariable linear regression prediction model. | Python |
+| 80 | [Morse Code Converter](./Morse%20Code%20Converter) |Developed a Python terminal utility that parses text strings and maps letters, numbers, and special characters into standard Morse code symbols using clean error handling. | Python |
 
 
 
