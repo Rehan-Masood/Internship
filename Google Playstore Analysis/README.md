@@ -2,6 +2,12 @@
 
 This project analyzes a Google Play Store dataset and generates a few quick insights with Python. The main script loads `apps.csv`, cleans a couple of numeric fields, prints summary checks to the console, and opens interactive Plotly charts.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/280217c4-0655-4671-b6e1-0e9a2d287f8f" controls width="600"></video>
+
+## Google Play Store Analysis
+   ![Google Play Store Analysis.](./1.jpg)
+
 ## What it does
 
 - Loads the app dataset from `apps.csv`
