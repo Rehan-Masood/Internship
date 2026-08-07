@@ -2,6 +2,13 @@
 
 This project analyzes a dataset of college majors and their salary statistics using Python and Pandas. The script loads the CSV file, cleans missing values, identifies salary extremes, and compares salary spread as a measure of financial risk.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/f4628c18-190d-43a4-91bb-e888ec37a4af" controls width="600"></video>
+
+## Pandas College Major
+   ![Pandas College Major.](./1.jpg)
+   ![Pandas College Major.](./2.jpg)
+
 ## Project Overview
 
 The analysis includes:
