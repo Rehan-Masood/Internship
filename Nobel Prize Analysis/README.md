@@ -2,6 +2,9 @@
 
 This repository contains a small analysis project for Nobel Prize data.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/2a1de3c6-85d5-403a-984c-c688c7667ee8" controls width="600"></video>
+
 ## Project Structure
 
 - `main.py` - Main script to run the analysis.
