@@ -3,10 +3,10 @@
 A small Python CLI tool that converts plain text into Morse code.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/13eef8c5-4476-43ae-9e3a-67f47bde23ae" controls width="600"></video>
 
 ## Morse Code Converter
-   ![Morse Code Converter.](./1jpg)
+   ![Morse Code Converter.](./1.jpg)
 
 ## Features
 - Converts letters, digits, and common punctuation to Morse code.
