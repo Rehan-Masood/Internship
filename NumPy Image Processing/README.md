@@ -2,6 +2,12 @@
 
 Small Python project demonstrating basic image processing using NumPy.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/38495f83-945e-4238-908a-2e47ecff41a6" controls width="600"></video>
+
+## NumPy Image Processing
+   ![NumPy Image Processing.](./1.jpg)
+
 ## Summary
 
 This repository contains a minimal example for image processing tasks implemented with NumPy and standard Python tooling. The main entry point is `main.py` which demonstrates the core functionality.
