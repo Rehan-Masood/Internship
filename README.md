@@ -109,6 +109,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 76 | [Seaborn Linear Regression](./Seaborn%20Linear%20Regression) |A machine learning and data visualization project using Seaborn to map the correlation between movie budgets and box office gross, and Scikit-Learn to build a predictive linear regression model. | Python | 
 | 77 | [Nobel Prize Analysis](./Nobel%20Prize%20Analysis) |A comprehensive data analysis project using Pandas, Seaborn, Matplotlib, and Plotly to analyze demographic trends, age distributions, and global rankings of Nobel Prize laureates over a century. | Python |
 | 78 | [Dr-Semmelweis-Analysis](./Dr-Semmelweis-Analysis) |A statistical data analysis project using Pandas, Plotly, and SciPy to analyze historical hospital mortality data and perform a two-sample t-test proving the effectiveness of handwashing. | Python |
+| 79 | [Multivariable Regression](./Multivariable%20Regression) |A real estate valuation capstone project using Pandas and Scikit-Learn to analyze Boston housing features and build a log-transformed multivariable linear regression prediction model. | Python |
 
 
 
