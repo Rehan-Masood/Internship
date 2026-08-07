@@ -106,6 +106,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 73 | [Google Trend Data Visualization](./Google%20Trend%20Data) |A time-series data visualization project using Pandas and Matplotlib to resample and correlate Google Trends web search popularity with real-world financial metrics like Tesla stock and Bitcoin prices. | Python | 
 | 74 | [Google Playstore Analysis](./Google%20Playstore%20Analysis) |A data analysis project using Pandas and Plotly to clean Google Play Store dataset metrics and build interactive charts exploring Android app popularity, pricing, and category distribution. | Python | 
 | 75 | [NumPy Image Processing](./NumPy%20Image%20Processing) |A numerical computing project using NumPy to analyze $N$-dimensional arrays and perform matrix manipulation, color inversion, and spatial transformations on image data. | Python | 
+| 76 | [Seaborn Linear Regression](./Seaborn%20Linear%20Regression) |A machine learning and data visualization project using Seaborn to map the correlation between movie budgets and box office gross, and Scikit-Learn to build a predictive linear regression model. | Python | 
 
 
 
