@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5 my-5 text-center">
+    <div class="glass-card p-5 mx-auto" style="max-width: 550px;">
+        <div class="mb-4 text-gradient fs-1">
+            <i class="fa-solid fa-circle-check fa-2x"></i>
+        </div>
+        <h2 class="fw-bold mb-3">Message Sent Successfully!</h2>
+        <p class="text-secondary mb-4">Thank you, <strong class="text-light">{{ name }}</strong>. Your note has been received, and I will get back to you shortly.</p>
+        <a href="{{ url_for('home') }}" class="btn btn-gradient px-4 py-2 shadow-glow">
+            <i class="fa-solid fa-house me-2"></i>Back to Home
+        </a>
+    </div>
+</div>
+{% endblock %}
