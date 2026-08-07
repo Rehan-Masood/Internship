@@ -2,6 +2,9 @@
 
 A simple Flask-based personal portfolio website that showcases featured projects, key statistics, and a contact form.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/4832987d-c318-4ff9-bd5e-44b1a7f58b9f" controls width="600"></video>
+
 ## Features
 
 - Responsive portfolio landing page
