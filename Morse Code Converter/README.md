@@ -2,6 +2,12 @@
 
 A small Python CLI tool that converts plain text into Morse code.
 
+## Demo Video
+<video src="" controls width="600"></video>
+
+## Morse Code Converter
+   ![Morse Code Converter.](./1jpg)
+
 ## Features
 - Converts letters, digits, and common punctuation to Morse code.
 - Prints unknown characters as `[?]` so outputs remain readable.
