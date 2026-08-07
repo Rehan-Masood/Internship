@@ -2,6 +2,12 @@
 
 This project analyzes and visualizes the popularity of programming languages on Stack Overflow using Python, pandas, and matplotlib.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/15acabe4-bead-40fa-8881-a89ca1cae444" controls width="600"></video>
+
+## Matplotlib Languages
+   ![Matplotlib Languages.](./1.jpg)
+
 ## What the project does
 
 The script:
