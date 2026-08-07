@@ -99,7 +99,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 66 |[BLOG Capstone Project](./BLOG%20Capstone%20Project) |CineJournal is a modern, high-performance web application built with Python Flask and SQLite that allows users to create, edit, view, and publish rich-text editorial articles through a sleek, glassmorphic dark-mode interface. | Python |
 | 67 |[Login and Resgistration](./Login%20and%20Resgistration) |SecureAuth Engine is a full-stack user authentication platform built with Python Flask and SQLite, featuring PBKDF2 password hashing, session management, and protected routes wrapped in a modern dark glassmorphic interface. | Python |
 | 68 |[Advanced BLOG Capstone Project](./Advanced%20BLOG%20Capstone%20Project) |CineJournal is a modern, full-stack blog platform built with Python Flask and SQLite that features user authentication, relational databases for articles and comments, and an interactive glassmorphic interface. | Python |
-| 69 | [Live BLOG Capstone Project](https://jrehan590.pythonanywhere.com) | A modern full-stack Flask blog allowing users to create, edit, and publish rich-text articles with a SQLite database. | Python | 
+| 69 | [Live BLOG Capstone Project](https://jrehan590.pythonanywhere.com) |A modern full-stack Flask blog allowing users to create, edit, and publish rich-text articles with a SQLite database. | Python | 
+| 70 | [Pandas College Major](./Pandas%20College%20Major) |Analyzed college major salary data using Pandas to identify top-earning degrees, evaluate salary spread/risk, and compare career growth across academic disciplines. | Python | 
 
 
 
