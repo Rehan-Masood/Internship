@@ -111,6 +111,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 78 | [Dr-Semmelweis-Analysis](./Dr-Semmelweis-Analysis) |A statistical data analysis project using Pandas, Plotly, and SciPy to analyze historical hospital mortality data and perform a two-sample t-test proving the effectiveness of handwashing. | Python |
 | 79 | [Multivariable Regression](./Multivariable%20Regression) |A real estate valuation capstone project using Pandas and Scikit-Learn to analyze Boston housing features and build a log-transformed multivariable linear regression prediction model. | Python |
 | 80 | [Morse Code Converter](./Morse%20Code%20Converter) |Developed a Python terminal utility that parses text strings and maps letters, numbers, and special characters into standard Morse code symbols using clean error handling. | Python |
+| 81 | [Online Personal Portfolio](./Online%20Personal%20Portfolio) |Designed a modern glassmorphism portfolio site using Flask and Bootstrap, highlighting full-stack projects, live metrics, and interactive contact form submission routing. | Python |
 
 
 
