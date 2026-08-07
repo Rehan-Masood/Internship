@@ -102,6 +102,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 69 | [Live BLOG Capstone Project](https://jrehan590.pythonanywhere.com) |A modern full-stack Flask blog allowing users to create, edit, and publish rich-text articles with a SQLite database. | Python | 
 | 70 | [Pandas College Major](./Pandas%20College%20Major) |Analyzed college major salary data using Pandas to identify top-earning degrees, evaluate salary spread/risk, and compare career growth across academic disciplines. | Python | 
 | 71 | [Matplotlib Languages](./Matplotlib%20Languages) |Analyzed historical Stack Overflow post data using Pandas and Matplotlib, applying time-series pivoting and rolling-average smoothing to visualize programming language growth trends. | Python | 
+| 72 | [LEGO-Notebook and Data](./LEGO-Notebook%20and%20Data) |A data analysis project using Pandas and Matplotlib to aggregate and merge multiple LEGO relational datasets, uncovering historical production and theme growth trends. | Python | 
 
 
 
