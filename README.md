@@ -107,7 +107,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 74 | [Google Playstore Analysis](./Google%20Playstore%20Analysis) |A data analysis project using Pandas and Plotly to clean Google Play Store dataset metrics and build interactive charts exploring Android app popularity, pricing, and category distribution. | Python | 
 | 75 | [NumPy Image Processing](./NumPy%20Image%20Processing) |A numerical computing project using NumPy to analyze $N$-dimensional arrays and perform matrix manipulation, color inversion, and spatial transformations on image data. | Python | 
 | 76 | [Seaborn Linear Regression](./Seaborn%20Linear%20Regression) |A machine learning and data visualization project using Seaborn to map the correlation between movie budgets and box office gross, and Scikit-Learn to build a predictive linear regression model. | Python | 
-| 77 | [Nobel Prize Analysis](./Nobel%20Prize%20Analysis) |A comprehensive data analysis project using Pandas, Seaborn, Matplotlib, and Plotly to analyze demographic trends, age distributions, and global rankings of Nobel Prize laureates over a century. | Python | 
+| 77 | [Nobel Prize Analysis](./Nobel%20Prize%20Analysis) |A comprehensive data analysis project using Pandas, Seaborn, Matplotlib, and Plotly to analyze demographic trends, age distributions, and global rankings of Nobel Prize laureates over a century. | Python |
+| 78 | [Dr-Semmelweis-Analysis](./Dr-Semmelweis-Analysis) |A statistical data analysis project using Pandas, Plotly, and SciPy to analyze historical hospital mortality data and perform a two-sample t-test proving the effectiveness of handwashing. | Python |
 
 
 
