@@ -2,6 +2,10 @@
 
 This repository contains a small data analysis project exploring historical mortality data associated with Dr. Ignaz Semmelweis' work. It includes CSV datasets and a simple analysis script.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/641f1f76-e827-4a59-b532-796fa1fe5a10" controls width="600"></video>
+
+
 ## Contents
 
 - [annual_deaths_by_clinic.csv](annual_deaths_by_clinic.csv) — Annual deaths and admissions by clinic.
