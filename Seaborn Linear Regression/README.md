@@ -2,6 +2,12 @@
 
 This project explores the relationship between movie production budgets and worldwide box office revenue using Python, Seaborn, and scikit-learn.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/10a53fad-50ac-4dbf-8bde-87405bc466f1" controls width="600"></video>
+
+## Seaborn Linear Regression
+   ![Seaborn Linear Regression.](./1.jpg)
+
 ## Project Overview
 
 The script:
