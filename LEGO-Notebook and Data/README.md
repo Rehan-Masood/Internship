@@ -7,7 +7,7 @@ A small data analysis project that explores LEGO datasets with Python, pandas, a
 
 ## LEGO-Notebook and Data
    ![LEGO-Notebook and Data.](./1.jpg)
-   ![LEGO-Notebook and Data.](./1.jpg)
+   ![LEGO-Notebook and Data.](./2.jpg)
    
 ## Project Goals
 
