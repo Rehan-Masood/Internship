@@ -104,6 +104,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 71 | [Matplotlib Languages](./Matplotlib%20Languages) |Analyzed historical Stack Overflow post data using Pandas and Matplotlib, applying time-series pivoting and rolling-average smoothing to visualize programming language growth trends. | Python | 
 | 72 | [LEGO-Notebook and Data](./LEGO-Notebook%20and%20Data) |A data analysis project using Pandas and Matplotlib to aggregate and merge multiple LEGO relational datasets, uncovering historical production and theme growth trends. | Python | 
 | 73 | [Google Trend Data Visualization](./Google%20Trend%20Data) |A time-series data visualization project using Pandas and Matplotlib to resample and correlate Google Trends web search popularity with real-world financial metrics like Tesla stock and Bitcoin prices. | Python | 
+| 74 | [Google Playstore Analysis](./Google%20Playstore%20Analysis) |A data analysis project using Pandas and Plotly to clean Google Play Store dataset metrics and build interactive charts exploring Android app popularity, pricing, and category distribution. | Python | 
 
 
 
