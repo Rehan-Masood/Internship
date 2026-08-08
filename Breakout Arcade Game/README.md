@@ -2,6 +2,9 @@
 
 A simple Breakout-style arcade game implemented in Python.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/eaf9413a-da27-494a-9d10-bb62a827fc50" controls width="600"></video>
+
 ## Overview
 - Entry point: [main.py](main.py#L1)
 - Dependencies listed in [requirements.txt](requirements.txt#L1)
