@@ -117,6 +117,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 84 | [Breakout Arcade Game](./Breakout%20Arcade%20Game) |A responsive multi-level Breakout arcade game built in Python using Pygame, featuring dynamic ball speed scaling, window resizing, particle effects, and custom brick scoring. | Python |
 | 85 | [Cyber-Typer 2070](./Cyber-Typer%202070) |A cyberpunk developer terminal typing game built with Python and Pygame, featuring dynamic virtual screen scaling, real-time WPM calculation, combo streak multipliers, and multi-tasking security breach events. | Python |
 | 86 | [DevCareer OS — Developer Job Hunt & Skill Growth Platform](./DevCareer%20OS%20—%20Developer%20Job%20Hunt%20%26%20Skill%20Growth%20Platform) |A full-stack Flask web application that serves as a private developer career operating system to track job applications, pipeline statuses, and technical interview preparation cards. | Python |
+| 87 | [DevKit Studio](./DevKit%20Studio) |DevKit Studio is a clean, dark-themed Python GUI app that packages essential tools like JSON formatting, Base64 conversion, hashing, and text stats into one desktop utility. It helps developers transform, debug, and process data locally without needing online tools | Python |
 
 
 
