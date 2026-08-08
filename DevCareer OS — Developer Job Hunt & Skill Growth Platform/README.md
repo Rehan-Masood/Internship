@@ -2,6 +2,9 @@
 
 Simple Flask app to track developer job applications and practice skills.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/c85b3803-e38d-464d-9fee-ade050e625ab" controls width="600"></video>
+
 ## Project Structure
 
 - [app.py](app.py) — Flask application entrypoint.
