@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="fw-bold mb-1">Technical Interview Prep Hub</h1>
+            <p class="text-secondary small mb-0">Review core CS questions, system design concepts, and language nuances.</p>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="glass-card p-4">
+                <h5 class="fw-bold mb-3"><i class="fa-solid fa-square-plus text-cyan me-2"></i>Add Question Card</h5>
+                <form action="{{ url_for('flashcards') }}" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label text-muted small fw-bold">TOPIC</label>
+                        <input type="text" name="topic" class="form-control glass-input" required placeholder="Python / SQL / System Design">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-muted small fw-bold">QUESTION</label>
+                        <input type="text" name="question" class="form-control glass-input" required placeholder="Question text...">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-muted small fw-bold">KEY ANSWER / NOTES</label>
+                        <textarea name="answer" class="form-control glass-input" rows="3" required placeholder="Core answer breakdown..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gradient w-100 py-2 shadow-glow">Add Card</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="row g-3">
+                {% for card in cards %}
+                <div class="col-12">
+                    <div class="glass-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge badge-accent">{{ card.topic }}</span>
+                        </div>
+                        <h5 class="fw-bold text-light mb-2">Q: {{ card.question }}</h5>
+                        <div class="p-3 bg-dark rounded border border-secondary border-opacity-25 mt-3">
+                            <small class="text-cyan fw-bold d-block mb-1">ANSWER:</small>
+                            <p class="text-secondary small mb-0 font-monospace" style="white-space: pre-wrap;">{{ card.answer }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="col-12 text-center text-muted py-5">
+                    No study cards created yet.
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

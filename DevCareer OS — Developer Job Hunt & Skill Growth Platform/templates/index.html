@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="fw-bold mb-1">Job Application Tracker</h1>
+            <p class="text-secondary small mb-0">Manage your pipeline, interview schedules, and job offer responses.</p>
+        </div>
+        <a href="{{ url_for('add_job') }}" class="btn btn-gradient shadow-glow">
+            <i class="fa-solid fa-plus me-2"></i>New Application
+        </a>
+    </div>
+
+    <div class="row g-3 mb-5">
+        <div class="col-6 col-md-3">
+            <div class="glass-card p-3 text-center">
+                <h2 class="fw-bold text-gradient display-6 mb-1">{{ total }}</h2>
+                <span class="metric-label text-cyan fw-bold text-uppercase">Total Applications</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="glass-card p-3 text-center">
+                <h2 class="fw-bold text-cyan display-6 mb-1">{{ applied }}</h2>
+                <span class="metric-label text-light fw-bold text-uppercase">Applied / Pending</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="glass-card p-3 text-center">
+                <h2 class="fw-bold text-warning display-6 mb-1">{{ interviewing }}</h2>
+                <span class="metric-label text-warning fw-bold text-uppercase">Interviewing</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="glass-card p-3 text-center">
+                <h2 class="fw-bold text-success display-6 mb-1">{{ offers }}</h2>
+                <span class="metric-label text-success fw-bold text-uppercase">Job Offers</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card p-4">
+        <div class="table-responsive">
+            <table class="table table-dark table-hover align-middle mb-0 bg-transparent">
+                <thead>
+                    <tr class="text-secondary border-bottom border-secondary">
+                        <th>COMPANY</th>
+                        <th>ROLE</th>
+                        <th>STATUS</th>
+                        <th>SALARY</th>
+                        <th>APPLIED DATE</th>
+                        <th>INTERVIEW</th>
+                        <th class="text-end">ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for job in jobs %}
+                    <tr>
+                        <td class="fw-bold text-light">{{ job.company }}</td>
+                        <td>{{ job.position }}</td>
+                        <td>
+                            {% if job.status == 'Applied' %}
+                                <span class="badge bg-info-subtle text-info">Applied</span>
+                            {% elif job.status == 'Interviewing' %}
+                                <span class="badge bg-warning-subtle text-warning">Interviewing</span>
+                            {% elif job.status == 'Offer' %}
+                                <span class="badge bg-success-subtle text-success">Offer Received</span>
+                            {% else %}
+                                <span class="badge bg-danger-subtle text-danger">Rejected</span>
+                            {% endif %}
+                        </td>
+                        <td class="font-monospace text-secondary">{{ job.salary or 'N/A' }}</td>
+                        <td class="text-secondary small">{{ job.applied_date }}</td>
+                        <td class="text-warning small">{{ job.interview_date or '-' }}</td>
+                        <td class="text-end">
+                            <button type="button" class="btn btn-outline-danger btn-sm border-0" 
+                                    onclick="openDeleteModal('{{ job.id }}', '{{ job.company }}', '{{ job.position }}')">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="7" class="text-center py-5 text-muted">
+                            <i class="fa-regular fa-folder-open fa-2x mb-3 d-block"></i>
+                            No job applications logged yet. Click <strong>"New Application"</strong> to begin tracking!
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content glass-modal text-start p-3">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-bold text-danger">
+                    <i class="fa-solid fa-triangle-exclamation me-2"></i>Delete Record
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body py-3">
+                Are you sure you want to delete the application for <strong id="modalCompany" class="text-light"></strong> (<span id="modalRole" class="text-secondary"></span>)?
+            </div>
+            <div class="modal-footer border-0 pt-0">
+                <button type="button" class="btn btn-glass px-4" data-bs-dismiss="modal">Cancel</button>
+                <form id="deleteForm" action="" method="POST" class="d-inline">
+                    <button type="submit" class="btn btn-danger px-4 shadow-glow">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openDeleteModal(id, company, position) {
+    document.getElementById('modalCompany').textContent = company;
+    document.getElementById('modalRole').textContent = position;
+    document.getElementById('deleteForm').action = "/job/delete/" + id;
+    
+    var deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+    deleteModal.show();
+}
+</script>
+{% endblock %}
