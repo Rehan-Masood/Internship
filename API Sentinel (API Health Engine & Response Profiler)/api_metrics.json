@@ -1,0 +1,81 @@
+[
+    {
+        "timestamp": "2026-08-08 23:53:14",
+        "url": "https://jsonplaceholder.typicode.com/posts/1",
+        "method": "GET",
+        "status_code": 200,
+        "success": true,
+        "response_time_ms": 1653.15,
+        "payload_size_kb": 0.285,
+        "error": null,
+        "response_data": {
+            "userId": 1,
+            "id": 1,
+            "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+            "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+        }
+    },
+    {
+        "timestamp": "2026-08-08 23:53:15",
+        "url": "https://jsonplaceholder.typicode.com/posts",
+        "method": "POST",
+        "status_code": 201,
+        "success": true,
+        "response_time_ms": 1802.72,
+        "payload_size_kb": 0.096,
+        "error": null,
+        "response_data": {
+            "title": "API Sentinel Test",
+            "body": "Benchmarking HTTP POST",
+            "userId": 1,
+            "id": 101
+        }
+    },
+    {
+        "timestamp": "2026-08-08 23:53:18",
+        "url": "https://httpbin.org/delay/1",
+        "method": "GET",
+        "status_code": 200,
+        "success": true,
+        "response_time_ms": 2686.74,
+        "payload_size_kb": 0.344,
+        "error": null,
+        "response_data": {
+            "args": {},
+            "data": "",
+            "files": {},
+            "form": {},
+            "headers": {
+                "Accept": "*/*",
+                "Accept-Encoding": "gzip, deflate",
+                "Host": "httpbin.org",
+                "User-Agent": "APISentinel/1.0",
+                "X-Amzn-Trace-Id": "Root=1-6a777b1f-29013ede358860da0a2de56e"
+            },
+            "origin": "103.131.213.132",
+            "url": "https://httpbin.org/delay/1"
+        }
+    },
+    {
+        "timestamp": "2026-08-08 23:53:20",
+        "url": "https://httpbin.org/status/404",
+        "method": "GET",
+        "status_code": 404,
+        "success": false,
+        "response_time_ms": 1824.69,
+        "payload_size_kb": 0.0,
+        "error": null,
+        "response_data": ""
+    },
+    {
+        "timestamp": "2026-08-08 23:53:20",
+        "url": "https://invalid-non-existent-domain-123.com",
+        "method": "GET",
+        "status_code": null,
+        "success": false,
+        "response_time_ms": 0,
+        "payload_size_kb": 0,
+        "error": "Failed to connect to host",
+        "response_data": null
+    }
+]
