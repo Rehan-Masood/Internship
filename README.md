@@ -115,6 +115,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 82 | [Tic-Tac-Toe](./Tic-Tac-Toe) |Built an interactive CLI Tic-Tac-Toe game in Python supporting dual-player modes and three AI computer difficulty levels, including an unbeatable Minimax algorithm. | Python |
 | 83 | [Image Watermarking GUI](./Image%20Watermarking%20GUI) |A desktop watermarking application built with CustomTkinter and Pillow that allows users to apply custom text overlays with live opacity, position, and font size controls. | Python |
 | 84 | [Breakout Arcade Game](./Breakout%20Arcade%20Game) |A responsive multi-level Breakout arcade game built in Python using Pygame, featuring dynamic ball speed scaling, window resizing, particle effects, and custom brick scoring. | Python |
+| 85 | [Cyber-Typer 2070](./Cyber-Typer%202070) |A cyberpunk developer terminal typing game built with Python and Pygame, featuring dynamic virtual screen scaling, real-time WPM calculation, combo streak multipliers, and multi-tasking security breach events. | Python |
 
 
 
