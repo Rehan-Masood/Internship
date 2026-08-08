@@ -2,6 +2,9 @@
 
 A simple, terminal-based Tic-Tac-Toe game written in Python.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/305cc328-cf86-4309-9425-d0481ca873ac" controls width="600"></video>
+
 ## Description
 
 This project provides a local two-player and single-player Tic-Tac-Toe game. The single-player mode offers three difficulty levels: Easy (random moves), Medium (basic tactics), and Hard (unbeatable Minimax AI).
