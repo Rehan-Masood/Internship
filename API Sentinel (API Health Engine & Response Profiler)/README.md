@@ -2,6 +2,9 @@
 
 > Lightweight starter project for monitoring and profiling API health.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/17ada802-75c3-400f-8c1e-305b3ee1e247" controls width="600"></video>
+
 ## Overview
 
 API Sentinel is a small utility to inspect, profile, and report on the health of APIs. This repository currently contains a single entry point script, `main.py`, which you can extend to add checks, profiling, and reporting suited to your needs.
