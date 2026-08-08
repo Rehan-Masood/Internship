@@ -6,7 +6,7 @@ A small cross-platform GUI application to add text or image watermarks to photos
 <video src="https://github.com/user-attachments/assets/cfcf8a40-0a33-4f68-8ae7-4692e2813488" controls width="600"></video>
 
 ## Image Watermarking GUI
-   ![Image Watermarking GUI.](./Pic.jpg)
+   ![Image Watermarking GUI.](./Pic.png)
 
 ## Features
 - Add text or image watermarks
