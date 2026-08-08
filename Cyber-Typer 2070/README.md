@@ -2,6 +2,9 @@
 
 Developer terminal-style typing game with reactive security-breach events and synthesized audio.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/123f8f46-55fd-4a96-8aa7-91ecc8378649" controls width="600"></video>
+
 ## Features
 - Stylized terminal UI using `pygame`
 - Timed typing challenges with scoring, streaks and WPM calculation
