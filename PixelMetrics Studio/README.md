@@ -2,6 +2,9 @@
 
 Lightweight project for pixel-based metrics and visualization.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/a78a06ca-1358-44e1-a442-fc73bd076e69" controls width="600"></video>
+
 ## Description
 
 This repository contains `app.py`, a small Python entrypoint for PixelMetrics Studio. The README gives quick setup and run instructions so you can get started locally.
