@@ -119,7 +119,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 86 | [DevCareer OS — Developer Job Hunt & Skill Growth Platform](./DevCareer%20OS%20—%20Developer%20Job%20Hunt%20%26%20Skill%20Growth%20Platform) |A full-stack Flask web application that serves as a private developer career operating system to track job applications, pipeline statuses, and technical interview preparation cards. | Python |
 | 87 | [DevKit Studio](./DevKit%20Studio) |DevKit Studio is a clean, dark-themed Python GUI app that packages essential tools like JSON formatting, Base64 conversion, hashing, and text stats into one desktop utility. It helps developers transform, debug, and process data locally without needing online tools | Python |
 | 88 | [API Sentinel (API Health Engine & Response Profiler)](./API%20Sentinel%20(API%20Health%20Engine%20&%20Response%20Profiler)) |API Sentinel is a lightweight Python engine that benchmarks HTTP API endpoints by measuring response times, payload sizes, and status codes. It provides automatic error handling for network timeouts or broken URLs and exports complete health audit reports to JSON. | Python |
-| 89 | [PixelMetrics Studio)](./PixelMetrics%20Studio)) |PixelMetrics Studio is a Python web app that uses OpenCV to apply real-time computer vision filters to uploaded images. It extracts pixel statistics and plots interactive RGB color distribution charts for instant image analysis. | Python |
+| 89 | [PixelMetrics Studio)](./PixelMetrics%20Studio) |PixelMetrics Studio is a Python web app that uses OpenCV to apply real-time computer vision filters to uploaded images. It extracts pixel statistics and plots interactive RGB color distribution charts for instant image analysis. | Python |
 
 
 
