@@ -2,6 +2,9 @@
 
 A small Python project. This repository contains a minimal application entrypoint in `app.py`.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/65b07d63-cbb3-49c1-abb4-9cf311af3a1b" controls width="600"></video>
+
 ## Description
 
 DevPulse Studio is a development project scaffold. The current workspace includes a single script, `app.py`, which serves as the program entry point.
