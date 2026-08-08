@@ -7,7 +7,7 @@ A small cross-platform GUI application to add text or image watermarks to photos
 
 ## Image Watermarking GUI
    <p align="center">
-  <img src="Pic.png" alt="App GUI Preview" width="650" style="border-radius: 10px;">
+  <img src="Pic.png" alt="App GUI Preview" width="480" style="border-radius: 10px;">
   </p>
 
 ## Features
