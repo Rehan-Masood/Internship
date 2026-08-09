@@ -121,6 +121,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 88 | [API Sentinel (API Health Engine & Response Profiler)](./API%20Sentinel%20(API%20Health%20Engine%20&%20Response%20Profiler)) |API Sentinel is a lightweight Python engine that benchmarks HTTP API endpoints by measuring response times, payload sizes, and status codes. It provides automatic error handling for network timeouts or broken URLs and exports complete health audit reports to JSON. | Python |
 | 89 | [PixelMetrics Studio](./PixelMetrics%20Studio) |PixelMetrics Studio is a Python web app that uses OpenCV to apply real-time computer vision filters to uploaded images. It extracts pixel statistics and plots interactive RGB color distribution charts for instant image analysis. | Python |
 | 90 | [ScrapePulse (Real-Time Job & Tech Stack Intelligence Engine)](./ScrapePulse%20(Real-Time%20Job%20%26%20Tech%20Stack%20Intelligence%20Engine)) |ScrapePulse is an automated web scraping and analytics engine that extracts live job postings, analyzes tech stack keyword trends using pattern matching, and visualizes real-time tech market demand on an interactive Streamlit dashboard. | Python |
+| 91 | [AutoExpense Pro (GUI Workflow & Data Ingestion Automation)](./AutoExpense%20Pro%20(GUI%20Workflow%20%26%20Data%20Ingestion%20Automation)) |AutoExpense Pro is an automated RPA engine that extracts structured expense data from invoice files, logs transactions directly into an Excel ledger, and simulates user input to fill out desktop accounting forms automatically. | Python |
 
 
 
