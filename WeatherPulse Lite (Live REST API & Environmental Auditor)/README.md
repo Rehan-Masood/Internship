@@ -5,7 +5,7 @@ Lightweight Python script for auditing live weather data and exporting reports.
 Project: WeatherPulse Lite (Live REST API & Environmental Auditor)
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/21f4cd14-53ef-4352-8017-21eb6cf8a434" controls width="600"></video>
 
 Overview
 - Fetches current weather metrics for a configurable list of cities using the Open-Meteo REST API.
