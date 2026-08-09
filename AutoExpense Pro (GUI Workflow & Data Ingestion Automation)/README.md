@@ -2,6 +2,9 @@
 
 AutoExpense Pro is a small utility for GUI-based workflow and data-ingestion automation focused on processing invoices.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/46742ed3-4c8a-4094-8784-2a9ae3939034" controls width="600"></video>
+
 ## Features
 
 - GUI dashboard for reviewing and managing invoice ingestion (`app_dashboard.py`).
