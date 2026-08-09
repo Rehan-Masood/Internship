@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Grid Arena | Advanced Levels</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="brand">⚡ NEON GRID ARENA</div>
+        <div class="level-badge" id="levelDisplay">LEVEL 1</div>
+    </header>
+
+    <div class="arena-layout">
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+            <div id="gameOverOverlay" class="game-over-overlay" style="display: none;">
+                <div class="game-over-title">GAME OVER</div>
+                <div style="color: #94a3b8; font-family: 'JetBrains Mono';">You collided with a Neon Barrier!</div>
+                <button class="respawn-btn" onclick="respawnPlayer()">RESPAWN SYSTEM</button>
+            </div>
+        </div>
+
+        <div class="side-panel">
+            <div class="panel-card">
+                <div class="panel-title">🏆 Live Scores</div>
+                <div id="leaderboardList"></div>
+            </div>
+
+            <div class="panel-card" style="flex: 1;">
+                <div class="panel-title">⚡ Feed</div>
+                <div id="activityFeed" class="feed-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
