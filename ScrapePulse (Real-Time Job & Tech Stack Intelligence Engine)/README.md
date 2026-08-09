@@ -2,6 +2,9 @@
 
 ScrapePulse is a lightweight real-time job and tech-stack intelligence engine that scrapes remote job listings, extracts demanded technologies, and stores results in a local SQLite database. It provides a simple Streamlit dashboard for triggering scrapes and viewing analytics.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/83b0cf67-24c9-4669-9ed6-3ccc88884f57" controls width="600"></video>
+
 ## Features
 
 - Scrapes job postings from RemoteOK (top results) and extracts common tech keywords
