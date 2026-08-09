@@ -2,6 +2,9 @@
 
 Neon Grid Arena is a small, real-time multiplayer browser game built with Flask and Socket.IO. Players pilot neon cores around an arena, collect the Gold Power Core (coin), avoid procedurally generated neon barrier walls, level up, and compete on the live leaderboard.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/55986a2f-3b61-496e-a56a-4c7a2d9d4fce" controls width="600"></video>
+
 ## Features
 - Real-time multiplayer using WebSockets (Socket.IO)
 - Neon-styled 2D arena rendered on an HTML5 Canvas
