@@ -122,6 +122,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 89 | [PixelMetrics Studio](./PixelMetrics%20Studio) |PixelMetrics Studio is a Python web app that uses OpenCV to apply real-time computer vision filters to uploaded images. It extracts pixel statistics and plots interactive RGB color distribution charts for instant image analysis. | Python |
 | 90 | [ScrapePulse (Real-Time Job & Tech Stack Intelligence Engine)](./ScrapePulse%20(Real-Time%20Job%20%26%20Tech%20Stack%20Intelligence%20Engine)) |ScrapePulse is an automated web scraping and analytics engine that extracts live job postings, analyzes tech stack keyword trends using pattern matching, and visualizes real-time tech market demand on an interactive Streamlit dashboard. | Python |
 | 91 | [AutoExpense Pro (GUI Workflow & Data Ingestion Automation)](./AutoExpense%20Pro%20(GUI%20Workflow%20%26%20Data%20Ingestion%20Automation)) |AutoExpense Pro is an automated RPA engine that extracts structured expense data from invoice files, logs transactions directly into an Excel ledger, and simulates user input to fill out desktop accounting forms automatically. | Python |
+| 92 | [Neon Grid Arena](./Neon%20Grid%20Arena) |Neon Grid Arena is a real-time, cyberpunk-themed multiplayer canvas game built with Python Flask-SocketIO and JavaScript. Players collect power cores, dodge procedurally generated neon walls, and compete on a live leaderboard as movement speeds and maze difficulties scale up with every level. | Python |
 
 
 
