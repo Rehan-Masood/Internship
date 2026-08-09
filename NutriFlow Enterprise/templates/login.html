@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="auth-wrapper">
+    <div class="auth-card">
+        <h2 class="auth-title">System Sign-In</h2>
+        <p class="auth-subtitle">Enter your enterprise credentials to access the menu</p>
+        <form method="POST" action="{{ url_for('login') }}">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="e.g. john_doe" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-primary">Authenticate</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

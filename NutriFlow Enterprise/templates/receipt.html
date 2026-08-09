@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<div class="receipt-wrapper" style="width: 100%;">
+    <div id="receiptContent" class="receipt-card" style="padding-bottom: 3.5rem;">
+        <div class="receipt-header">
+            <h2>NUTRIFLOW ENTERPRISE</h2>
+            <p>Official Order Invoice</p>
+            <p style="font-size: 0.8rem; color: #64748b; margin-top: 0.5rem;">Order ID: {{ receipt.order_id }}</p>
+            <p style="font-size: 0.8rem; color: #64748b;">{{ receipt.date }}</p>
+        </div>
+
+        <p style="margin-bottom: 1.5rem; text-align: left;">Customer: <b>{{ receipt.username }}</b></p>
+
+        {% for item in receipt.cart_items %}
+        <div class="receipt-row">
+            <span>{{ item.name }} (x{{ item.qty }})</span>
+            <span>${{ "%.2f"|format(item.price * item.qty) }}</span>
+        </div>
+        {% endfor %}
+
+        <div class="receipt-total" style="margin-top: 1.5rem; page-break-inside: avoid;">
+            <div class="receipt-row">
+                <span>Subtotal</span>
+                <span>${{ receipt.subtotal }}</span>
+            </div>
+            <div class="receipt-row">
+                <span>Tax (10%)</span>
+                <span>${{ receipt.tax }}</span>
+            </div>
+            <div class="receipt-row" style="font-size: 1.2rem; margin-top: 0.5rem;">
+                <span>TOTAL</span>
+                <span>${{ receipt.total }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; gap: 1rem; justify-content: center; max-width: 480px; margin: 1.5rem auto 3rem;">
+        <button onclick="downloadPDF()" class="btn-primary" style="background: linear-gradient(135deg, #10b981, #06b6d4); color: #000; font-weight: 800;">
+            📥 Download PDF
+        </button>
+        <button onclick="window.print()" class="btn-primary" style="background: #0f172a; color: #fff;">
+            🖨️ Print / Save
+        </button>
+    </div>
+</div>
+
+<script>
+function downloadPDF() {
+    const element = document.getElementById('receiptContent');
+    const opt = {
+        margin:       [10, 10, 15, 10],
+        filename:     '{{ receipt.order_id }}_receipt.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, scrollY: 0 },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak:    { mode: 'avoid-all' }
+    };
+    html2pdf().set(opt).from(element).save();
+}
+</script>
+{% endblock %}

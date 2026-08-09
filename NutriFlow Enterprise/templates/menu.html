@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="menu-layout">
+    <div class="menu-grid">
+        {% for item in items %}
+        <div class="card">
+            <img src="{{ item.image_url }}" alt="{{ item.name }}" class="card-img">
+            <div class="card-body">
+                <div>
+                    <div class="card-title">{{ item.name }}</div>
+                    <div class="card-desc">{{ item.description }}</div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                    <div class="card-price">${{ "%.2f"|format(item.price) }}</div>
+                    <button class="btn-primary" style="width: auto; padding: 0.5rem 1.2rem;" 
+                            onclick="addToCart({{ item.id }}, '{{ item.name }}', {{ item.price }})">+ Add</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="cart-panel">
+        <h3 style="font-size: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem;">🛒 Selected Items</h3>
+        <div id="cartItems" class="cart-items"></div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 1rem;">
+                <span>Subtotal:</span>
+                <span id="cartTotal" style="color: var(--accent-emerald); font-size: 1.2rem;">$0.00</span>
+            </div>
+            <form method="POST" action="{{ url_for('checkout') }}">
+                <input type="hidden" name="cart_data" id="cartDataInput">
+                <button type="submit" class="btn-primary">Generate Invoice</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
