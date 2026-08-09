@@ -1,0 +1,7 @@
+2026-08-09 10:15:20 | INFO | 192.168.1.10 | GET /api/v1/users | 200 | 45ms
+2026-08-09 10:15:22 | ERROR | 192.168.1.12 | POST /api/v1/checkout | 500 | 1200ms
+2026-08-09 10:15:25 | WARNING | 10.0.0.5 | GET /admin/login | 403 | 12ms
+2026-08-09 10:15:28 | WARNING | 10.0.0.5 | GET /admin/login | 403 | 10ms
+2026-08-09 10:15:30 | ERROR | 192.168.1.15 | GET /api/v1/products | 500 | 850ms
+2026-08-09 10:15:35 | INFO | 192.168.1.18 | GET /menu | 200 | 30ms
+2026-08-09 10:15:40 | CRITICAL | 10.0.0.5 | POST /admin/config | 401 | 5ms
