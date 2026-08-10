@@ -3,6 +3,9 @@
 > Day 100 Capstone: Streamlit dashboard combining NLP (VADER)
 > sentiment with time-series price prediction (Random Forest).
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/e9e9050f-e5fd-453d-9dfc-7619980ae780" controls width="600"></video>
+
 ## Project Overview
 
 MarketPulse AI is a lightweight demo that fetches 1 year of historical
