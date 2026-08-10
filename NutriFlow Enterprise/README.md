@@ -3,7 +3,7 @@
 NutriFlow Enterprise is a small Flask web application for managing user authentication, viewing menus, and generating receipts.
 
 ## Demo Video
-<video src="" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/0cb082d1-c113-467c-939f-d73817d6f021" controls width="600"></video>
 
 ## Features
 
