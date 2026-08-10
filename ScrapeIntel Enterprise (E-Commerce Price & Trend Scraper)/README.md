@@ -2,6 +2,9 @@
 
 ScrapeIntel Enterprise is a Streamlit-based dashboard for simulating and visualizing e-commerce product scraping, competitor price monitoring, and inventory insights.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/7db5a9c5-9081-4cc7-93b1-4ea136ce83d9" controls width="600"></video>
+
 ## Overview
 
 This project demonstrates a lightweight web scraping workflow with:
