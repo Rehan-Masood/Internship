@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid px-md-5">
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 9999;">
+        <div id="glassToast" class="toast glass-toast text-light border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex align-items-center p-3">
+                <i class="fa-solid fa-circle-check text-success fs-4 me-3"></i>
+                <div class="toast-body p-0 fw-bold">Strategy notes saved successfully to SQLite database!</div>
+                <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="solutionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-modal p-3">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-cyan">
+                        <i class="fa-solid fa-lightbulb me-2 text-warning"></i>Python Reference Solution
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-3">
+                    <pre class="glass-console p-3 font-monospace text-cyan mb-0" id="refSolutionText" style="white-space: pre-wrap;">{{ problem.reference_solution or '# Reference solution not available for this problem.' }}</pre>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-glass px-4" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-gradient px-4 shadow-glow" onclick="copySolutionToEditor()">
+                        <i class="fa-solid fa-copy me-2"></i>Copy Solution to Editor
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-5">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge badge-accent">{{ problem.category }}</span>
+                        <div>
+                            <span class="badge bg-success-subtle text-success me-2">{{ problem.difficulty }}</span>
+                            <button class="btn btn-outline-cyan btn-sm" onclick="loadNextRandomChallenge()">
+                                <i class="fa-solid fa-shuffle me-1"></i>Next Random
+                            </button>
+                        </div>
+                    </div>
+
+                    <h2 class="fw-bold mb-3">{{ problem.title }}</h2>
+                    <p class="text-secondary mb-4" style="line-height: 1.7;">
+                        {{ problem.description }}
+                    </p>
+
+                    <button type="button" class="btn btn-outline-warning w-100 mb-4 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#solutionModal">
+                        <i class="fa-solid fa-lightbulb me-2"></i>Stuck? View Reference Solution
+                    </button>
+
+                    <div class="p-3 glass-card mb-4 d-flex justify-content-between align-items-center">
+                        <span class="text-cyan fw-bold"><i class="fa-regular fa-clock me-2"></i>Interview Countdown</span>
+                        <span id="timer" class="font-monospace fs-4 text-warning fw-bold">45:00</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label text-cyan fw-bold mb-2"><i class="fa-solid fa-pen-to-square me-2"></i>Strategy Scratchpad</label>
+                        <textarea id="noteInput" class="form-control glass-input font-monospace" rows="4" placeholder="Draft your logic, edge cases, or complexity notes here...">{{ saved_note }}</textarea>
+                        <button class="btn btn-glass btn-sm mt-2 w-100" onclick="saveNote('{{ problem.id }}')">
+                            <i class="fa-solid fa-floppy-disk me-1"></i>Save Note to DB
+                        </button>
+                    </div>
+                </div>
+
+                <a href="{{ url_for('index') }}" class="btn btn-glass w-100 py-2">
+                    <i class="fa-solid fa-arrow-left me-2"></i>Back to Challenge Hub
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="glass-card p-4 h-100 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0"><i class="fa-solid fa-code text-cyan me-2"></i>Python 3 Solution</h5>
+                    <button id="runBtn" class="btn btn-gradient px-4 py-2 shadow-glow" onclick="executeCode('{{ problem.id }}')">
+                        <i class="fa-solid fa-play me-2"></i>Run & Validate Test Cases
+                    </button>
+                </div>
+
+                <textarea id="codeEditor" class="form-control glass-editor font-monospace mb-3" rows="11">{{ editor_code }}</textarea>
+
+                <div class="glass-console p-3 flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-muted small fw-bold">// TEST CASE EXECUTION RESULTS:</span>
+                        <span id="complexityBadge" class="badge bg-purple-subtle text-purple d-none"></span>
+                    </div>
+                    <div id="testCaseResults">
+                        <span class="text-secondary small">Click "Run & Validate Test Cases" to evaluate your python solution.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

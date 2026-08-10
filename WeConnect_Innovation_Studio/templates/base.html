@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}WeConnect-Innovation.STUDIO — Cyber Interview Simulator{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-dark text-light">
+
+    <div class="bg-grid"></div>
+    <div class="bg-radial"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-gradient" href="{{ url_for('index') }}">
+                <i class="fa-solid fa-code-compare me-2"></i>WeConnect-Innovation<span class="text-cyan">.STUDIO</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}"><i class="fa-solid fa-layer-group me-1"></i> Challenge Hub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('history') }}"><i class="fa-solid fa-clock-rotate-left me-1"></i> Submissions</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <span class="badge badge-pulse px-3 py-2"><span class="pulse-dot me-2"></span>Python 3.12 Engine</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-wrapper py-5 mt-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="glass-footer text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0 text-muted small">&copy; 2026 WeConnect-Innovation.STUDIO. Premium Developer Interview & Code Execution Environment.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
