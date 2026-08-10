@@ -1,0 +1,5 @@
+task_name,status,duration_sec,completed_at
+Quick Data Sync,Success,3.39,2026-08-10 09:52:19
+Heavy Batch Processing,Success,6.66,2026-08-10 09:52:30
+Quick Data Sync,Success,3.39,2026-08-10 09:52:42
+Heavy Batch Processing,Success,6.75,2026-08-10 09:52:50
