@@ -2,6 +2,9 @@
 
 A small desktop GUI for running asynchronous background tasks, monitoring live performance, and exporting audit reports. Built with `customtkinter`, `matplotlib`, and `pandas` on top of a lightweight SQLite audit store.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/44615465-aa0e-454e-b3a0-9ce68505fe90" controls width="600"></video>
+
 ## Features
 
 - Run quick or heavy asynchronous jobs with responsive GUI
