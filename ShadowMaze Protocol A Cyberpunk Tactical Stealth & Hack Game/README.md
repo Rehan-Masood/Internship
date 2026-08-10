@@ -2,6 +2,9 @@
 
 A small experimental project implementing cyberpunk-themed tactical stealth and hacking mechanics. This repository contains a simple Python prototype named `shadowmaze_stealth.py` demonstrating core gameplay concepts.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/73914eef-f855-41ff-b1df-8e566e21487c" controls width="600"></video>
+
 ## Features
 - Turn-based tactical stealth movement
 - Basic hacking/minigame mechanics
