@@ -131,6 +131,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 98 | [ScrapeIntel Enterprise (E-Commerce Price & Trend Scraper)](./ScrapeIntel%20Enterprise%20(E-Commerce%20Price%20%26%20Trend%20Scraper)) |ScrapeIntel Enterprise is an automated web scraping suite that extracts and normalizes e-commerce product data across competitor sites. It analyzes pricing strategies, monitors stock levels, and displays actionable market intelligence via an interactive Streamlit dashboard. | Python |
 | 99 | [TaskPulse Pro (Enterprise Operations Suite)](./TaskPulse%20Pro%20(Enterprise%20Operations%20Suite)) |TaskPulse Pro is an asynchronous desktop operations suite built with Python and CustomTkinter that manages background tasks without freezing the UI. It features real-time performance charting, log file parsing, live search filtering, and multi-format report exports (SQLite, Excel, CSV). | Python |
 | 100 | [ShadowMaze Protocol A Cyberpunk Tactical Stealth & Hack Game](./ShadowMaze%20Protocol%20A%20Cyberpunk%20Tactical%20Stealth%20%26%20Hack%20Game) |ShadowMaze Protocol is a tactical cyberpunk stealth game where you navigate maze corridors, dodge enemy guard flashlights, and hack security terminals using line-of-sight sneaking and keyboard controls. | Python |
+| 101 | [WeConnect_Innovation_Studio](./WeConnect_Innovation_Studio) |WeConnect_Innovation.Studio is an AI-powered coding interview preparation platform that dynamically fetches LeetCode challenges and generates optimal Python solutions. It provides an interactive code editor with automated test case evaluation, complexity analysis, and persistent submission tracking. | Python |
+
 
 
 
