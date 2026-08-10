@@ -2,6 +2,9 @@
 
 A small Streamlit-based demo app that generates synthetic customer data, trains a Random Forest classifier to predict churn, and provides an interactive dashboard for EDA, live prediction, and model diagnostics.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/c20d5485-7756-4d58-ad66-9a13eb22ff69" controls width="600"></video>
+
 ## Features
 - Synthetic dataset generation (tenure, monthly charges, support tickets, contract/payment types)
 - Exploratory Data Analysis with interactive Plotly charts
