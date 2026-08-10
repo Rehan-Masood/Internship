@@ -1,6 +1,4 @@
 # MarketPulse AI — Live Financial NLP & Prediction Suite
-
-> Day 100 Capstone: Streamlit dashboard combining NLP (VADER)
 > sentiment with time-series price prediction (Random Forest).
 
 ## Demo Video
