@@ -2,6 +2,9 @@
 
 > Lightweight desktop tool for auditing and inspecting logs (GUI).
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/f5fcf815-697e-474b-ad78-2b32bef6b1ed" controls width="600"></video>
+
 ## Overview
 
 This repository contains a simple GUI application, `app_gui.py`, intended as the entry point for the LogSentinel Pro desktop auditor. The GUI presents logs, supports basic filtering, and can be extended to integrate with enterprise log sources.
