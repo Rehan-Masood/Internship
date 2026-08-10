@@ -127,6 +127,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 94 | [NutriFlow Enterprise](./NutriFlow%20Enterprise) |NutriFlow Enterprise is a full-stack, food enterprise system built with Flask and SQLite featuring user authentication, an interactive menu with real-time cart quantity controls, and automated PDF invoice/receipt generation. | Python |
 | 95 | [LogSentinel Pro (Enterprise Desktop Log Auditor)](./LogSentinel%20Pro%20(Enterprise%20Desktop%20Log%20Auditor)) |LogSentinel Pro is a responsive desktop log auditing application built with Python and CustomTkinter. It parses messy server logs using regex to identify security violations and performance bottlenecks, displaying live metrics while exporting structured reports to SQLite and Excel. | Python |
 | 96 | [CustomerChurn Intelligence Pro (Streamlit ML Suite)](./CustomerChurn%20Intelligence%20Pro%20(Streamlit%20ML%20Suite)) |CustomerChurn Intelligence Pro is an interactive Streamlit and Scikit-Learn dashboard that predicts customer churn using machine learning. It delivers real-time risk scores, highlights key retention drivers, and provides exploratory data insights. | Python |
+| 97 | [MarketPulse AI (Live Financial NLP & Prediction Suite)](./MarketPulse%20AI%20(Live%20Financial%20NLP%20%26%20Prediction%20Suite)) |MarketPulse AI is an interactive financial dashboard that combines real-time stock data with NLP sentiment analysis (NLTK VADER). It uses a Random Forest model to forecast price trends and displays actionable market insights via Streamlit. | Python |
 
 
 
