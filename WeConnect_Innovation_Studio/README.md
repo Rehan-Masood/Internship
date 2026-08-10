@@ -2,6 +2,9 @@
 
 WeConnect Innovation Studio is a lightweight Flask app for practicing coding problems in a LeetCode-style workflow. It includes a problem browser, an in-browser editor, local code execution against test cases, note taking, and submission history, all backed by SQLite.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/09b24616-3892-46d0-a5b7-7a61ca4318ca" controls width="600"></video>
+
 ## Features
 
 - Browse seeded practice problems from the home page
