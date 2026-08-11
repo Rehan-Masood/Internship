@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% from "_macros.html" import avatar %}
+
+{% block content %}
+<div class="container">
+    <div class="account-header" style="margin-top:40px;">
+        {{ avatar(user, 84) }}
+        <div>
+            <h2 style="margin-bottom:2px;">{{ user.username }}</h2>
+            {% if user.bio %}<p style="color:var(--text-muted); margin:4px 0;">{{ user.bio }}</p>{% endif %}
+            <span class="meta">{{ posts|length }} article{{ 's' if posts|length != 1 else '' }} published</span>
+        </div>
+    </div>
+
+    <div class="section-heading">
+        <h2>Articles by {{ user.username }}</h2>
+    </div>
+
+    {% if posts %}
+    <div class="post-grid">
+        {% for post in posts %}
+        <div class="card post-card">
+            <a href="{{ url_for('posts.post_detail', post_id=post.id) }}" class="post-card-cover">
+                {% if post.cover_image %}
+                    <img src="{{ url_for('static', filename='post_covers/' + post.cover_image) }}" alt="{{ post.title }}">
+                {% else %}
+                    <span class="cover-fallback">&#10022;</span>
+                {% endif %}
+            </a>
+            <div class="post-card-body">
+                <span class="meta">{{ post.date_posted.strftime('%b %d, %Y') }}</span>
+                <h3><a href="{{ url_for('posts.post_detail', post_id=post.id) }}" class="title-link">{{ post.title }}</a></h3>
+                <p class="post-card-excerpt">{{ post.excerpt or (post.content[:100] ~ '…') }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <p>{{ user.username }} hasn't published anything yet.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+app/site.db
+app/static/profile_pics/*
+!app/static/profile_pics/.gitkeep
+app/static/post_covers/*
+!app/static/post_covers/.gitkeep
+.env
+.env.local

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="form-card">
+        <h2 style="text-align:center;">Join Inkwell</h2>
+        <p style="text-align:center; color:var(--text-muted); margin-bottom:28px;">Create an account to start writing.</p>
+
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+
+            <div class="form-group">
+                {{ form.username.label(class="form-label") }}
+                {{ form.username(class="form-control", placeholder="e.g. rehan_writes") }}
+                {% for error in form.username.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="form-group">
+                {{ form.email.label(class="form-label") }}
+                {{ form.email(class="form-control", placeholder="you@example.com") }}
+                {% for error in form.email.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="form-group">
+                {{ form.password.label(class="form-label") }}
+                {{ form.password(class="form-control", placeholder="At least 6 characters") }}
+                {% for error in form.password.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="form-group">
+                {{ form.confirm_password.label(class="form-label") }}
+                {{ form.confirm_password(class="form-control") }}
+                {% for error in form.confirm_password.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            {{ form.submit(class="btn btn-gold btn-block") }}
+        </form>
+
+        <div class="form-footer-link">
+            Already have an account? <a href="{{ url_for('auth.login') }}" class="ink-link">Log in</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

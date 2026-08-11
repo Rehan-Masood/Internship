@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% from "_macros.html" import avatar %}
+
+{% block content %}
+
+<div class="article-header">
+    <div class="container-narrow">
+        <span class="meta">{{ post.date_posted.strftime('%B %d, %Y') }}</span>
+        <h1 class="article-title">{{ post.title }}</h1>
+        <div class="article-byline">
+            {{ avatar(post.author, 44) }}
+            <div>
+                <a href="{{ url_for('users.author_profile', username=post.author.username) }}" class="ink-link article-byline-name">{{ post.author.username }}</a>
+                <div class="meta">{{ post.comments|length }} comment{{ 's' if post.comments|length != 1 else '' }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-narrow">
+
+    {% if post.cover_image %}
+        <img src="{{ url_for('static', filename='post_covers/' + post.cover_image) }}" alt="{{ post.title }}" class="article-cover">
+    {% endif %}
+
+    <div class="article-body">{{ post.content }}</div>
+
+    {% if current_user.is_authenticated and current_user == post.author %}
+    <div class="article-actions">
+        <a href="{{ url_for('posts.update_post', post_id=post.id) }}" class="btn btn-outline btn-sm">Edit Article</a>
+        <form action="{{ url_for('posts.delete_post', post_id=post.id) }}" method="POST" class="delete-post-form">
+            <button type="submit" class="btn btn-danger btn-sm">Delete Article</button>
+        </form>
+    </div>
+    {% endif %}
+
+    <div class="comments-section" id="comments">
+        <h3>Comments ({{ comments|length }})</h3>
+
+        {% if current_user.is_authenticated %}
+        <form method="POST" action="{{ url_for('posts.post_detail', post_id=post.id) }}#comments" style="margin: 20px 0 32px;">
+            {{ comment_form.hidden_tag() }}
+            <div class="form-group">
+                {{ comment_form.content(class="form-control", rows="3", placeholder="Share your thoughts...") }}
+                {% for error in comment_form.content.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+            </div>
+            {{ comment_form.submit(class="btn btn-teal btn-sm") }}
+        </form>
+        {% else %}
+        <p class="meta" style="margin: 16px 0 32px;">
+            <a href="{{ url_for('auth.login') }}" class="ink-link">Log in</a> to join the conversation.
+        </p>
+        {% endif %}
+
+        {% if comments %}
+            {% for comment in comments %}
+            <div class="comment">
+                {{ avatar(comment.author, 38) }}
+                <div class="comment-body">
+                    <div class="comment-header">
+                        <span class="comment-author">{{ comment.author.username }}</span>
+                        <span class="comment-date">{{ comment.date_posted.strftime('%b %d, %Y at %H:%M') }}</span>
+                    </div>
+                    <p class="comment-text">{{ comment.content }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p class="meta">No comments yet. Be the first to share your thoughts.</p>
+        {% endif %}
+    </div>
+
+</div>
+{% endblock %}
