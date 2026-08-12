@@ -25,11 +25,11 @@ This repository is a growing collection of projects I built while learning **Pyt
 
 ---
 
-## 📂 Projects
+## 📂 Tasks
 
-> Click a project name to open its folder and see the code.
+> Click a task name to open its folder and see the code.
 
-| # | Project | Description | Tech |
+| # | Tasks | Description | Tech |
 |---|---------|--------------|------|
 | 01 | [1_Portfolio](./1_Portfolio) | My personal portfolio website — live demo linked above. | HTML, CSS, JS |
 | 02 | [BMI Calculator](./BMI%20Calculator) | Calculates Body Mass Index from height and weight input, with category classification. | Python |
@@ -132,6 +132,22 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 99 | [TaskPulse Pro (Enterprise Operations Suite)](./TaskPulse%20Pro%20(Enterprise%20Operations%20Suite)) |TaskPulse Pro is an asynchronous desktop operations suite built with Python and CustomTkinter that manages background tasks without freezing the UI. It features real-time performance charting, log file parsing, live search filtering, and multi-format report exports (SQLite, Excel, CSV). | Python |
 | 100 | [ShadowMaze Protocol A Cyberpunk Tactical Stealth & Hack Game](./ShadowMaze%20Protocol%20A%20Cyberpunk%20Tactical%20Stealth%20%26%20Hack%20Game) |ShadowMaze Protocol is a tactical cyberpunk stealth game where you navigate maze corridors, dodge enemy guard flashlights, and hack security terminals using line-of-sight sneaking and keyboard controls. | Python |
 | 101 | [WeConnect_Innovation_Studio](./WeConnect_Innovation_Studio) |WeConnect_Innovation.Studio is an AI-powered coding interview preparation platform that dynamically fetches LeetCode challenges and generates optimal Python solutions. It provides an interactive code editor with automated test case evaluation, complexity analysis, and persistent submission tracking. | Python |
+
+## 📂 Real-Time Projects
+
+> Click any Real-Time project name to open its folder and see the code.
+
+| # | Projects | Description | Tech |
+|---|---------|--------------|------|
+| 01 | [Combat Warrior](./Combat%20Warrior) | A turn-based text combat game with health, attack, and win/lose logic. | Python |
+| 02 | [Advanced Library Management System (OOP)](./Advanced%20Library%20Management%20System%20(OOP)) | An Advanced command-line library management system with Book, Member, Library, and Transaction classes that handles borrowing, returning, and automatic late-fee calculation. | Python |
+| 03 | [Professional Finance Manager](./Professional%20Finance%20Manager) | A Python OOP + File-Handling CLI app that tracks personal income and expenses, saves data between sessions, blocks overspending, and warns when expenses hit 80% of income. | Python |
+| 04 | [Professional Inventory & Sales Management System](./Professional%20Inventory%20%26%20Sales%20Management%20System) |A premium Python OOP inventory & sales management system with CSV persistence, invoicing, discounts, profit tracking, undo support, and Excel/PDF report exports. | Python |
+| 05 | [Professional Inventory & Sales Management System](./Professional%20Inventory%20%26%20Sales%20Management%20System) |A premium Python OOP inventory & sales management system with CSV persistence, invoicing, discounts, profit tracking, undo support, and Excel/PDF report exports. | Python |
+| 06 | [InkWell-Flask-Blog](./InkWell-Flask-Blog) |InkWell Flask Blog is a modern full-stack blogging platform built with Python, Flask, PostgreSQL using SQLAlchemy, HTML, CSS, and JavaScript. It includes user authentication, blog creation, editing, deletion, comments, profile management, image uploads, and a responsive interface.The application is deployed live on Vercel with Cloudinary to increase deployment performance. | Python |
+
+
+
 
 
 
