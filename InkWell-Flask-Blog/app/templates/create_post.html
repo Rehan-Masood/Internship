@@ -22,8 +22,12 @@
 
             <div class="form-group">
                 {{ form.cover_image.label(class="form-label") }}
-                {{ form.cover_image(class="form-control") }}
+                {{ form.cover_image(class="form-control", id="cover_image") }}
                 {% for error in form.cover_image.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+                <p class="image-validator-helper-text">
+                  Recommended: 1280 × 720 px (16:9) • Allowed: 800 × 450 – 1920 × 1080 px<br>
+                  Please resize your image to these requirements before uploading.
+                </p>
                 {% if post and post.cover_image %}
                     <p class="meta" style="margin-top:8px;">Current cover image will be kept unless you upload a new one.</p>
                 {% endif %}
@@ -40,4 +44,34 @@
         </form>
     </div>
 </div>
+
+{# ================================================================
+   IMAGE VALIDATOR MODAL
+   ================================================================ #}
+<div id="image-validation-modal" class="image-validator-modal">
+    <div class="image-validator-backdrop"></div>
+    <div class="image-validator-dialog" role="dialog" aria-modal="true" aria-labelledby="image-validator-title">
+        <button type="button" class="image-validator-close" data-modal-close-image-validator aria-label="Close validation message">&times;</button>
+        <div class="image-validator-icon">⚠</div>
+        <h3 id="image-validator-title" class="image-validator-title" data-modal-title>Image Doesn't Meet Inkwell's Requirements</h3>
+        <div class="image-validator-message" data-modal-message>
+            <p>Please check your image dimensions and try again.</p>
+        </div>
+        <div class="image-validator-instruction" data-modal-details>
+            Please resize or re-export your image and try again.
+        </div>
+        <div class="image-validator-actions">
+            <button type="button" class="image-validator-btn image-validator-btn-primary" id="modal-choose-another">
+                Choose Another Image
+            </button>
+            <button type="button" class="image-validator-btn image-validator-btn-outline" data-modal-close-image-validator>
+                Close
+            </button>
+        </div>
+    </div>
+</div>
+
+{# Load the image validator script #}
+<script src="{{ url_for('static', filename='js/image-validator.js') }}"></script>
 {% endblock %}
+
