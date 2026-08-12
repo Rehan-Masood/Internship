@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="form-card form-card-wide">
+        <h2>{{ legend }}</h2>
+
+        <form method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+
+            <div class="form-group">
+                {{ form.title.label(class="form-label") }}
+                {{ form.title(class="form-control", placeholder="A compelling title") }}
+                {% for error in form.title.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="form-group">
+                {{ form.excerpt.label(class="form-label") }}
+                {{ form.excerpt(class="form-control", placeholder="A one-sentence summary shown on the homepage") }}
+                {% for error in form.excerpt.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            <div class="form-group">
+                {{ form.cover_image.label(class="form-label") }}
+                {{ form.cover_image(class="form-control") }}
+                {% for error in form.cover_image.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+                {% if post and post.cover_image %}
+                    <p class="meta" style="margin-top:8px;">Current cover image will be kept unless you upload a new one.</p>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.content.label(class="form-label") }}
+                {{ form.content(class="form-control content-editor", placeholder="Write your article here...") }}
+                {% for error in form.content.errors %}<div class="form-error">{{ error }}</div>{% endfor %}
+            </div>
+
+            {{ form.submit(class="btn btn-gold") }}
+            <a href="{{ url_for('main.home') }}" class="btn btn-outline">Cancel</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

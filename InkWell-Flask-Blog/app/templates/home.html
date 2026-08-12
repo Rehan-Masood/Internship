@@ -1,98 +1,229 @@
 {% extends "base.html" %}
 {% from "_macros.html" import avatar %}
 
-{% block content %}
-<div class="container">
+{% block head_extra %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
 
+{% block content %}
+
+{# ================================================================
+   HERO BAND — dark editorial section
+   ================================================================ #}
+<section class="home-hero-band">
+  <div class="home-hero-inner">
+
+    {# ---- Left: Editorial intro ---- #}
+    <div class="home-intro">
+      <span class="home-intro-eyebrow">Welcome to Inkwell</span>
+
+      <h1 class="home-intro-headline">
+        Stories that <span class="gold-word">inspire,</span><br>
+        ideas that<br>
+        <span class="gold-word">live forever.</span>
+      </h1>
+
+      <p class="home-intro-sub">
+        A space to share your thoughts, insights,<br>
+        and experiences with the world.
+      </p>
+
+      {% if current_user.is_authenticated %}
+      <a href="{{ url_for('posts.create_post') }}" class="home-intro-cta">
+        Write a New Article <span class="cta-arrow">→</span>
+      </a>
+      {% else %}
+      <a href="{{ url_for('auth.register') }}" class="home-intro-cta">
+        Join Inkwell <span class="cta-arrow">→</span>
+      </a>
+      {% endif %}
+    </div>
+
+    {# ---- Right: Featured article card ---- #}
     {% if featured_post %}
-    <section class="hero">
-        <div class="featured-card">
-            <div class="featured-content">
-                <span class="featured-eyebrow">Latest Article</span>
-                <h1><a href="{{ url_for('posts.post_detail', post_id=featured_post.id) }}" class="title-link" style="color:#fff;">{{ featured_post.title }}</a></h1>
-                <p class="featured-excerpt">
-                    {{ featured_post.excerpt or (featured_post.content[:160] ~ '…') }}
-                </p>
-                <div style="display:flex; align-items:center; gap:12px;">
-                    {{ avatar(featured_post.author, 36) }}
-                    <div>
-                        <div style="color:#fff; font-size:0.88rem; font-weight:600;">{{ featured_post.author.username }}</div>
-                        <div class="meta" style="color:#9aa0c4;">{{ featured_post.date_posted.strftime('%b %d, %Y') }}</div>
-                    </div>
-                </div>
+    <div class="home-featured-card">
+
+      {# Image — robust container, any aspect ratio handled #}
+      <div class="home-featured-img-wrap">
+        {% if featured_post.cover_image %}
+          <img src="{{ featured_post.cover_image }}"
+               alt="{{ featured_post.title }}"
+               loading="lazy">
+        {% else %}
+          <div class="home-featured-img-placeholder">✦</div>
+        {% endif %}
+      </div>
+
+      <div class="home-featured-body">
+        <span class="home-featured-badge">Featured</span>
+
+        <a href="{{ url_for('posts.post_detail', post_id=featured_post.id) }}"
+           class="home-featured-title">
+          {{ featured_post.title }}
+        </a>
+
+        <p class="home-featured-excerpt">
+          {{ featured_post.excerpt or (featured_post.content[:200] ~ '…') }}
+        </p>
+
+        <div class="home-featured-meta">
+          <div class="home-featured-author">
+            {{ avatar(featured_post.author, 34) }}
+            <div>
+              <div class="home-featured-author-name">{{ featured_post.author.username }}</div>
+              <div class="home-featured-author-date">{{ featured_post.date_posted.strftime('%b %d, %Y') }}</div>
             </div>
-            <div class="featured-visual">
-                {% if featured_post.cover_image %}
-                    <img src="{{ url_for('static', filename='post_covers/' + featured_post.cover_image) }}" alt="{{ featured_post.title }}">
-                {% endif %}
-            </div>
+          </div>
+          <a href="{{ url_for('posts.post_detail', post_id=featured_post.id) }}"
+             class="home-featured-read">
+            Read Article →
+          </a>
         </div>
-    </section>
+      </div>
+
+    </div>
     {% endif %}
 
-    <div class="section-heading">
-        <h2>Recent Articles</h2>
-        {% if current_user.is_authenticated %}
-        <a href="{{ url_for('posts.create_post') }}" class="ink-link">Write a new article &rarr;</a>
-        {% endif %}
+  </div>{# /.home-hero-inner #}
+</section>
+
+{# ================================================================
+   RECENT ARTICLES — light section
+   ================================================================ #}
+<section class="home-recent-band">
+  <div class="home-recent-inner">
+
+    <div class="home-section-header">
+      <div class="home-section-title-wrap">
+        <span class="home-section-label">Latest Posts</span>
+        <h2 class="home-section-title">Recent Articles</h2>
+      </div>
+      {% if current_user.is_authenticated %}
+      <a href="{{ url_for('posts.create_post') }}" class="home-view-all">
+        Write an article →
+      </a>
+      {% endif %}
     </div>
 
     {% if posts %}
-    <div class="post-grid">
-        {% for post in posts %}
-        <div class="card post-card">
-            <a href="{{ url_for('posts.post_detail', post_id=post.id) }}" class="post-card-cover">
-                {% if post.cover_image %}
-                    <img src="{{ url_for('static', filename='post_covers/' + post.cover_image) }}" alt="{{ post.title }}">
-                {% else %}
-                    <span class="cover-fallback">&#10022;</span>
-                {% endif %}
-            </a>
-            <div class="post-card-body">
-                <span class="meta">{{ post.date_posted.strftime('%b %d, %Y') }}</span>
-                <h3><a href="{{ url_for('posts.post_detail', post_id=post.id) }}" class="title-link">{{ post.title }}</a></h3>
-                <p class="post-card-excerpt">{{ post.excerpt or (post.content[:100] ~ '…') }}</p>
-                <div class="byline">
-                    {{ avatar(post.author, 28) }}
-                    <a href="{{ url_for('users.author_profile', username=post.author.username) }}" class="ink-link" style="font-size:0.85rem;">{{ post.author.username }}</a>
-                </div>
+    <div class="home-post-grid">
+      {% for post in posts %}
+      <article class="home-post-card">
+
+        {# Image — fixed height container, never distorts layout #}
+        <a href="{{ url_for('posts.post_detail', post_id=post.id) }}"
+           class="home-post-img-wrap"
+           tabindex="-1"
+           aria-hidden="true">
+          {% if post.cover_image %}
+            <img src="{{ post.cover_image }}"
+                 alt="{{ post.title }}"
+                 loading="lazy">
+          {% else %}
+            <div class="home-post-img-fallback">✦</div>
+          {% endif %}
+        </a>
+
+        <div class="home-post-body">
+          <span class="home-post-date">{{ post.date_posted.strftime('%b %d, %Y') }}</span>
+
+          <a href="{{ url_for('posts.post_detail', post_id=post.id) }}"
+             class="home-post-title">
+            {{ post.title }}
+          </a>
+
+          <p class="home-post-excerpt">
+            {{ post.excerpt or (post.content[:120] ~ '…') }}
+          </p>
+
+          <div class="home-post-footer">
+            <div class="home-post-byline">
+              {{ avatar(post.author, 28) }}
+              <a href="{{ url_for('users.author_profile', username=post.author.username) }}"
+                 class="home-post-author-name">
+                {{ post.author.username }}
+              </a>
             </div>
+            <a href="{{ url_for('posts.post_detail', post_id=post.id) }}"
+               class="home-post-read">
+              Read →
+            </a>
+          </div>
         </div>
-        {% endfor %}
+
+      </article>
+      {% endfor %}
     </div>
+
     {% elif not featured_post %}
-    <div class="empty-state">
-        <h3>No articles yet</h3>
-        <p>Be the first to publish something worth reading.</p>
-        {% if current_user.is_authenticated %}
-            <a href="{{ url_for('posts.create_post') }}" class="btn btn-gold">Write the First Article</a>
-        {% else %}
-            <a href="{{ url_for('auth.register') }}" class="btn btn-gold">Join Inkwell</a>
-        {% endif %}
+    <div class="home-empty">
+      <h3>No articles yet</h3>
+      <p>Be the first to publish something worth reading.</p>
+      {% if current_user.is_authenticated %}
+        <a href="{{ url_for('posts.create_post') }}" class="btn btn-gold" style="margin-top:16px;">Write the First Article</a>
+      {% else %}
+        <a href="{{ url_for('auth.register') }}" class="btn btn-gold" style="margin-top:16px;">Join Inkwell</a>
+      {% endif %}
     </div>
     {% endif %}
 
+    {# Pagination #}
     {% if pagination and pagination.pages > 1 %}
-    <div class="pagination">
-        {% if pagination.has_prev %}
-            <a href="{{ url_for('main.home', page=pagination.prev_num) }}">&larr; Prev</a>
+    <nav class="home-pagination" aria-label="Article pages">
+      {% if pagination.has_prev %}
+        <a href="{{ url_for('main.home', page=pagination.prev_num) }}">&larr; Prev</a>
+      {% endif %}
+      {% for num in pagination.iter_pages() %}
+        {% if num %}
+          {% if num == pagination.page %}
+            <span class="active">{{ num }}</span>
+          {% else %}
+            <a href="{{ url_for('main.home', page=num) }}">{{ num }}</a>
+          {% endif %}
+        {% else %}
+          <span>&hellip;</span>
         {% endif %}
-        {% for num in pagination.iter_pages() %}
-            {% if num %}
-                {% if num == pagination.page %}
-                    <span class="active">{{ num }}</span>
-                {% else %}
-                    <a href="{{ url_for('main.home', page=num) }}">{{ num }}</a>
-                {% endif %}
-            {% else %}
-                <span>&hellip;</span>
-            {% endif %}
-        {% endfor %}
-        {% if pagination.has_next %}
-            <a href="{{ url_for('main.home', page=pagination.next_num) }}">Next &rarr;</a>
-        {% endif %}
-    </div>
+      {% endfor %}
+      {% if pagination.has_next %}
+        <a href="{{ url_for('main.home', page=pagination.next_num) }}">Next &rarr;</a>
+      {% endif %}
+    </nav>
     {% endif %}
 
-</div>
+  </div>{# /.home-recent-inner #}
+</section>
+
+{# ================================================================
+   FEATURES STRIP — dark band
+   ================================================================ #}
+<section class="home-features-band">
+  <div class="home-features-inner">
+
+    <div class="home-feature-item">
+      <span class="home-feature-icon">✏️</span>
+      <h3 class="home-feature-title">Write Freely</h3>
+      <p class="home-feature-desc">Express your thoughts and share your knowledge with a global audience.</p>
+    </div>
+
+    <div class="home-feature-item">
+      <span class="home-feature-icon">👥</span>
+      <h3 class="home-feature-title">Engage More</h3>
+      <p class="home-feature-desc">Connect with readers, build your audience, and spark conversations.</p>
+    </div>
+
+    <div class="home-feature-item">
+      <span class="home-feature-icon">⚡</span>
+      <h3 class="home-feature-title">Stay Inspired</h3>
+      <p class="home-feature-desc">Discover ideas that fuel your creativity and keep you writing.</p>
+    </div>
+
+    <div class="home-feature-item">
+      <span class="home-feature-icon">🛡️</span>
+      <h3 class="home-feature-title">Safe &amp; Secure</h3>
+      <p class="home-feature-desc">Your content is protected and always in your control.</p>
+    </div>
+
+  </div>
+</section>
+
 {% endblock %}

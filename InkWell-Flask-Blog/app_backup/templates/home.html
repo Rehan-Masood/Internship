@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% from "_macros.html" import avatar %}
+
+{% block content %}
+<div class="container">
+
+    {% if featured_post %}
+    <section class="hero">
+        <div class="featured-card">
+            <div class="featured-content">
+                <span class="featured-eyebrow">Latest Article</span>
+                <h1><a href="{{ url_for('posts.post_detail', post_id=featured_post.id) }}" class="title-link" style="color:#fff;">{{ featured_post.title }}</a></h1>
+                <p class="featured-excerpt">
+                    {{ featured_post.excerpt or (featured_post.content[:160] ~ '…') }}
+                </p>
+                <div style="display:flex; align-items:center; gap:12px;">
+                    {{ avatar(featured_post.author, 36) }}
+                    <div>
+                        <div style="color:#fff; font-size:0.88rem; font-weight:600;">{{ featured_post.author.username }}</div>
+                        <div class="meta" style="color:#9aa0c4;">{{ featured_post.date_posted.strftime('%b %d, %Y') }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-visual">
+                {% if featured_post.cover_image %}
+                    <img src="{{ url_for('static', filename='post_covers/' + featured_post.cover_image) }}" alt="{{ featured_post.title }}">
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <div class="section-heading">
+        <h2>Recent Articles</h2>
+        {% if current_user.is_authenticated %}
+        <a href="{{ url_for('posts.create_post') }}" class="ink-link">Write a new article &rarr;</a>
+        {% endif %}
+    </div>
+
+    {% if posts %}
+    <div class="post-grid">
+        {% for post in posts %}
+        <div class="card post-card">
+            <a href="{{ url_for('posts.post_detail', post_id=post.id) }}" class="post-card-cover">
+                {% if post.cover_image %}
+                    <img src="{{ url_for('static', filename='post_covers/' + post.cover_image) }}" alt="{{ post.title }}">
+                {% else %}
+                    <span class="cover-fallback">&#10022;</span>
+                {% endif %}
+            </a>
+            <div class="post-card-body">
+                <span class="meta">{{ post.date_posted.strftime('%b %d, %Y') }}</span>
+                <h3><a href="{{ url_for('posts.post_detail', post_id=post.id) }}" class="title-link">{{ post.title }}</a></h3>
+                <p class="post-card-excerpt">{{ post.excerpt or (post.content[:100] ~ '…') }}</p>
+                <div class="byline">
+                    {{ avatar(post.author, 28) }}
+                    <a href="{{ url_for('users.author_profile', username=post.author.username) }}" class="ink-link" style="font-size:0.85rem;">{{ post.author.username }}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% elif not featured_post %}
+    <div class="empty-state">
+        <h3>No articles yet</h3>
+        <p>Be the first to publish something worth reading.</p>
+        {% if current_user.is_authenticated %}
+            <a href="{{ url_for('posts.create_post') }}" class="btn btn-gold">Write the First Article</a>
+        {% else %}
+            <a href="{{ url_for('auth.register') }}" class="btn btn-gold">Join Inkwell</a>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% if pagination and pagination.pages > 1 %}
+    <div class="pagination">
+        {% if pagination.has_prev %}
+            <a href="{{ url_for('main.home', page=pagination.prev_num) }}">&larr; Prev</a>
+        {% endif %}
+        {% for num in pagination.iter_pages() %}
+            {% if num %}
+                {% if num == pagination.page %}
+                    <span class="active">{{ num }}</span>
+                {% else %}
+                    <a href="{{ url_for('main.home', page=num) }}">{{ num }}</a>
+                {% endif %}
+            {% else %}
+                <span>&hellip;</span>
+            {% endif %}
+        {% endfor %}
+        {% if pagination.has_next %}
+            <a href="{{ url_for('main.home', page=pagination.next_num) }}">Next &rarr;</a>
+        {% endif %}
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}

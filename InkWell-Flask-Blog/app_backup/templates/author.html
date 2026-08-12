@@ -20,9 +20,9 @@
     <div class="post-grid">
         {% for post in posts %}
         <div class="card post-card">
-            <a href="{{ url_for('posts.post_detail', post_id=post.id) }}" class="post-card-cover blog-cover-container">
+            <a href="{{ url_for('posts.post_detail', post_id=post.id) }}" class="post-card-cover">
                 {% if post.cover_image %}
-                    <img src="{{ post.cover_image }}" alt="{{ post.title }}" class="blog-cover-image">
+                    <img src="{{ url_for('static', filename='post_covers/' + post.cover_image) }}" alt="{{ post.title }}">
                 {% else %}
                     <span class="cover-fallback">&#10022;</span>
                 {% endif %}

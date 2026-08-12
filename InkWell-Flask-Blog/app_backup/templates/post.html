@@ -20,9 +20,7 @@
 <div class="container-narrow">
 
     {% if post.cover_image %}
-        <div class="blog-cover-container article-cover-container">
-            <img src="{{ post.cover_image }}" alt="{{ post.title }}" class="blog-cover-image article-cover">
-        </div>
+        <img src="{{ url_for('static', filename='post_covers/' + post.cover_image) }}" alt="{{ post.title }}" class="article-cover">
     {% endif %}
 
     <div class="article-body">{{ post.content }}</div>
@@ -30,22 +28,9 @@
     {% if current_user.is_authenticated and current_user == post.author %}
     <div class="article-actions">
         <a href="{{ url_for('posts.update_post', post_id=post.id) }}" class="btn btn-outline btn-sm">Edit Article</a>
-        <form id="delete-post-form-{{ post.id }}" action="{{ url_for('posts.delete_post', post_id=post.id) }}" method="POST" class="delete-post-form"></form>
-        <button type="button" class="btn btn-danger btn-sm delete-post-trigger" data-modal-target="delete-post-modal-{{ post.id }}">Delete Article</button>
-    </div>
-
-    <div id="delete-post-modal-{{ post.id }}" class="inkwell-modal" aria-hidden="true" hidden>
-        <div class="inkwell-modal-backdrop" data-modal-close="true"></div>
-        <div class="inkwell-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="delete-post-title-{{ post.id }}">
-            <button type="button" class="inkwell-modal-close" data-modal-close="true" aria-label="Close deletion dialog">&times;</button>
-            <div class="inkwell-modal-icon" aria-hidden="true">⚠</div>
-            <h3 id="delete-post-title-{{ post.id }}">Delete this article?</h3>
-            <p>This action is permanent and cannot be undone.</p>
-            <div class="inkwell-modal-actions">
-                <button type="button" class="btn btn-outline btn-sm" data-modal-close="true">Cancel</button>
-                <button type="submit" class="btn btn-danger btn-sm" form="delete-post-form-{{ post.id }}">Delete Article</button>
-            </div>
-        </div>
+        <form action="{{ url_for('posts.delete_post', post_id=post.id) }}" method="POST" class="delete-post-form">
+            <button type="submit" class="btn btn-danger btn-sm">Delete Article</button>
+        </form>
     </div>
     {% endif %}
 

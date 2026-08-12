@@ -18,7 +18,7 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password_hash = db.Column(db.String(255), nullable=False)
     bio = db.Column(db.String(200), nullable=True, default="")
-    profile_image = db.Column(db.String(500), nullable=True)  # full Cloudinary URL or None = initials avatar
+    profile_image = db.Column(db.String(120), nullable=True)  # filename, None = show initials avatar
     date_joined = db.Column(db.DateTime, default=datetime.utcnow)
 
     posts = db.relationship("Post", backref="author", lazy=True, cascade="all, delete-orphan")
@@ -45,7 +45,7 @@ class Post(db.Model):
     title = db.Column(db.String(140), nullable=False)
     content = db.Column(db.Text, nullable=False)
     excerpt = db.Column(db.String(240), nullable=True)
-    cover_image = db.Column(db.String(500), nullable=True)  # full Cloudinary URL
+    cover_image = db.Column(db.String(120), nullable=True)
     date_posted = db.Column(db.DateTime, default=datetime.utcnow)
     date_updated = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
