@@ -2,6 +2,9 @@
 
 A full-stack blogging platform built with Flask. Users can register, log in, publish articles, edit or delete their own posts, comment on articles, and upload a profile picture. Guests can read everything but need an account to write or comment.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/ccefa95a-a307-42f2-9efd-441577a1f042" controls width="600"></video>
+
 ## Features
 
 - **Authentication** — Register, log in, log out. Passwords are hashed with Werkzeug's `generate_password_hash` (never stored in plain text).
