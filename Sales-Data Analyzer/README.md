@@ -2,6 +2,9 @@
 
 A CLI-based Python tool that cleans messy retail sales data, explores trends, predicts future sales, and generates a full professional PDF report.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/179ac0e7-48dc-41d6-b125-c51d69583b19" controls width="600"></video>
+
 ## Features
 
 **Core requirements:**
