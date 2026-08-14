@@ -2,6 +2,9 @@
 
 A secure, command-line password manager built in Python with strong encryption, session management, and password strength analysis.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/c248681f-6342-4936-81d4-533a080a57ea" controls width="600"></video>
+
 ## ✨ Features
 
 ### 🔑 Core Password Management
