@@ -7,6 +7,9 @@ A premium, production-ready task management system with a modern web interface, 
 ![Flask](https://img.shields.io/badge/Flask-3.0.0-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/535cd38d-5557-47a8-925a-94c7192b0c81" controls width="600"></video>
+
 ## Features
 
 - ✅ **JWT Authentication** - Secure token-based authentication
