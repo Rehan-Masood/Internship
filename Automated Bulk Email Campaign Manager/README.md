@@ -2,6 +2,15 @@
 
 A Flask-based, database-driven email campaign manager inspired by the supplied dashboard reference.
 
+## Demo Video
+<video src="https://github.com/user-attachments/assets/93af35ed-48e7-4c2a-bbf0-e6de62fa56d7" controls width="600"></video>
+
+## DashBoard
+   ![ DashBoard.](./Dashboard.jpg)
+
+## Email-Confirmation
+   ![ Email-Confirmation.](./Email.jpg)
+
 ## Features
 
 - CSV contact import
