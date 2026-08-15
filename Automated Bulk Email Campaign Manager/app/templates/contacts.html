@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="fw-bold">Contacts</h2>
+
+<p class="text-secondary">
+    Import CSV contacts and manage subscription status.
+</p>
+
+<!-- Import Contacts -->
+<div class="card p-4 mb-4">
+
+    <form method="post"
+          enctype="multipart/form-data"
+          class="row g-3">
+
+        <div class="col-md-4">
+            <label class="form-label">Group name</label>
+
+            <input
+                type="text"
+                name="group_name"
+                class="form-control"
+                placeholder="e.g. Students"
+                required
+            >
+        </div>
+
+        <div class="col-md-5">
+            <label class="form-label">CSV file</label>
+
+            <input
+                type="file"
+                name="csv_file"
+                accept=".csv"
+                class="form-control"
+                required
+            >
+        </div>
+
+        <div class="col-md-3 d-flex align-items-end">
+
+            <button
+                type="submit"
+                class="btn btn-primary w-100">
+                Import Contacts
+            </button>
+
+        </div>
+
+    </form>
+
+    <div class="small text-secondary mt-2">
+        CSV columns:
+        <code>name,email</code>
+    </div>
+
+</div>
+
+
+<!-- Contacts Table -->
+<div class="card p-4">
+
+    <div class="table-responsive">
+
+        <table class="table align-middle">
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Group</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {% for c in contacts %}
+
+                <tr>
+
+                    <!-- Name -->
+                    <td>
+                        {{ c.name }}
+                    </td>
+
+                    <!-- Email -->
+                    <td>
+                        {{ c.email }}
+                    </td>
+
+                    <!-- Group -->
+                    <td>
+                        {{ c.group.name if c.group else "—" }}
+                    </td>
+
+                    <!-- Status -->
+                    <td>
+
+                        {% if c.subscribed %}
+
+                            <span class="badge bg-success">
+                                Subscribed
+                            </span>
+
+                        {% else %}
+
+                            <span class="badge bg-secondary">
+                                Unsubscribed
+                            </span>
+
+                        {% endif %}
+
+                    </td>
+
+                    <!-- Action -->
+                    <td>
+
+                        {% if c.subscribed %}
+
+                            <!-- Unsubscribe -->
+                            <form
+                                method="post"
+                                action="{{ url_for('contacts.unsubscribe', contact_id=c.id) }}"
+                                class="d-inline">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-sm btn-outline-danger">
+
+                                    Unsubscribe
+
+                                </button>
+
+                            </form>
+
+                        {% else %}
+
+                            <!-- Subscribe -->
+                            <form
+                                method="post"
+                                action="{{ url_for('contacts.subscribe', contact_id=c.id) }}"
+                                class="d-inline">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-sm btn-outline-success">
+
+                                    Subscribe
+
+                                </button>
+
+                            </form>
+
+                        {% endif %}
+
+                    </td>
+
+                </tr>
+
+                {% else %}
+
+                <tr>
+
+                    <td
+                        colspan="5"
+                        class="text-center text-secondary py-4">
+
+                        No contacts.
+
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}

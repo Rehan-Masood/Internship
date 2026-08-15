@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="fw-bold">Email Logs</h2>
+<div class="card p-4 mt-3"><div class="table-responsive"><table class="table">
+<thead><tr><th>Time</th><th>Recipient</th><th>Campaign</th><th>Status</th><th>Message</th></tr></thead>
+<tbody>{% for l in logs %}<tr><td>{{l.created_at.strftime("%Y-%m-%d %H:%M")}}</td><td>{{l.recipient}}</td><td>{{l.campaign.name}}</td><td>{{l.status}}</td><td>{{l.provider_message or l.error_message or ""}}</td></tr>{% else %}<tr><td colspan="5">No logs.</td></tr>{% endfor %}</tbody>
+</table></div></div>
+{% endblock %}

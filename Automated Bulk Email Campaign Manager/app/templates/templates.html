@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="fw-bold">Email Templates</h2>
+<div class="card p-4 mb-4">
+<form method="post">
+<input name="name" class="form-control mb-3" placeholder="Template name" required>
+<input name="subject" class="form-control mb-3" placeholder="Subject — use {{name}} for personalization" required>
+<textarea name="html_body" class="form-control mb-3" rows="10" placeholder="<h1>Hello {{name}}</h1><p>Your content...</p>" required></textarea>
+<button class="btn btn-primary">Create Template</button>
+</form>
+</div>
+<div class="row g-3">{% for t in templates %}<div class="col-lg-6"><div class="card p-4"><h5>{{ t.name }}</h5><div class="text-secondary">{{ t.subject }}</div><hr><div>{{ t.html_body|safe }}</div></div></div>{% endfor %}</div>
+{% endblock %}

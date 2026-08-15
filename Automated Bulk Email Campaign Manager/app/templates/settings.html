@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="fw-bold">SMTP Settings</h2>
+<p class="text-secondary">For Gmail, use an App Password rather than your normal account password.</p>
+<div class="card p-4">
+<form method="post" class="row g-3">
+<div class="col-md-6"><label>SMTP Host</label><input name="host" class="form-control" value="{{setting.host if setting else 'smtp.gmail.com'}}" required></div>
+<div class="col-md-2"><label>Port</label><input name="port" type="number" class="form-control" value="{{setting.port if setting else 587}}" required></div>
+<div class="col-md-4"><label>From name</label><input name="from_name" class="form-control" value="{{setting.from_name if setting else 'MailFlow'}}"></div>
+<div class="col-md-6"><label>Username</label><input name="username" type="email" class="form-control" value="{{setting.username if setting else ''}}" required></div>
+<div class="col-md-6"><label>Password / App Password</label><input name="password" type="password" class="form-control" value="{{setting.password if setting else ''}}" required></div>
+<div class="col-12 form-check ms-2"><input name="use_tls" type="checkbox" class="form-check-input" {% if not setting or setting.use_tls %}checked{% endif %}><label class="form-check-label">Use STARTTLS</label></div>
+<div class="col-12"><button class="btn btn-primary">Save SMTP Settings</button></div>
+</form>
+</div>
+{% endblock %}

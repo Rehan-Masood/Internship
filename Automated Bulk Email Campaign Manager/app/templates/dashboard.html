@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · MailFlow{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <div><h2 class="fw-bold mb-1">Dashboard</h2><div class="text-secondary">Welcome back. Here's what's happening with your campaigns.</div></div>
+  <a class="btn btn-primary" href="{{ url_for('campaigns.index') }}">+ Create Campaign</a>
+</div>
+
+<div class="row g-3 mb-4">
+{% for label,value in [
+("Total Contacts",total_contacts),
+("Total Campaigns",total_campaigns),
+("Emails Sent",sent),
+("Emails Failed",failed),
+("Emails Pending",pending),
+("Success Rate",success_rate ~ "%")
+] %}
+<div class="col-xl-2 col-md-4 col-6"><div class="card stat p-3"><div class="small-label">{{ label }}</div><div class="stat-value mt-2">{{ value }}</div></div></div>
+{% endfor %}
+</div>
+
+<div class="row g-4">
+  <div class="col-lg-8">
+    <div class="card p-4">
+      <div class="d-flex justify-content-between"><h5 class="fw-bold">Recent Campaigns</h5><a href="{{ url_for('campaigns.index') }}">View all</a></div>
+      <div class="table-responsive mt-3">
+      <table class="table align-middle">
+        <thead><tr><th>Campaign</th><th>Status</th><th>Created</th></tr></thead>
+        <tbody>
+        {% for c in recent_campaigns %}
+          <tr><td>{{ c.name }}</td><td><span class="badge badge-soft">{{ c.status }}</span></td><td>{{ c.created_at.strftime("%Y-%m-%d %H:%M") }}</td></tr>
+        {% else %}
+          <tr><td colspan="3" class="text-secondary">No campaigns yet.</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card p-4">
+      <h5 class="fw-bold">Email Status Overview</h5>
+      <div class="mt-3">
+        <div class="d-flex justify-content-between mb-2"><span>Sent</span><b>{{ sent }}</b></div>
+        <div class="progress mb-3"><div class="progress-bar bg-success" style="width: {{ (sent/(sent+failed+pending+skipped) * 100) if (sent+failed+pending+skipped) else 0 }}%"></div></div>
+        <div class="d-flex justify-content-between mb-2"><span>Pending</span><b>{{ pending }}</b></div>
+        <div class="d-flex justify-content-between mb-2"><span>Failed</span><b>{{ failed }}</b></div>
+        <div class="d-flex justify-content-between"><span>Skipped</span><b>{{ skipped }}</b></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

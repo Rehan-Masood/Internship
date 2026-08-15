@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="fw-bold">Campaigns</h2>
+<div class="card p-4 mb-4">
+<form method="post" class="row g-3">
+<div class="col-md-6"><label class="form-label">Campaign name</label><input name="name" class="form-control" required></div>
+<div class="col-md-3"><label class="form-label">Template</label><select name="template_id" class="form-select" required>{% for t in templates %}<option value="{{t.id}}">{{t.name}}</option>{% endfor %}</select></div>
+<div class="col-md-3"><label class="form-label">Contact group</label><select name="group_id" class="form-select" required>{% for g in groups %}<option value="{{g.id}}">{{g.name}}</option>{% endfor %}</select></div>
+<div class="col-md-4"><label class="form-label">Schedule (optional)</label><input type="datetime-local" name="scheduled_at" class="form-control"></div>
+<div class="col-md-8 d-flex align-items-end"><button class="btn btn-primary">Create Campaign</button></div>
+</form>
+</div>
+<div class="card p-4"><div class="table-responsive"><table class="table align-middle">
+<thead><tr><th>Name</th><th>Status</th><th>Group</th><th>Scheduled</th><th>Action</th></tr></thead>
+<tbody>{% for c in campaigns %}<tr><td>{{c.name}}</td><td><span class="badge badge-soft">{{c.status}}</span></td><td>{{c.group.name}}</td><td>{{c.scheduled_at or "—"}}</td><td>{% if c.status not in ["Sending","Completed"] %}<form method="post" action="{{url_for('campaigns.send',campaign_id=c.id)}}"><button class="btn btn-sm btn-success">Send Now</button></form>{% endif %}</td></tr>{% else %}<tr><td colspan="5">No campaigns.</td></tr>{% endfor %}</tbody>
+</table></div></div>
+{% endblock %}
