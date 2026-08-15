@@ -148,7 +148,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 07 | [TaskFlow RESTful Task Manager API](./TaskFlow%20RESTful%20Task%20Manager%20API) |TaskFlow RESTful API is a secure task-management API built with Flask, PostgreSQL, JWT Authentication, and REST principles. It provides endpoints for user authentication, task CRUD operations, dashboards, analytics, and user management. | Python |
 | 08 | [Sales-Data Analyzer](./Sales-Data%20Analyzer) |A Python CLI tool that cleans messy 5-year retail sales data, analyzes trends, and forecasts future sales — generating a complete professional PDF report with charts, tables, and predictions. | Python |
 | 09 | [Password-Manager Pro](./Password-Manager%20Pro) |A secure CLI password manager built with Python OOP that encrypts saved passwords using Fernet symmetric encryption, with a master-password-derived key, auto-logout, and built-in security auditing. | Python |
-| 10 | [Automated Bulk Email Campaign Manager](./Automated%20Bulk%20Email%20Campaign%20Manager) |MailFlow is a Flask-based automated bulk email campaign manager that lets users import contacts, create email templates, schedule campaigns, send emails instantly, manage subscriptions, and monitor email delivery through real-time logs and analytics. | Python |
+| 10 | [MailFlow — Automated Bulk Email Campaign Manager](./Automated%20Bulk%20Email%20Campaign%20Manager) |MailFlow is a Flask-based automated bulk email campaign manager that lets users import contacts, create email templates, schedule campaigns, send emails instantly, manage subscriptions, and monitor email delivery through real-time logs and analytics. | Python |
 
 
 
