@@ -1,0 +1,25 @@
+services:
+  dockflow:
+    build: .
+    container_name: dockflow
+
+    ports:
+      - "5000:5000"
+
+    env_file:
+      - .env
+
+    environment:
+      PORT: 5000
+      APP_ENV: Docker
+
+    volumes:
+      - dockflow_data:/app/instance
+      - dockflow_logs:/app/logs
+      - /var/run/docker.sock:/var/run/docker.sock
+
+    restart: unless-stopped
+
+volumes:
+  dockflow_data:
+  dockflow_logs:

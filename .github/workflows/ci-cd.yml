@@ -1,0 +1,138 @@
+name: DockFlow CI/CD
+
+on:
+  push:
+    branches: ["main", "develop"]
+
+  pull_request:
+    branches: ["main", "develop"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+
+  # ==========================================
+  # 1. TEST APPLICATION
+  # ==========================================
+  test:
+    name: Test Application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          pytest -q
+
+      - name: Compile Python
+        run: |
+          python -m compileall -q app run.py
+
+
+  # ==========================================
+  # 2. BUILD AND TEST DOCKER IMAGE
+  # ==========================================
+  docker:
+    name: Build Docker Image
+    needs: test
+    runs-on: ubuntu-latest
+
+    # Don't build Docker image for pull requests
+    if: github.event_name != 'pull_request'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build -t dockflow:${{ github.sha }} .
+
+      - name: Start Docker container
+        run: |
+          docker run -d \
+            --name dockflow-smoke \
+            -p 5000:5000 \
+            -e SECRET_KEY=ci-secret \
+            -e APP_ENV=CI \
+            dockflow:${{ github.sha }}
+
+      - name: Wait for application
+        run: |
+          echo "Waiting for DockFlow to start..."
+
+          for i in {1..15}; do
+            if curl --fail --silent http://127.0.0.1:5000/health > /dev/null; then
+              echo "DockFlow is healthy!"
+              exit 0
+            fi
+
+            echo "Waiting... attempt $i/15"
+            sleep 2
+          done
+
+          echo "DockFlow failed to become healthy."
+          exit 1
+
+      - name: Health check
+        run: |
+          curl --fail http://127.0.0.1:5000/health
+
+      - name: Show container status
+        run: |
+          docker ps -a
+
+      - name: Show container logs
+        if: always()
+        run: |
+          docker logs dockflow-smoke
+
+      - name: Remove smoke test container
+        if: always()
+        run: |
+          docker rm -f dockflow-smoke || true
+
+
+  # ==========================================
+  # 3. DEPLOYMENT HANDOFF
+  # ==========================================
+  deploy:
+    name: Deployment Handoff
+    needs: docker
+    runs-on: ubuntu-latest
+
+    # Deploy only after a successful push to main
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - name: Deployment handoff
+        run: |
+          echo "======================================"
+          echo "DockFlow CI/CD Pipeline"
+          echo "======================================"
+          echo "Tests passed."
+          echo "Docker image built successfully."
+          echo "Docker smoke test passed."
+          echo "Ready for production deployment."
+          echo "======================================"
+
+      # Future deployment provider integration
+      - name: Deployment provider
+        run: |
+          echo "Configure Render, AWS, or another deployment provider here."

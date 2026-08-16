@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}DockFlow — Dashboard{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>Dashboard 👋</h1><p>Real-time overview of your Dockerized Flask application.</p></div>
+  <div class="head-actions"><span class="select">Last 30 Days⌄</span><button class="btn primary" onclick="loadDashboard(true)">⟳ Refresh</button></div>
+</div>
+
+<div class="stats-grid" id="stats"></div>
+
+<div class="dashboard-grid">
+  <section class="panel wide">
+    <div class="panel-head"><h2>Request Overview</h2><span class="tag">Live</span></div>
+    <canvas id="requestChart" height="125"></canvas>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><h2>Response Time</h2><span class="tag">ms</span></div>
+    <div class="donut-wrap"><canvas id="responseChart"></canvas><div class="donut-center"><strong id="avgResponse">0ms</strong><span>Average</span></div></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><h2>Container Health</h2><a href="/containers/">View all →</a></div>
+    <div id="containerSummary" class="list"></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><h2>System Status</h2><span class="tag">Live</span></div>
+    <div id="systemStatus" class="list"></div>
+  </section>
+  <section class="panel wide">
+    <div class="panel-head"><h2>Recent Deployments</h2><a href="/deployments/">View all →</a></div>
+    <div class="table-wrap"><table><thead><tr><th>Commit</th><th>Branch</th><th>Status</th><th>Environment</th><th>Deployed At</th><th>Duration</th></tr></thead><tbody id="deployments"></tbody></table></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><h2>Recent Activity</h2></div>
+    <div id="activity" class="activity"></div>
+  </section>
+</div>
+
+<div class="bottom-grid">
+  <section class="panel quick"><div class="panel-head"><h2>⚡ Quick Actions</h2></div>
+    <div class="quick-grid">
+      <button onclick="healthCheck()">✓ Run Health Check</button>
+      <a href="/logs/">▤ View Logs</a>
+      <button onclick="deployNow()">🚀 Deploy Now</button>
+      <button onclick="triggerCI()">⌁ CI/CD Status</button>
+      <a href="/documentation/">▧ Open Documentation</a>
+    </div>
+  </section>
+  <section class="panel"><div class="panel-head"><h2>Services Overview</h2></div><div id="services" class="list"></div></section>
+  <section class="panel"><div class="panel-head"><h2>Resource Usage</h2></div><div id="resources" class="resource-grid"></div></section>
+  <section class="panel"><div class="panel-head"><h2>Environment Status</h2></div><div id="environment" class="environment"></div></section>
+  <section class="panel"><div class="panel-head"><h2>Deployment Pipeline</h2></div><div id="pipeline" class="pipeline"></div></section>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>{% endblock %}

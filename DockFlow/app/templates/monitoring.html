@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}DockFlow — Monitoring{% endblock %}
+{% block content %}
+<div class="page-head"><div><h1>Monitoring</h1><p>Live host/application metrics where available.</p></div><button class="btn primary" onclick="loadMonitoring()">⟳ Refresh</button></div>
+<div id="monitorPage" class="stats-grid"></div>
+<section class="panel"><div class="panel-head"><h2>Runtime</h2></div><pre id="monitorRaw" class="code"></pre></section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/pages.js') }}"></script>{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}DockFlow — Documentation{% endblock %}
+{% block content %}
+<div class="page-head"><div><h1>Documentation</h1><p>How to run, test, containerize and deploy DockFlow.</p></div></div>
+<section class="panel prose">
+<h2>Quick start</h2><pre class="code">python -m venv .venv
+.venv\Scripts\activate   # Windows
+source .venv/bin/activate  # Linux/macOS
+pip install -r requirements.txt
+copy .env.example .env    # Windows
+cp .env.example .env      # Linux/macOS
+python run.py</pre>
+<h2>Docker</h2><pre class="code">docker compose up --build</pre>
+<h2>Health</h2><p><code>GET /health</code> is used by Docker and deployment platforms.</p>
+<h2>CI/CD</h2><p>Push to GitHub to run tests and the Docker smoke test. Add provider-specific deployment credentials in GitHub Secrets.</p>
+<h2>Real-time rule</h2><p>The dashboard does not contain screenshot-derived metrics. It polls backend APIs and displays actual state, or an explicit unavailable/not-configured state.</p>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/pages.js') }}"></script>{% endblock %}

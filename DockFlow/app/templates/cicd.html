@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}DockFlow — CI/CD Pipeline{% endblock %}
+{% block content %}
+<div class="page-head"><div><h1>CI/CD Pipeline</h1><p>Live GitHub Actions status. No fake pipeline data.</p></div><button class="btn primary" onclick="triggerCI()">▶ Run Workflow</button></div>
+<section class="panel"><div id="ciPage"></div></section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/pages.js') }}"></script>{% endblock %}

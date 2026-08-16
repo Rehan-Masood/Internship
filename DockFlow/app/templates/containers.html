@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}DockFlow — Containers{% endblock %}
+{% block content %}
+<div class="page-head"><div><h1>Containers</h1><p>Live Docker container discovery when Docker is available.</p></div><button class="btn primary" onclick="loadContainers()">⟳ Refresh</button></div>
+<section class="panel"><div id="containerPage"></div></section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/pages.js') }}"></script>{% endblock %}
