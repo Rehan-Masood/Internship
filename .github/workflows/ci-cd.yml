@@ -1,4 +1,4 @@
-```yaml
+
 name: DockFlow CI/CD
 
 on:
@@ -102,4 +102,4 @@ jobs:
         run: |
           echo "Docker build and smoke test passed."
           echo "Configure your Render/AWS deployment integration here."
-```
+
