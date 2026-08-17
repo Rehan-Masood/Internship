@@ -149,6 +149,8 @@ This repository is a growing collection of projects I built while learning **Pyt
 | 08 | [Sales-Data Analyzer](./Sales-Data%20Analyzer) |A Python CLI tool that cleans messy 5-year retail sales data, analyzes trends, and forecasts future sales — generating a complete professional PDF report with charts, tables, and predictions. | Python |
 | 09 | [Password-Manager Pro](./Password-Manager%20Pro) |A secure CLI password manager built with Python OOP that encrypts saved passwords using Fernet symmetric encryption, with a master-password-derived key, auto-logout, and built-in security auditing. | Python |
 | 10 | [MailFlow — Automated Bulk Email Campaign Manager](./Automated%20Bulk%20Email%20Campaign%20Manager) |MailFlow is a Flask-based automated bulk email campaign manager that lets users import contacts, create email templates, schedule campaigns, send emails instantly, manage subscriptions, and monitor email delivery through real-time logs and analytics. | Python |
+| 11 | [DockFlow — Containerized Flask Deployment & CI/CD Platform](./DockFlow) |DockFlow is a Dockerized Flask application with a GitHub Actions CI/CD pipeline, automated testing, health monitoring, and environment-based configuration. The project demonstrates modern containerization and DevOps practices and is prepared for cloud deployment. | Python |
+
 
 
 
