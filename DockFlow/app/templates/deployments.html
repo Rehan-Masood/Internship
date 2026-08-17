@@ -1,7 +1,502 @@
 {% extends "base.html" %}
+
 {% block title %}DockFlow — Deployments{% endblock %}
+
 {% block content %}
-<div class="page-head"><div><h1>Deployments</h1><p>Deployment records created only by configured integrations.</p></div><button class="btn primary" onclick="deployNow()">🚀 Deploy Now</button></div>
-<section class="panel"><div class="table-wrap"><table><thead><tr><th>Commit</th><th>Branch</th><th>Status</th><th>Environment</th><th>Time</th><th>Message</th></tr></thead><tbody id="deploymentPage"></tbody></table></div></section>
+
+<div class="page-head deployment-page-head">
+    <div>
+        <div class="deployment-eyebrow">
+            <span class="deployment-eyebrow-dot"></span>
+            RELEASE MANAGEMENT
+        </div>
+
+        <h1>Deployments</h1>
+
+        <p>
+            Manage application releases, deployment targets, and production delivery.
+        </p>
+    </div>
+
+    <button class="btn primary deployment-launch-btn" onclick="deployNow()">
+        <span class="deploy-btn-icon">🚀</span>
+        <span>Deploy Now</span>
+    </button>
+</div>
+
+<!-- Deployment Overview -->
+<section class="deployment-overview">
+
+    <div class="deployment-overview-card">
+        <div class="deployment-overview-icon purple">
+            ◈
+        </div>
+
+        <div>
+            <span class="deployment-overview-label">Provider</span>
+            <strong id="deploymentProvider">Checking...</strong>
+        </div>
+    </div>
+
+    <div class="deployment-overview-card">
+        <div class="deployment-overview-icon green">
+            ✓
+        </div>
+
+        <div>
+            <span class="deployment-overview-label">Environment</span>
+            <strong id="deploymentEnvironment">Production</strong>
+        </div>
+    </div>
+
+    <div class="deployment-overview-card">
+        <div class="deployment-overview-icon cyan">
+            ◉
+        </div>
+
+        <div>
+            <span class="deployment-overview-label">Branch</span>
+            <strong id="deploymentBranch">main</strong>
+        </div>
+    </div>
+
+    <div class="deployment-overview-card">
+        <div class="deployment-overview-icon pink">
+            ↻
+        </div>
+
+        <div>
+            <span class="deployment-overview-label">Deployment Records</span>
+            <strong id="deploymentCount">0</strong>
+        </div>
+    </div>
+
+</section>
+
+<!-- Deployment Integration Status -->
+<section class="panel deployment-integration-panel">
+
+    <div class="deployment-panel-header">
+
+        <div>
+            <div class="deployment-section-kicker">
+                DEPLOYMENT INTEGRATION
+            </div>
+
+            <h2>Deployment Provider</h2>
+
+            <p>
+                DockFlow uses your configured deployment integration to trigger releases.
+            </p>
+        </div>
+
+        <span id="deploymentProviderStatus" class="deployment-provider-badge neutral">
+            Checking...
+        </span>
+
+    </div>
+
+    <div class="deployment-provider-box">
+
+        <div class="deployment-provider-main">
+
+            <div class="deployment-provider-logo">
+                🚀
+            </div>
+
+            <div>
+                <strong id="deploymentProviderName">
+                    Deployment Provider
+                </strong>
+
+                <span id="deploymentProviderDescription">
+                    Checking deployment integration...
+                </span>
+            </div>
+
+        </div>
+
+        <div class="deployment-provider-meta">
+
+            <div>
+                <span>Target</span>
+                <strong id="deploymentTarget">Production</strong>
+            </div>
+
+            <div>
+                <span>Branch</span>
+                <strong id="deploymentTargetBranch">main</strong>
+            </div>
+
+            <div>
+                <span>Integration</span>
+                <strong id="deploymentIntegration">
+                    Checking...
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="deploymentConfigurationNotice"
+         class="deployment-configuration-notice"
+         style="display:none;">
+
+        <div class="deployment-notice-icon">
+            !
+        </div>
+
+        <div>
+            <strong>Deployment integration not configured</strong>
+
+            <p>
+                DockFlow is ready to create deployment requests, but no deployment
+                provider or webhook is currently configured.
+            </p>
+
+            <small>
+                Configure <code>DEPLOYMENT_PROVIDER</code> and
+                <code>DEPLOYMENT_WEBHOOK_URL</code> in your environment configuration
+                when you are ready to connect a real deployment service.
+            </small>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Deployment History -->
+<section class="panel deployment-history-panel">
+
+    <div class="deployment-panel-header">
+
+        <div>
+            <div class="deployment-section-kicker">
+                RELEASE HISTORY
+            </div>
+
+            <h2>Deployment Activity</h2>
+
+            <p>
+                Recent deployment records generated by configured integrations.
+            </p>
+        </div>
+
+        <span class="deployment-live-indicator">
+            <span></span>
+            Live
+        </span>
+
+    </div>
+
+    <div class="table-wrap">
+
+        <table class="deployment-table">
+
+            <thead>
+                <tr>
+                    <th>Commit</th>
+                    <th>Branch</th>
+                    <th>Status</th>
+                    <th>Environment</th>
+                    <th>Time</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+
+            <tbody id="deploymentPage">
+
+                <tr>
+                    <td colspan="6" class="deployment-loading">
+                        Loading deployment records...
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- Premium Deployment Modal -->
+<div id="deploymentModal"
+     class="deployment-modal"
+     aria-hidden="true">
+
+    <div class="deployment-modal-backdrop"
+         onclick="closeDeploymentModal()">
+    </div>
+
+    <div class="deployment-modal-card"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="deploymentModalTitle">
+
+        <!-- Modal Header -->
+        <div class="deployment-modal-header">
+
+            <div class="deployment-modal-title-wrap">
+
+                <div class="deployment-modal-icon">
+                    🚀
+                </div>
+
+                <div>
+                    <div class="deployment-modal-kicker">
+                        DOCKFLOW RELEASE CENTER
+                    </div>
+
+                    <h2 id="deploymentModalTitle">
+                        Start Deployment
+                    </h2>
+
+                    <p>
+                        Configure the release target before triggering deployment.
+                    </p>
+                </div>
+
+            </div>
+
+            <button class="deployment-modal-close"
+                    type="button"
+                    onclick="closeDeploymentModal()"
+                    aria-label="Close deployment dialog">
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- Progress Indicator -->
+        <div class="deployment-stepper">
+
+            <div class="deployment-step active">
+                <span>1</span>
+                <div>
+                    <strong>Configure</strong>
+                    <small>Release settings</small>
+                </div>
+            </div>
+
+            <div class="deployment-step-line"></div>
+
+            <div class="deployment-step">
+                <span>2</span>
+                <div>
+                    <strong>Deploy</strong>
+                    <small>Trigger release</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Form -->
+        <form id="deploymentForm"
+              onsubmit="submitDeployment(event)">
+
+            <div class="deployment-form-grid">
+
+                <!-- Branch -->
+                <div class="deployment-field">
+
+                    <label for="deploymentBranchInput">
+                        Branch
+                    </label>
+
+                    <div class="deployment-input-wrap">
+
+                        <span>⑂</span>
+
+                        <input
+                            id="deploymentBranchInput"
+                            name="branch"
+                            type="text"
+                            value="main"
+                            placeholder="main"
+                            autocomplete="off"
+                            required
+                        >
+
+                    </div>
+
+                    <small>
+                        Git branch containing the release you want to deploy.
+                    </small>
+
+                </div>
+
+
+                <!-- Environment -->
+                <div class="deployment-field">
+
+                    <label for="deploymentEnvironmentInput">
+                        Environment
+                    </label>
+
+                    <div class="deployment-input-wrap">
+
+                        <span>◉</span>
+
+                        <select
+                            id="deploymentEnvironmentInput"
+                            name="environment">
+
+                            <option value="Production">
+                                Production
+                            </option>
+
+                            <option value="Staging">
+                                Staging
+                            </option>
+
+                            <option value="Development">
+                                Development
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <small>
+                        Target environment for this deployment.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Commit -->
+            <div class="deployment-field">
+
+                <label for="deploymentCommitInput">
+                    Commit / Release Reference
+                </label>
+
+                <div class="deployment-input-wrap">
+
+                    <span>⌘</span>
+
+                    <input
+                        id="deploymentCommitInput"
+                        name="commit"
+                        type="text"
+                        value="manual"
+                        placeholder="manual or commit SHA"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+                <small>
+                    Use <strong>manual</strong> for a manual deployment or enter a
+                    commit SHA/reference.
+                </small>
+
+            </div>
+
+
+            <!-- Deployment Summary -->
+            <div class="deployment-summary">
+
+                <div class="deployment-summary-header">
+
+                    <span>DEPLOYMENT SUMMARY</span>
+
+                    <span id="deploymentModalProviderBadge"
+                          class="deployment-provider-badge neutral">
+                        Checking...
+                    </span>
+
+                </div>
+
+                <div class="deployment-summary-grid">
+
+                    <div>
+                        <span>Branch</span>
+                        <strong id="summaryBranch">main</strong>
+                    </div>
+
+                    <div>
+                        <span>Environment</span>
+                        <strong id="summaryEnvironment">Production</strong>
+                    </div>
+
+                    <div>
+                        <span>Commit</span>
+                        <strong id="summaryCommit">manual</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Configuration Warning -->
+            <div id="deploymentModalWarning"
+                 class="deployment-modal-warning"
+                 style="display:none;">
+
+                <div class="deployment-modal-warning-icon">
+                    !
+                </div>
+
+                <div>
+                    <strong>Deployment provider is not configured</strong>
+
+                    <p>
+                        Your deployment settings can be prepared here, but DockFlow
+                        cannot start a real external deployment until a deployment
+                        provider/webhook is configured.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Footer -->
+            <div class="deployment-modal-footer">
+
+                <button
+                    type="button"
+                    class="btn deployment-cancel-btn"
+                    onclick="closeDeploymentModal()">
+
+                    Cancel
+
+                </button>
+
+                <button
+                    type="submit"
+                    id="deploymentSubmitButton"
+                    class="btn primary deployment-submit-btn">
+
+                    <span id="deploymentSubmitIcon">🚀</span>
+
+                    <span id="deploymentSubmitText">
+                        Start Deployment
+                    </span>
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
 {% endblock %}
-{% block scripts %}<script src="{{ url_for('static', filename='js/pages.js') }}"></script>{% endblock %}
+
+
+{% block scripts %}
+
+<script src="{{ url_for('static', filename='js/pages.js') }}"></script>
+
+{% endblock %}

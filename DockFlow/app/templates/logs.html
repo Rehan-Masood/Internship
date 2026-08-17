@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}DockFlow — Logs{% endblock %}
 {% block content %}
-<div class="page-head"><div><h1>Logs</h1><p>Application logs from the backend.</p></div><button class="btn primary" onclick="loadLogs()">⟳ Refresh</button></div>
+<div class="page-head"><div><h1>Logs</h1><p>Live application and HTTP request logs from the DockFlow backend.</p></div><button class="btn primary" onclick="loadLogs()">⟳ Refresh</button></div>
 <section class="panel"><div class="table-wrap"><table><thead><tr><th>Time</th><th>Level</th><th>Service</th><th>Message</th></tr></thead><tbody id="logsPage"></tbody></table></div></section>
 {% endblock %}
 {% block scripts %}<script src="{{ url_for('static', filename='js/pages.js') }}"></script>{% endblock %}

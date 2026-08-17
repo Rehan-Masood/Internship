@@ -9,7 +9,6 @@ def create_app(test_config=None):
         app.config.update(test_config)
 
     db.init_app(app)
-    init_logging(app)
 
     from .routes.main import main_bp
     from .routes.dashboard import dashboard_bp
@@ -39,7 +38,10 @@ def create_app(test_config=None):
     def server_error(_):
         return render_template("errors/500.html"), 500
 
+    # Create the database tables before any logging handler writes to app_logs.
     with app.app_context():
         db.ensure_schema()
+        init_logging(app)
+        app.logger.info("DockFlow application started")
 
     return app

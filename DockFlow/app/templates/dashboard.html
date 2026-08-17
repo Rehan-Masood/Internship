@@ -2,8 +2,14 @@
 {% block title %}DockFlow — Dashboard{% endblock %}
 {% block content %}
 <div class="page-head">
-  <div><h1>Dashboard 👋</h1><p>Real-time overview of your Dockerized Flask application.</p></div>
-  <div class="head-actions"><span class="select">Last 30 Days⌄</span><button class="btn primary" onclick="loadDashboard(true)">⟳ Refresh</button></div>
+  <div>
+    <h1>Dashboard 👋</h1>
+    <p>Real-time overview of your Dockerized Flask application.</p>
+  </div>
+
+  <div class="head-actions">
+    <button class="btn primary" onclick="loadDashboard(true)">⟳ Refresh</button>
+  </div>
 </div>
 
 <div class="stats-grid" id="stats"></div>
