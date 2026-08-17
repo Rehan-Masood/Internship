@@ -108,3 +108,4 @@ gunicorn --bind 0.0.0.0:5000 --workers 2 --threads 4 run:app
 ```
 
 Set a strong `SECRET_KEY` and `FLASK_ENV=production`.
+CI/CD pipeline verification test.
