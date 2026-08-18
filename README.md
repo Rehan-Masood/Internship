@@ -3,9 +3,9 @@
 <!-- 🖼️ BANNER IMAGE GOES HERE — see notes at the bottom of this file for what to use -->
 <img src="./assets/banner.png" alt="Django Fullstack Internship Banner" width="850"/>
 
-# 🚀 Django Fullstack Internship
+# 🚀 Python Developer Internship
 
-### A collection of HTML, CSS, Python & Django projects built during my learning journey
+### A collection of HTML, CSS, Python & Django/Flask projects built during my learning journey
 
 [![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-2ea44f?style=for-the-badge)](https://internship-axskzl99q-rehan-web.vercel.app)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -19,7 +19,7 @@
 
 ## 📌 About
 
-This repository is a growing collection of projects I built while learning **Python, HTML, CSS, and Django**. Each folder is a self-contained project with its own code and README. New projects are added regularly as I continue building.
+This repository is a growing collection of projects I built while learning **Python, HTML, CSS, and Django/Flask**. Each folder is a self-contained project with its own code and README. New projects are added regularly as I continue building.
 
 **🔗 Live Portfolio :** [Rehan's Portfolio](https://internship-axskzl99q-rehan-web.vercel.app)
 
