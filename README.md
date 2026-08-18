@@ -195,7 +195,7 @@ This repository is a growing collection of projects I built while learning **Pyt
 ## 📁 Repository Structure
 
 ```
-Django-Fullstack-Internship/
+Python Developer Internship/
 │
 ├── 1_Portfolio/
 ├── BMI Calculator/
@@ -211,7 +211,42 @@ Django-Fullstack-Internship/
 ├── Scope and Number-Guessing Game/
 ├── Secret Auction Program/
 ├── Tip Calculator/
-├── Treasue Island/
+├── Coffee Machine/
+├── Coffee Machine (OOP)/
+├── Quiz Game/
+├── Hirst Painting/
+├── Turtle Race/
+├── The Snake Game/
+├── Advanced Library Management System (OOP)/
+├── The Pong Game/
+├── Turtle Crossing Game/
+├── Professional Finance Manager/
+├── Mail Merge Project/
+├── U.S State Game/
+├── NATO Alphabet project/
+├── Miles to Km Converter/
+├── Pomodoro Timer App/
+├── Password Manager/
+├── Advanced Password Manager/
+├── Professional Inventory & Sales Management System/
+├── Flash Card Project/
+├── Birthday Wisher Project/
+├── ISS Overhead Notifier Project/
+├── The Quizzler App/
+├── Rain Alert App/
+├── Stock News Montoring Project/
+├── Habit Tracker/
+├── Exercise Tracking App/
+├── Rehan's Flight Club/
+├── Birthday Invitation Project/
+├── Spanish Color-Vocab Project/
+├── Motivation-Meme Project/
+├── 100-MoviesTo Watch/
+├── Musical Time Machine Project/
+├── Amazon Price Tracker/
+├── The Cookie Clicker/
+├── LinkedIn-Job-Application-Automation/
+├── Auto-BBC-News Bot
 │
 ├── assets/
 │   └── banner.png        ← README banner image (see notes below)
