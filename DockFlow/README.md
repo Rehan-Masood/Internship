@@ -9,6 +9,9 @@ logs, health checks and responsive real-time polling.
 ## Demo Video
 <video src="https://github.com/user-attachments/assets/d0244b1b-f503-46c2-819c-216861b1350d" controls width="600"></video>
 
+## DockFlow Dashboard
+   ![DockFlow Dashboard.](./Dashboard.jpg)
+
 ## Important design rule
 
 The provided UI reference is a visual model only. It is not the source of
