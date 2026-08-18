@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 🖼️ BANNER IMAGE GOES HERE — see notes at the bottom of this file for what to use -->
-<img src="./assets/banner.png" alt="Django Fullstack Internship Banner" width="850"/>
+<img src="./assets/banner.png" alt="Python Developer Internship Banner" width="850"/>
 
 # 🚀 Python Developer Internship
 
@@ -246,7 +246,68 @@ Python Developer Internship/
 ├── Amazon Price Tracker/
 ├── The Cookie Clicker/
 ├── LinkedIn-Job-Application-Automation/
-├── Auto-BBC-News Bot
+├── Auto-BBC-News Bot/
+├── LinkedIn-Speed-Complaint-Bot/
+├── LinkedIn Follower Bot/
+├── Data Entry Job Automation/
+├── Higher-Lower App/
+├── Name Card Website/
+├── Templating Flask Application/
+├── TINDOG Website/
+├── BLOG Website/
+├── BLOG Contact Form/
+├── Flask Advance Sign-In Form/
+├── Coffee and Wifi/
+├── My Library/
+├── Top Movies Website/
+├── Cafe RESTful API/
+├── BLOG Capstone Project/
+├── Login and Resgistration/
+├── Advanced BLOG Capstone Project/
+├── Live BLOG Capstone Project/
+├── Pandas College Major/
+├── Matplotlib Languages/
+├── LEGO-Notebook and Data/
+├── Google Trend Data Visualization/
+├── Google Playstore Analysis/
+├── NumPy Image Processing/
+├── Seaborn Linear Regression/
+├── Nobel Prize Analysis/
+├── Dr-Semmelweis-Analysis/
+├── Multivariable Regression/
+├── Morse Code Converter/
+├── Online Personal Portfolio/
+├── Tic-Tac-Toe/
+├── Image Watermarking GUI/
+├── Breakout Arcade Game/
+├── Cyber-Typer 2070/
+├── DevCareer OS — Developer Job Hunt & Skill Growth Platform/
+├── DevKit Studio/
+├── API Sentinel (API Health Engine & Response Profiler)/
+├── PixelMetrics Studio/
+├── ScrapePulse (Real-Time Job & Tech Stack Intelligence Engine)/
+├── AutoExpense Pro (GUI Workflow & Data Ingestion Automation)/
+├── Neon Grid Arena/
+├── WeatherPulse Lite (Live REST API & Environmental Auditor)/
+├── NutriFlow Enterprise/
+├── LogSentinel Pro (Enterprise Desktop Log Auditor)/
+├── CustomerChurn Intelligence Pro (Streamlit ML Suite)/
+├── MarketPulse AI (Live Financial NLP & Prediction Suite)/
+├── ScrapeIntel Enterprise (E-Commerce Price & Trend Scraper)/
+├── TaskPulse Pro (Enterprise Operations Suite)/
+├── ShadowMaze Protocol A Cyberpunk Tactical Stealth & Hack Game/
+├── WeConnect_Innovation_Studio/
+│
+├── Combat Warrior/
+├── Advanced Library Management System (OOP)/
+├── Professional Finance Manager/
+├── Professional Inventory & Sales Management System/
+├── InkWell-Flask-Blog/
+├── TaskFlow RESTful Task Manager API/
+├── Sales-Data Analyzer/
+├── Password-Manager Pro/
+├── MailFlow — Automated Bulk Email Campaign Manager/
+├── DockFlow — Containerized Flask Deployment & CI/CD Platform/
 │
 ├── assets/
 │   └── banner.png        ← README banner image (see notes below)
