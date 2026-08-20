@@ -3,7 +3,7 @@ from datetime import datetime
 import requests
 
 USERNAME = "rehan-demo-2026"
-TOKEN = "RehanDemoToken2026"
+TOKEN = "your_own_Token"
 GRAPH_ID = "cycling-demo"
 
 PIXELA_ENDPOINT = "https://pixe.la/v1/users"
