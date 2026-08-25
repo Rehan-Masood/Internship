@@ -7,7 +7,7 @@
 
 ### A collection of HTML, CSS, Python & Django/Flask projects built during my learning journey
 
-[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-2ea44f?style=for-the-badge)](https://internship-axskzl99q-rehan-web.vercel.app)
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-2ea44f?style=for-the-badge)](internship-one-alpha.vercel.app)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
