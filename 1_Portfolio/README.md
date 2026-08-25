@@ -8,7 +8,7 @@ A personal portfolio website showcasing my journey as a **Django Developer Inter
 
 ## 🔗 Live Demo
 
-**[View Live Portfolio →](https://internship-axskzl99q-rehan-web.vercel.app)**
+**[View Live Portfolio →](https://internship-deedc9cpt-rehan-web.vercel.app)**
 
 ## Demo Video
 <video src="https://github.com/user-attachments/assets/ec5a7d21-3140-4ca3-aa51-94449e487837" controls width="600"></video>
