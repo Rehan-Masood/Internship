@@ -4,7 +4,7 @@
 # 🚀 My Portfolio
 
 
-A personal portfolio website showcasing my journey as a **Django Developer Intern**, currently building skills in full stack web development.
+A personal portfolio website showcasing my journey as a **Python Developer Intern**, currently building skills in full stack development.
 
 ## 🔗 Live Demo
 
@@ -15,13 +15,15 @@ A personal portfolio website showcasing my journey as a **Django Developer Inter
 
 ## 📌 About
 
-I'm Muhammad Rehan Masood, a **Django Developer Intern** at WeConnect-Innovation and a Software Engineering student at COMSATS University Islamabad. This portfolio highlights my current skills, ongoing internship experience, and the small projects I've built while learning full stack development.
+I'm Muhammad Rehan Masood, a **Python Developer Intern** at WeConnect-Innovation and a Software Engineering student at COMSATS University Islamabad. This portfolio highlights my current skills, ongoing internship experience, and the small projects I've built while learning full stack development.
 
 ## 🛠️ Built With
 
-- HTML5
+- HTML
 - CSS3
 - JavaScript
+- Flask
+- SMTP Configuration
 - Three.js (background animation)
 
 ## 💼 What's Inside
@@ -29,22 +31,23 @@ I'm Muhammad Rehan Masood, a **Django Developer Intern** at WeConnect-Innovation
 - **Profile Overview** — internship role, education, and skills
 - **About Me** — my background and career goals
 - **Education** — BS Software Engineering @ COMSATS University Islamabad
-- **Skills** — Python, Django (learning), HTML5, Tailwind CSS, Tkinter, MySQL, Git
-- **Projects** — including a BMI Calculator desktop app and a Django learning project
+- **Skills** — Python, Django/Flask, PostgreSQL/MySQL,RESTful/FAST APIs, Dpcker, Automation, Git, AI/ML (Learning)
+- **Projects** — including a DockFlow — Containerized Flask Deployment & CI/CD Platform and TaskFlow - RESTful Task Management API
 - **Contact** — ways to reach me for opportunities or collaboration
 
 ## 🎯 Currently Learning
 
-- Django (models, views, templates)
-- MySQL fundamentals
-- AI/ML basics
-- Building toward becoming a **Full Stack Web Developer**
+- Django/Flask (models, views, templates)
+- PostgreSQL/MySQL 
+- AI/ML 
+- Building toward becoming a **Full Stack Developer**
 
 ## 📫 Contact
 
 - **Email:** jrehan590@gmail.com
 - **LinkedIn:** [linkedin.com/in/m-rehan-masood-48126241b](https://www.linkedin.com/in/m-rehan-masood-48126241b)
 - **GitHub:** [github.com/Rehan-Masood](https://github.com/Rehan-Masood)
+- **Facebook:** [facebook.com/profile.php?id=61593200861505](https://www.facebook.com/profile.php?id=61593200861505)
 
 ---
 
@@ -53,7 +56,7 @@ I'm Muhammad Rehan Masood, a **Django Developer Intern** at WeConnect-Innovation
 
 ## Overview
 
-- Built with plain HTML, CSS, and JavaScript in one file.
+- Built with plain HTML, CSS, and JavaScript and Flask, SMTP Confiuration .
 - Uses custom typography, animated effects, and a dark futuristic visual style.
 - Includes SEO metadata, Open Graph tags, Twitter card tags, and JSON-LD structured data.
 - References the local profile image [LinkedIn photo.png](LinkedIn%20photo.png).
@@ -71,7 +74,7 @@ I'm Muhammad Rehan Masood, a **Django Developer Intern** at WeConnect-Innovation
 
 ## How To Run
 
-1. Open [Index.html](Index.html) in a web browser.
+1. Open [app.pyl](app.py) in VS Code
 2. Or open the folder in VS Code and use Live Server if you want auto-refresh while editing.
 
 ## File Structure
@@ -89,3 +92,4 @@ I'm Muhammad Rehan Masood, a **Django Developer Intern** at WeConnect-Innovation
 - Email: jrehan590@gmail.com
 - LinkedIn: https://www.linkedin.com/in/muhammad-rehan-masood-48126241b/
 - GitHub: https://github.com/Rehan-Masood
+- Facebook: https://www.facebook.com/profile.php?id=61593200861505
