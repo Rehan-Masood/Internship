@@ -22,7 +22,7 @@
 
 This repository is a growing collection of projects I built while learning **Python, HTML, CSS, and Django/Flask**. Each folder is a self-contained project with its own code and README. New projects are added regularly as I continue building.
 
-**🔗 Live Portfolio :** [Rehan's Portfolio](https://internship-axskzl99q-rehan-web.vercel.app)
+**🔗 Live Portfolio :** [Rehan's Portfolio](https://internship-deedc9cpt-rehan-web.vercel.app/)
 
 ---
 
