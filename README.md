@@ -7,7 +7,7 @@
 
 ### A collection of HTML, CSS, Python & Django/Flask projects built during my learning journey
 
-[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-2ea44f?style=for-the-badge)](internship-one-alpha.vercel.app)
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-2ea44f?style=for-the-badge)](https://internship-gfaqg0gv6-rehan-web.vercel.app)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
@@ -22,7 +22,7 @@
 
 This repository is a growing collection of projects I built while learning **Python, HTML, CSS, and Django/Flask**. Each folder is a self-contained project with its own code and README. New projects are added regularly as I continue building.
 
-**🔗 Live Portfolio :** [Rehan's Portfolio](internship-one-alpha.vercel.app)
+**🔗 Live Portfolio :** [Rehan's Portfolio](https://internship-gfaqg0gv6-rehan-web.vercel.app)
 
 ---
 
@@ -337,7 +337,7 @@ Each project folder contains its own `main.py` (or equivalent) and a short local
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rehan-Masood)
 [![Indeed](https://img.shields.io/badge/Indeed-003A9B?style=for-the-badge&logo=indeed&logoColor=white)](https://profile.indeed.com)
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=61593200861505)
-[![Portfolio](https://img.shields.io/badge/Portfolio-2ea44f?style=for-the-badge&logo=vercel&logoColor=white)](internship-one-alpha.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2ea44f?style=for-the-badge&logo=vercel&logoColor=white)](https://internship-gfaqg0gv6-rehan-web.vercel.app)
 
 </div>
 
